@@ -1,0 +1,935 @@
+﻿@import url("ion.rangeSlider.min.css");
+/***********************************
+  cars
+ ***********************************/
+.carname h5 > span:first-child { font-weight:700}
+.carname span{padding-left:10px}
+ span.question-icon{  display:block; height:20px}
+ span.question-icon i{color:rgba(0, 0, 0, 0.3);}
+
+.thumbnail-container {
+    position: relative;
+    overflow: hidden;
+    margin: 8px -8px;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    padding: 0 !important;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.price-car {
+    position:relative
+}
+.price-car .value {
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 2.3rem;
+    color: #14538b;
+}
+
+.price-car .price-was {
+    color: #999;
+    text-decoration: line-through;
+    position:static; 
+    top:-30px
+}
+
+.price-car .duration{ 
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.thumbnail-container .car-img img {
+      -webkit-transition: transform 1s;
+      -o-transition: transform 1s;
+      transition: transform 1s;
+      backface-visibility: hidden;
+}
+.thumbnail-container .car-img{
+    background-color: #f1f1f2;
+}
+ .thumbnail-container:hover {
+     background: #FFFFFF; 
+     border: 1px solid #eee;
+     border-radius:5px ;
+}
+.thumbnail-container .car-price{
+    padding: .4rem .8rem;
+}
+ .thumbnail-container:hover .car-img img {
+        -webkit-transform: scale3d(1.1, 1.1, 1);
+        -moz-transform: scale3d(1.1, 1.1, 1);
+        -ms-transform: scale3d(1.1, 1.1, 1);
+        -o-transform: scale3d(1.1, 1.1, 1);
+        transform: scale3d(1.1, 1.1, 1); 
+}
+
+
+ 
+
+  /*******  group ******/
+
+  .button-mobile-container {
+    display: none;
+}
+  @media (max-width: 768px){
+        .button-mobile-close {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 520;
+    display: block;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+    border: solid 0.5px #e5e5e5;
+}
+        .button-mobile-fixed {
+    position: fixed;
+    bottom: 20px;
+}
+        .button-mobile-container {
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 120;
+    display: block;
+    pointer-events: none;
+}
+        .button-mobile {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    width: 180px;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+        .search-option {
+    display: none;
+    position: fixed;
+    height: 100%;
+    padding: 10px 20px 275px 20px;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    overflow: scroll;
+    background: #fff;
+    z-index: 510;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden; 
+}
+
+  }
+  .show {
+    display: block!important;
+}
+  
+  .search-option span.labelh{display:block; font-weight: 600 ;  position: relative;}
+
+  hr.line-blue-right {
+    border: 0;
+    height: 3px;
+    background-color:#e7e7e7;
+    width: 50px;
+    margin: 0 0 1rem  0 ; }
+
+    hr.line-gray-right {
+    border: 0;
+    height: 1px;
+    background-color:#e7e7e7;
+  
+    }
+  .planname input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+  .planname label {
+  
+  display: inline-block;
+  cursor: pointer;
+      border-radius: 50em; 
+      flex: 1; 
+      text-align:center;
+      margin-left: 12px;
+      font-size:0.875rem;
+      height: 31px;
+}
+
+.caronecol .planname label {padding: 0}
+.caronecol  .car_btn .fieldset{margin: 0}
+
+  .planname input[type=radio]:checked + label {
+  color: #fff;
+
+}
+
+  .planname input[type=radio]#blueplan:checked + label {
+  background:#006ea8;
+
+}
+  .planname input[type=radio]#greenplan:checked + label {
+  background:rgb(61,145,16);
+
+}
+  .planname input[type=radio]#redplan:checked + label{
+  background:rgb(230,1,1);
+
+}
+  .planname label + input[type=radio] + label {
+  border-right: solid 0 #fff;
+}
+
+  .planname.radio-group {
+  border: solid 0 #fff;
+  display: inline-block;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.btn-switch {
+  font-size: 0.5em;
+	position: absolute;
+	display: inline-block;		
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;     height: 25px;
+  width: 40px;
+  top: 26px;
+  left: 13px;
+}
+
+.btn-switch__radio {
+	display: none;
+}
+.btn-switch__label {
+	display: inline-block;	
+	padding: .75em .5em .75em .75em;
+	vertical-align: top;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1.5;
+	color: #666;
+  cursor: pointer;
+	transition: color .2s ease-in-out; margin-bottom:0
+}
+.btn-switch__label + .btn-switch__label {
+  padding-left: 4em;
+	padding-right: 0;
+}
+.btn-switch__txt {
+	position: relative;
+	z-index: 2;
+  display: inline-block;
+   min-width: 1.5em;
+	opacity: 1;
+	pointer-events: none;
+	transition: opacity .2s ease-in-out;
+}
+.btn-switch__radio_no:checked ~ .btn-switch__label_yes .btn-switch__txt,
+.btn-switch__radio_yes:checked ~ .btn-switch__label_no .btn-switch__txt {
+	opacity: 0;
+}
+.btn-switch__label:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #e3e3e3;
+	border-radius: 1.5em;
+	box-shadow: inset 0 .0715em .3572em rgba(43,43,43,.05);
+	transition: background .2s ease-in-out;
+}
+.btn-switch__radio_yes:checked ~ .btn-switch__label:before {
+	background: #14538b;
+}
+.btn-switch__label_no:after {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	top: .5em;
+	bottom: .5em;
+	left: .5em;
+	width: 2em;
+	background: #fff;
+	border-radius: 1em;	
+	pointer-events: none;
+	box-shadow: 0 .1429em .2143em rgba(43,43,43,.2), 0 .3572em .3572em rgba(43,43,43,.1);
+	transition: left .2s ease-in-out, background .2s ease-in-out;
+}
+.btn-switch__radio_yes:checked ~ .btn-switch__label_no:after {
+	left: calc(100% - 2.5em);
+	background: #fff;
+}
+.btn-switch__radio_no:checked ~ .btn-switch__label_yes:before,
+.btn-switch__radio_yes:checked ~ .btn-switch__label_no:before {
+	z-index: 1;
+}
+.btn-switch__radio_yes:checked ~ .btn-switch__label_yes {
+	color: #fff;
+}
+/********* menu car ***************/
+
+.car_btn .fieldset {
+
+	position: relative;
+	height: 40px;
+    	display: inline-block;
+
+	border-radius: 50em;
+	border: 0px solid #2d3e50;
+
+}
+.car_btn nav a {
+	line-height: 40px;
+	height: 100%;
+	
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+
+	text-align: center;
+	color: #333;
+	cursor: pointer;
+}
+.car_btn .fieldset .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 50em;
+}
+.car_btn label{ 
+     border-radius: 50em;
+ 
+     color:#333;
+     	position: relative;
+	z-index: 1;
+	display: inline-block;
+	
+    	height: 40px;
+	line-height: 35px;
+	cursor: pointer;
+	font-size: 1rem;
+	margin-bottom: 0; text-align: center;  padding:0 ;  transition: all .2s; font-weight: 600; border:2px solid #fff;
+
+  }
+.car_btn  label.all {
+	width: 90px;
+}
+.car_btn  label.economic {
+	width: 92px;
+}
+.car_btn label.small {
+	width: 90px;
+}
+.car_btn label.mini 
+{
+	width: 90px;
+}
+.car_btn label.big {
+	width: 90px;
+}
+.car_btn label.superior {
+	width: 90px;
+}
+.car_btn nav.start-home, .car_btn  label.all:hover~.animation {
+	width: 90px;
+	right: 0;
+	background-color: #fff;
+}
+.car_btn nav .start-about, .car_btn label.economic:hover~.animation {
+	width: 90px;
+	right: 95px;
+		background-color: #fff;
+
+}
+.car_btn nav .start-blog, .car_btn label.small:hover~.animation {
+	width: 90px;
+	right: 188px;
+	background-color: #fff;
+}
+.car_btn nav .start-portefolio, .car_btn label.mini:hover~.animation {
+	width: 90px;
+	right: 280px;
+	background-color: #fff;
+
+}
+.car_btn nav .start-contact, .car_btn label.big:hover~.animation {
+	width: 90px;
+	right: 373px;
+	background-color: #fff;
+
+}
+
+.car_btn nav .start-contact, .car_btn label.superior:hover~.animation {
+	width: 90px;
+	right: 465px;
+		background-color: #fff;
+
+}
+
+
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
+/************************
+	car type 
+*****************************/
+  
+ 
+  
+
+
+    .car_btn.car-y label{ 
+
+    	height: 35px;
+	line-height: 30px;
+ margin-left:5px; padding:0 15px;      border: 2px solid #d7d7d7; font-size:0.75rem
+
+  }
+
+
+
+
+  .car_btn input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	  display: none
+}
+
+
+
+
+
+  /**********car color ******************/
+
+  .custom-radios div {
+  display: inline-block; padding:0;
+}
+.custom-radios input[type="checkbox"] {
+  display: none;
+}
+.custom-radios input[type="checkbox"] + label {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.custom-radios input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0 ;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 35px;
+}
+.custom-radios input[type="checkbox"] + label span i {
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.custom-radios input[type="checkbox"]#white + label span {
+  background-color: #ffffff;
+}
+.custom-radios input[type="checkbox"]#gray + label span {
+  background-color: #aaaaaa;
+}
+.custom-radios input[type="checkbox"]#brown + label span {
+  background-color: #D2691E;
+}
+
+.custom-radios input[type="checkbox"]#beige + label span {
+  background-color: #F5F5DC;
+}
+.custom-radios input[type="checkbox"]#green + label span {
+  background-color: #2ecc71;
+}
+.custom-radios input[type="checkbox"]#blue + label span {
+  background-color: #3498db;
+}
+.custom-radios input[type="checkbox"]#yellow + label span {
+  background-color: #f1c40f;
+}
+.custom-radios input[type="checkbox"]#red + label span {
+  background-color: #e74c3c;
+}
+.custom-radios input[type="checkbox"]#black + label span {
+  background-color: #000;
+}
+.custom-radios input[type="checkbox"]#Aetna + label span{
+    background-color: #7d3f98;
+}
+.custom-radios input[type="checkbox"]#Arriva + label span{
+    background-color: #11862f;
+}
+.custom-radios input[type="checkbox"]#Adobe + label span{
+    background-color: #8a7967;
+}
+.custom-radios input[type="checkbox"]#Lingus + label span{
+    background-color: #89ba16;
+}
+.custom-radios input[type="checkbox"]#Algolia + label span{
+    background-color: #3369e7;
+}
+.custom-radios input[type="checkbox"]:checked + label span i {
+  opacity: 1; color:#fefefe
+}
+.custom-radios input[type="checkbox"]:checked + label span .blackCheck {
+  opacity: 1; color:#000
+}
+
+
+.input_hidden {
+    position: absolute;
+ visibility:hidden;
+ opacity:0
+}
+
+.selected {
+    background-color: #ccc;
+}
+
+#sites label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+#sites label:hover {
+    background-color: #efefef;
+}
+
+#sites label img {
+    padding: 3px;
+    
+}
+
+.adv-search {
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.1);
+ 
+}
+
+/******* exploresearch ********/
+.adv-search, .exploresearch .form-control {font-size:0.875rem}
+.exploresearch .form-control{ line-height:1.5}
+.exploresearch .labelh {
+    display: inline-block !important;
+    padding: 0 10px;
+}
+.exploresearch .btn-switch {
+    top: 16px;
+    font-size: 0.5em;
+    position: relative;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 22px;
+    width: 37px;
+    left: auto
+   
+}
+
+
+
+.adv-search .car_btn.with-bg{background: #f6f6f6;}
+
+.adv-search .car_btn.with-bg label{border-radius:0; border:0 !important}
+
+.adv-search .car_btn.with-bg .fieldset .animation {
+border-radius:0
+}
+
+.get-nicer {
+       overflow: auto;
+       height: 580px;
+     }
+
+
+/* yousef edits */
+
+/* cars search */
+
+.car_btn label:hover{
+    color: #fff;
+    background-color: #ccc;
+}
+
+.sear-inp{
+    position: relative;
+    z-index: 1;
+    left: 39px;
+    top: 1px;
+    color: #ccc;
+    cursor: pointer;
+    width: 0;
+}
+
+.inp-inp{
+    display: inline;
+    width: 72%;
+    height: 3.5rem !important;
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+}
+.inp-inp::placeholder{
+    color: #000;
+}
+
+.custom-select1{
+    padding: .375rem .75rem .375rem 1.75rem;
+    color: #495057;
+    vertical-align: middle;
+    background: #fff;
+    position: relative;
+    width: 26%;
+    height: 3.5rem;
+    left: 14px;
+    bottom: 1px;
+    border: 1px solid #ccc;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.text-muted {
+    color: #14538b !important;
+}
+.color-dots .dot100{
+    position: relative;
+    bottom: 10px;
+    padding-right: 45px;
+}
+.color-dots .dot1 , .color-dots .dot2 , .color-dots .dot3 , .color-dots .dot4{
+    height: 11px;
+  width: 11px;
+  
+  border-radius: 50%;
+  display: inline-block;
+    margin-right: 20px;
+    margin-top: 2px;
+    float: left;
+    position: absolute;
+}
+
+.ch-row-ch{
+    width: 100%;
+}
+.color-dots .dot1 ,
+.dot11{
+    background-color: rgb(61,145,16);
+}
+.color-dots .dot2{
+    background-color: rgb(255,126,0);
+}
+.color-dots .dot3{
+    background-color: rgb(132,132,132);
+}
+.color-dots .dot4{
+    background-color: rgb(230,1,1);
+}
+
+
+
+
+.mr-auto h5{
+    font-size: 1rem;
+    font-style: normal;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 2rem;
+    color: #333;
+}
+.mr-auto h3{
+    font-size: 1.75rem;
+    font-style: normal;
+    line-height: 1.5rem;
+}
+
+.dot11{
+    height: 17px;
+  width: 17px;
+  
+  border-radius: 50%;
+  display: inline-block;
+    float: left;
+    position: absolute;
+    margin-top: 5px;
+}
+.car-price .heart{
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+.fa-heart:hover{
+    cursor: pointer;
+}
+.btn-reserve1{
+    float: left;
+}
+.btn-reserve1 a{
+    padding: 5px 19px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+}
+.pagin{
+    margin: 20px 0;
+}
+.pagin li{
+    display: inline;
+}
+.pagin .fa-chevron-right{
+    margin: 8px 0;
+    color: #0f4a79;
+}
+.pagin .fa-chevron-left{
+    margin: -25px 0;
+    color: #0f4a79;
+}
+.pagin .items{
+    margin: 0;
+    font-weight: bold;
+    border: 1px solid #fff;
+    padding: 2px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.pagin .items:hover{
+    border: 1px solid #eee;
+}
+.pagin .active{
+    background-color: #fff;
+    padding: 2px 12px;
+    border-radius: 8px;
+    border: 1px solid #0f4a79;
+    color: #0f4a79;
+}
+.pagin .items a{
+    color: #000;
+}
+.pagin .active a{
+    color: #14538b;
+}
+.no-gutters{
+    margin-top: 57px;
+}
+.cars-many,
+.cars-branch{
+    border: 2px solid #000;
+    color: #fff;
+    border-radius: 0;
+    background: #000;
+    margin-left: 10px;
+}
+/*
+.blueplan1:{
+    background-color: #14538b;
+    color: #fff;
+}
+.greenplan:hover{
+    background-color: rgb(61,145,16);
+    color: #fff;
+}
+.redplan:hover{
+    background-color: rgb(230,1,1);
+    
+}
+*/
+.planname input[type=radio]#blueplan:hover + label {
+  background:#006ea8;
+    color: #fff;
+
+}
+  .planname input[type=radio]#greenplan:hover + label {
+  background:rgb(61,145,16);
+color: #fff;
+}
+  .planname input[type=radio]#redplan:hover + label{
+  background:rgb(230,1,1);
+color: #fff;
+}
+.text-mutedd{
+    color: #525252 ;
+}
+/*
+.fieldset .less-month{
+    margin-left: 25px !important;
+}
+.fieldset .more-month{
+    margin-right: 25px !important;
+}
+*/
+
+/* start Custom Radio Buttons */
+
+.customButton {
+/*  display: block;*/
+  position: relative;
+  margin-right: 15px;
+    padding-right: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.customButton input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 24px;
+    width: 24px;
+    margin: 4px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+/*
+.customButton:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+*/
+
+/* When the radio button is checked, add a blue background */
+.customButton input:checked ~ .checkmark {
+  background-color: #14538b;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.customButton input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.customButton .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* end Custom Radio Buttons */
+
+
+.car_btn input[type=radio]:checked + label:hover{
+    color: #fff;
+    background: #000;
+    opacity: 1;
+}
+.car_btn input[type=radio]:checked + label{
+    color: #fff;
+    background: #000;
+    opacity: 1;
+}
+.car_btn.car-y label:hover {
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+}
+/*
+.fieldset .day{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+*/
+/*
+.fieldset .day:hover,
+.fieldset .week:hover,
+.fieldset .month:hover,
+.fieldset .year:hover{
+    background-color: #ccc !important; 
+    color: #fff !important;
+    border: 2px solid #ccc !important;
+}
+*/
+.search-option .item2000,
+.search-option .item8000{
+    width: 35%;
+    text-align: center;
+}
+.irs--round .irs-handle{
+    top: 26px;
+    width: 24px;
+    height: 24px;
+    border: 4px solid #14538b;
+    background-color: #14538b;
+    border-radius: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+.irs--round .irs-to,
+.irs--round .irs-from{
+    font-size: 14px;
+    line-height: 1;
+    text-shadow: none;
+    padding: 3px 5px;
+    background-color: #fff;
+    color: #14538b;
+    border-radius: 0;
+}
+#select-country,
+#select-car{
+    margin: 15px 0;
+    border: 1px solid #fff;
+}
+#select-car:hover{
+    border: 1px solid #14538b;
+}

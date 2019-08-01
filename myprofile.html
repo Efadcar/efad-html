@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Efad</title>
+<link href="css/efad.css" rel="stylesheet">
+</head>
+<body class="top">
+<!--back-to-top start-->
+<div class="scroll-top"><a class="smoothscroll" href="#top"><i class="fa fa-arrow-up"></i></a></div>
+<!--back-to-top end--> 
+<!-- preloader start
+
+<div id="ht-preloader">
+  <div class="loader clear-loader">
+    <div class="loader-text">Loading</div>
+    <div class="loader-dots"> <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<!-- preloader end -->
+
+<nav class="navbar navbar-expand-lg navbar-light  sb-navbar" dir="ltr">
+    <div class="container"> <a class="navbar-brand" href="index.html"><img class="logo" src="images/EfadLogo.svg" alt="Efad" /></a>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto" dir="rtl">
+                <li class="nav-item"><a class="nav-link" href="explore.html">اكتشف</a> </li>
+                <li class="nav-item active"><a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"><a class="nav-link" href="howrentcar.html">كيف أحصل على سيارة ؟ </a> </li>
+                <li class="nav-item"><a class="nav-link" href="Payment.html">الدفع السريع</a> </li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">الأسئلة المتكررة</a> </li>
+                <!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">للمزيد </a>
+                        <div class="dropdown-menu border-0 shadow animate slideIn " aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">إتصل بنا</a> <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">الشروط و الأحكام</a>
+                        </div>
+                    </li>-->
+                
+            </ul>
+            <div class="navbar-buttons  mbr-section-btn "> <a id="top-login-button" href="#login_form_ajax" class="mr-2 login-link">تسجيل دخول </a> <a class="btn    btn--accent"  href="member.html"><span><span>مميزات العضوية</span></span></a> </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="hamburger"> <span></span> <span></span> <span></span> <span></span> </div>
+        </button>
+    </div>
+</nav>
+
+<!-- profile -->
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+                <div class="main-heading  text-center ">
+                    <h1  class="no-border">المعلومات الشخصية</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section >
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="reservation-form  mb-4 ">
+                    <div class="p-3 text-center">
+                        <div class="relative mx-auto col-sm-2 mb-2"> <img class=" rounded-circle" src="images/profile-pic.png" width="128" height="128"> </div>
+                        <h4>Mohamed Mosaad</h4>
+                        <h5> <a href="/user/muhammed_2020">muhammed_2020</a> </h5>
+                    </div>
+                    <ul id="user-meta" class="c-list c-list--meta">
+                        <li class="c-list__item"> <i class="fas fa-map-marker-alt"></i> <span>المدينة</span> <span class="u-block">الرياض</span> </li>
+                        <li class="c-list__item"> <i class="fa fa-certificate"></i> <span>العضوية</span> <span class="u-block">الخضراء</span> </li>
+                        <li class="c-list__item"> <i class="fas fa-coins"></i> <span>عدد النقاط</span> <span class="u-block">15</span> </li>
+                        <li class="c-list__item"> <i class="fas fa-calculator"></i> <span>عدد الحجوزات</span> <span class="u-block">3</span> </li>
+                        <li class="c-list__item" title="متصل الآن"> <i class="far fa-calendar-minus"></i> <span>آخر حجز</span> <span class="u-block">10/04/2019</span> </li>
+                    </ul>
+                </div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item"> <a class="nav-link active" id="notification-tab" data-toggle="tab" href="#notification" role="tab" aria-controls="notification" aria-selected="true">تنبيهات</a> </li>
+                    <li class="nav-item"> <a class="nav-link" id="reservation-tab" data-toggle="tab" href="#reservation" role="tab" aria-controls="reservation" aria-selected="true">الحجوزات</a> </li>
+                    <li class="nav-item"> <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">البيانات الشخصية</a> </li>
+                    <li class="nav-item"> <a class="nav-link" id="member-tab" data-toggle="tab" href="#member" role="tab" aria-controls="member" aria-selected="false">تغير العضوية</a> </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="toast__container">
+                                    <div class="toast__cell">
+                                        <div class="toast toast--blue add-margin">
+                                            <div class="toast__icon"> <i class="fas fa-info-circle"></i> </div>
+                                            <div class="toast__content">
+                                                <p class="toast__type">معلومات بخصوص العضوية</p>
+                                                <p class="toast__message">لقد قاربت عضويتك على الانتهاء يرجى تجديد العضوية</p>
+                                            </div>
+                                            <div class="toast__close"> <i class="far fa-times-circle"></i> </div>
+                                        </div>
+                                        <div class="toast toast--yellow add-margin">
+                                            <div class="toast__icon"> <i class="fas fa-exclamation-triangle"></i> </div>
+                                            <div class="toast__content">
+                                                <p class="toast__type">يرجى سداد حجز السيارة فى حساب البنك</p>
+                                                <p class="toast__message">يرجى سداد حجز السيارة قبل موعد أستلامها بمده أقصاها 3 ايام عمل </p>
+                                            </div>
+                                            <div class="toast__close"> <i class="far fa-times-circle"></i> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade " id="reservation" role="tabpanel" aria-labelledby="reservation-tab">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="toast__container">
+                                    <div class="toast__cell">
+                                        <div class="toast toast--green">
+                                            <div class="toast__icon"> <i class="fas fa-check-circle"></i> </div>
+                                            <div class="toast__content">
+                                                <p class="toast__type">تم حجز سيارتك الان</p>
+                                                <p class="toast__message">لقد قمت بحجز سياره هيونداى توسان لمده 4 أيام ابتداء من 22/04/2019 الى 26/04/2019 </p>
+                                            </div>
+                                            <div class="toast__close"> <i class="far fa-times-circle"></i> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="col-sm-6 mx-auto">
+                            <div class="row mt-3   pt-3">
+                                <div class="col-sm-12">
+                                    <h4><i class="fas fa-edit"></i> البياناتك الشخصية</h4>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="avatar-wrapper"> <i class="fas fa-camera" ></i> <img class="profile-pic" src="images/profile-pic.png" />
+                                    <div class="upload-button"> </div>
+                                    <input class="file-upload" type="file" accept="image/*"/>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Mohamed">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" placeholder="Mosaad">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" placeholder="mohamed.mosaad@mail.com">
+                                </div>
+                                <div class="form-group col-md-6" >
+                                    <input type="tel" class="form-control" placeholder="010052242050">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-default">حفظ التعديلات</button>
+                        </div>
+                        
+                        <!-- personal info --> 
+                        
+                        <!-- password -->
+                        
+                        <div class="col-sm-12 col-md-6 mx-auto">
+                            <div class="row mt-3   pt-3 mt-10">
+                                <div class="col-sm-12">
+                                    <h4><i class="fas fa-edit"></i> كلمة المرور </h4>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="inputpass">كلمة المرور الحالية</label>
+                                    <div class="input-group" >
+                                        <input type="password" id="inputpass" class="form-control password-field" name="password" value="كلمة المرور"  placeholder ="كلمة المرور">
+                                        <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="inputpass">كلمة المرور الجديد</label>
+                                    <div class="input-group" >
+                                        <input type="password" id="Password1" class="form-control password-field" name="password" value="كلمة المرور"  placeholder ="كلمة المرور">
+                                        <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="inputpass"> تأكيد كلمة المرور الجديدة</label>
+                                    <div class="input-group" >
+                                        <input type="password" id="Password2" class="form-control password-field" name="password" value="كلمة المرور"  placeholder ="كلمة المرور">
+                                        <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-default">تعديل كلمة المرور </button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="member" role="tabpanel" aria-labelledby="member-tab">
+                        <div class="row mt-3   pt-3">
+                            <div class="col-sm-12">
+                                <h3 >العضوية</h3>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                    <div class="col p-4 d-flex flex-column position-static"> <strong class="d-inline-block mb-2 text-muted">لون العضوية</strong>
+                                        <h3 class="mb-4">الخضراء</h3>
+                                        <div >
+                                            <h5 class="float-sm-left"> <span class="text-muted mr-2">تاريخ الاشتراك</span><span>11/04/2019</span></h5>
+                                            <h5 class="float-sm-right"><span class="text-muted mr-2">تاريخ انتهاء</span><span>11/04/2019</span></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                    <div class="col p-4 d-flex flex-column position-static"> <strong class="d-inline-block mb-2 text-muted">تغير نوع العضوية</strong>
+                                        <p> أنت الان مشترك فى العضويه الخضراء أذا كنت ترغب فى تغير أ, ترقيه العضويه يرجى الذهاب الى صفحة الاشتراكات </p>
+                                        <p> <a href="" class="btn btn-default">مقارنة مميزات العضوية</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- footer -->
+
+<footer class="footer-end py-4">
+    <div class="footerTopWide  pb-2">
+        <div class="container">
+            <div class="row align-items-center ">
+                <div class="col-sm-5 col-xs-12">
+                    <ul class="footermenu">
+                        <li><a href="contactus.html">تواصل معنا </a></li>
+                        <li><a href="branches.html">الفروع </a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                    <div class="footer-social d-flex  pt-3 pb-3 ">
+                        <h6 class="pr-3 pl-0">تواصل</h6>
+                        <p> <a href="#"><i class="fab fa-whatsapp"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-snapchat"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-facebook-messenger"></i></a> </p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <ul class="payment-img">
+                        <li> <span> <img src="images/payment/mada.png" class="img-thumbnail" alt="مدى" /></span> </li>
+                        <li> <span> <img src="images/payment/visa.png" class="img-thumbnail" alt="فيزا" /></span> </li>
+                        <li> <span> <img src="images/payment/master.png" class="img-thumbnail" alt="ماستر كارد" /></span> </li>
+                        <li> <span> <img src="images/payment/cash.png" class="img-thumbnail" alt="نقدى" /></span> </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-xs-12 ask">
+                    <h2 class="mt-0 pt-0"> عندك سؤال؟ </h2>
+                    <h6 >تواصل معنا يومياً على الواتس أب
+                        أو الايميل </h6>
+                    <h3 class="mb-1"> <i class="fab fa-whatsapp"></i> 078  208 555 966 + </h3>
+                    <h5 class="pt-0"> <i class="far fa-envelope-open"></i> <a href="mailto:customercare@efadcar.com"> customercare@efadcar.com </a> </h5>
+                </div>
+                <div class="col-sm-3 col-xs-12 text-center logo-footer"> <img src="images/footer-logo.svg" alt="Efad" class="footerlogo" /> </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerMidWide  mt-2 mb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-xs-12">
+                    <ul class="footerBottomMenu">
+                        <li><a href="accessibility_policy_ar.aspx">الشروط و الأحكام</a></li>
+                        <li><a href="privacy_policy_ar.aspx">سياسة الخصوصية</a></li>
+                        <li><a href="privacy_policy_ar.aspx">خريطة الموقع</a></li>
+                    </ul>
+                    <p class="pt-1"> جميع الحقوق محفوظة © 2019 </p>
+                </div>
+                <div class="col-sm-3 col-xs-12 text-center "> <a href="#" class="btn btn-default lang ">English <img src="images/en-lang.svg" alt="English" /> </a> </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.2.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.0.0.js"></script> 
+
+<!-- filter --> 
+
+<script src="js/efad-scripts.js"></script> 
+	<script type="text/javascript">
+	$(document).ready(function () {
+        $( "ul" ).on( "click", "li", function() {
+			var pos = $(this).index()+2;
+			$("tr").find('td:not(:eq(0))').hide();
+			$('td:nth-child('+pos+')').css('display','table-cell');
+			$("tr").find('th:not(:eq(0))').hide();
+			$('li').removeClass('active');
+			$(this).addClass('active');
+		});
+
+		// Initialize the media query
+		var mediaQuery = window.matchMedia('(min-width: 640px)');
+  
+		// Add a listen event
+		mediaQuery.addListener(doSomething);
+  
+		// Function to do something with the media query
+		function doSomething(mediaQuery) {    
+			if (mediaQuery.matches) {
+				$('.sep').attr('colspan',5);
+			} else {
+				$('.sep').attr('colspan',2);
+			}
+		}
+  
+		doSomething(mediaQuery);
+
+	});
+
+  
+     
+    </script> 
+	<script type="text/javascript">
+        $(function () {
+
+            /* login */
+            $(".toggle-password").click(function () {
+
+                $(this).toggleClass("fa-eye fa-eye-slash");
+                var input = $($(this).attr("toggle"));
+                if (input.attr("type") == "password") {
+                    input.attr("type", "text");
+                } else {
+                    input.attr("type", "password");
+                }
+            });
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script> 
+	<script>
+        $(document).ready(function () {
+            var readURL = function (input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('.profile-pic').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            $(".file-upload").on('change', function () {
+                readURL(this);
+            });
+
+            $(".upload-button").on('click', function () {
+                $(".file-upload").click();
+            });
+        });
+    </script> 
+	<script>
+	jQuery(document).ready(function(){
+	  jQuery('.toast__close').click(function(e){
+		e.preventDefault();
+		var parent = $(this).parent('.toast');
+		parent.fadeOut("slow", function() { $(this).remove(); } );
+	  });
+	});
+	</script>
+</body>
+</html>

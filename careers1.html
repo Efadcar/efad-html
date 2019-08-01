@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.png" sizes="144x144" type="image/png">
+<title>إفاد | الرئيسية</title>
+<link href="css/efad.css" rel="stylesheet">
+    <link href="css/yousef.css" rel="stylesheet">
+    <link href="css/yousef-homepage.css" rel="stylesheet">
+    <link href="css/careers1.css" rel="stylesheet">
+</head>
+<body class="top">
+<div style="display:none">
+    <div id="login_form_ajax" class="login-wrap">
+        <div id="login_inputs">
+            <div class="panel" id="login" >
+                <h3>تسجيل الدخول</h3>
+                <div class="form-group">
+                    <input type='tel' name='mobile' id='mobile' value='رقم الجوال'   class="form-control" placeholder="mobile ID" />
+                </div>
+                <div class="form-group">
+                    <div class="input-group" >
+                        <input type="password" class="form-control password-field" name="password" value="كلمة المرور"  placeholder ="كلمة المرور">
+                        <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
+                    </div>
+                </div>
+                <div class="form-group text-right"> <a class="right_a switchPanelButton  " panelclass="panel" panelid="forgotpassword" href="#">نسيب كلمة المرور؟</a> </div>
+                <input type='submit' name='Submit' class="btn btn-default  btn-block" value='تسجيل الدخول' />
+                <div class="bottom"> <a class="switchPanelButton" panelclass="panel" panelid="register" href="#">ليس لديك حساب؟ إنشاء حساب جديد.</a> </div>
+            </div>
+            <div class="panel" id='register' >
+                <h3>تسجيل حساب جديد</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="الأسم الاول">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="الأسم الأخير">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <select id="inputState" data-placeholder="أختر مدينه" class="form-control ">
+                                <option >أختر مدينه </option>
+                                <option >الرياض</option>
+                                <option >مكة</option>
+                                <option>المدينة</option>
+                                <option >حائل</option>
+                                <option >القطيف</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="رقم الجوال">
+                        </div>
+                    </div>
+                </div>
+                <div class="row  my-2">
+                    <div class="col-sm-12">
+                        <label for="user_password"> كلمة المرور</label>
+                        <div class="input-group" >
+                            <input type="password" class="form-control password-field" name="password" >
+                            <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-sm-12">
+                        <label for="user_password">اعادة كتابة كلمة المرور</label>
+                        <div class="input-group" >
+                            <input type="password" class="form-control password-field2" name="password" >
+                            <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field2" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
+                        </div>
+                    </div>
+                </div>
+                <input type='submit' name='Submit' class="btn btn-default  btn-block my-4" value='إرسال' />
+                <div class="bottom"> <a class="switchPanelButton" panelclass="panel" panelid="login"
+					href="#">لديك حساب. سجل دخول الان</a> </div>
+            </div>
+            <div class="panel" id='forgotpassword'>
+                <h3>إعاده تعين كلمة مرور جديدة</h3>
+                <input type='tel' name='mobile' id='Tel1' value='أدخل رقم الجوال'   class="form-control" placeholder="mobile ID" />
+                <input
+				type='submit' name='Submit' class="btn btn-default  btn-block my-4" value='أستعادة كلمة المرور' />
+                <div class="bottom"> يرجى مراجعه الهاتف و كتابة كود التفعيل </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--back-to-top start-->
+<div class="scroll-top"><a class="smoothscroll" href="#top"><i class="fa fa-arrow-up"></i></a></div>
+<!--back-to-top end--> 
+<!-- preloader start
+
+<div id="ht-preloader">
+  <div class="loader clear-loader">
+    <div class="loader-text">Loading</div>
+    <div class="loader-dots"> <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<!-- preloader end -->
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top sb-navbar nav-new" dir="ltr">
+    <div class="container-fluid"> <a class="navbar-brand" href="index.html"><img class="logo" src="images/efadlogo.png" alt="Efad" /></a>
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav ml-auto" dir="rtl">
+                <li class="nav-item"><a class="nav-link" href="explore.html">اكتشف</a> </li>
+<!--                <li class="nav-item active"><a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a> </li>-->
+                <li class="nav-item"><a class="nav-link" href="howrentcar.html">كيف أحصل على سيارة ؟ </a> </li>
+                <li class="nav-item"><a class="nav-link" href="Payment.html">الدفع السريع</a> </li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">الأسئلة المتكررة</a> </li>
+                <!--<li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">للمزيد </a>
+                        <div class="dropdown-menu border-0 shadow animate slideIn " aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">إتصل بنا</a> <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">الشروط و الأحكام</a>
+                        </div>
+                    </li>-->
+                
+            </ul>
+            <div class="navbar-buttons  mbr-section-btn "> <a id="top-login-button" href="#login_form_ajax" class="mr-2 login-link">تسجيل دخول </a> <a href="member.html" class="btn  btn-now  btn--accent" ><span><span>إشترك الان</span></span></a> </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="hamburger"> <span></span> <span></span> <span></span> <span></span> </div>
+        </button>
+    </div>
+</nav>
+    
+    <section style="padding-top: 100px" class="careers-banner">
+        <div class="container-fluid">
+            <h1 class="text-left">الوظائف</h1>
+        </div>
+        <img src="images/careers/careers1-banner.PNG" style="width: 100%;">
+        
+    </section>
+    
+    <section>
+        <div class="container">
+        <!-- Buttons to choose list or grid view -->
+        <a onclick="listView()"><i class="fas fa-list"></i></a> 
+        <a onclick="gridView()"><i class="fas fa-grip-horizontal"></i></a> 
+
+        <div class="row">
+          <div class="column" style="background-color:#aaa;">
+            <h2>Column 1</h2>
+            <p>Some text..</p>
+          </div>
+          <div class="column" style="background-color:#bbb;">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column" style="background-color:#ccc;">
+            <h2>Column 3</h2>
+            <p>Some text..</p>
+          </div>
+          <div class="column" style="background-color:#ddd;">
+            <h2>Column 4</h2>
+            <p>Some text..</p>
+          </div>
+        </div>
+        </div>
+    </section>
+    
+    <footer class="footer-end py-4">
+    <div class="footerTopWide  pb-2">
+        <div class="container-fluid">
+            <div class="row align-items-center ">
+                <div class="col-lg-4 col-sm-7 col-xs-12">
+                    <ul class="footermenu pb-8">
+                        <li><a href="aboutus.html">عن إفاد </a></li>
+                        <li><a href="#">الوظائف</a></li>
+                        <li><a href="branches.html">الفروع </a></li>
+                    </ul>
+                    <div class="clearfix"></div>
+<!--
+                    <div class="footer-social d-flex  pt-3 pb-3 ">
+                        <h6 class="pr-3 pl-0">تواصل</h6>
+                        <p> <a href="#"><i class="fab fa-whatsapp"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-snapchat"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-facebook-messenger"></i></a> </p>
+                    </div>
+-->
+                    <div class="clearfix"></div>
+                    <ul class="payment-img">
+                        <li> <span> <img src="images/payment/visa.png" class="img-thumbnail" alt="فيزا" /></span> </li>
+                        <li> <span> <img src="images/payment/master.png" class="img-thumbnail" alt="ماستر كارد" /></span> </li>
+                        <li> <span> <img src="images/payment/mada.png" class="img-thumbnail" alt="مدى" /></span> </li>
+                        <li> <span> <img src="images/payment/cash1.png" class="img-thumbnail" alt="كاش" /></span> </li>
+                    </ul>
+                    <ul class="footerBottomMenu pt-8">
+                        <li><a class="br-l" href="termsandcondiitions.html">الشروط و الأحكام</a></li>
+                        <li><a class="br-l" href="privacy.html">سياسة الخصوصية</a></li>
+                        <li><p class="pr-1"> إفاد © 2019 </p></li>
+                    </ul>
+                </div>
+                <div class=" col-lg-3 col-sm-5 col-xs-12 ask">
+                    <h6 >تواصل معنا الأن عبر الواتس اب</h6>
+                    <h3 class="mb-1"> <i class="fab fa-whatsapp pl-1"></i> 078  208 555 966 + </h3>
+                    <img src="images/QR-code.png" alt="QR-Code" class="qr-code">
+                </div>
+                <div class="col-lg-2 col-sm-7 col-xs-12">
+                    <h3 class="mb-1">قريبا</h3>
+                    <a href="#"><img src="images/google-play%20(2).png" class="mb-2" style="width: 140px;height: 42px;"></a>
+                    <a href="#"><img src="images/app-store%20(2).png" class="mb-2" style="width: 140px;height: 42px;"></a>
+                </div>
+                <div class="col-lg-3 col-sm-5 col-xs-12 text-center logo-footer"> 
+                    <img src="images/footer-logo.svg" alt="Efad" class="footerlogo" />
+                    <div class="footer-social d-flex  pt-3 pb-3 ">
+                        <p> 
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.2.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.0.0.js"></script> 
+
+<!-- fancybox --> 
+<script type="text/javascript" src="js/jquery.fancybox.js"></script> 
+<script type="text/javascript">
+        /* navbar */
+        $(document).ready(function () {
+
+            /* navbar */
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+
+   
+            
+
+        });
+
+  
+     
+    </script> 
+
+<!-- filter car search --> 
+<script src='js/filter/mixitup.min.js'></script> 
+<script src='js/filter/mixitup.js'></script> 
+
+<!--Plugin rangeSlider JavaScript file--> 
+<script src="js/filter/ion.rangeSlider.min.js"></script> 
+<script>
+
+             var $range = $(".js-range-slider"),
+       instance;
+
+             $range.ionRangeSlider({
+                 skin: "round",
+                 type: "double",
+                 min: 0,
+                 max: 500,
+                 from: 0,
+                 to: 500,
+                 onChange: handleRangeInputChange
+             });
+
+             instance = $range.data("ionRangeSlider");
+
+
+             var container = document.querySelector('[data-ref="product_list"]');
+             var mixer = mixitup(container, {
+                 animation: {
+                     duration: 500,
+                     queueLimit: 1000
+                 }
+             });
+
+             function getRange() {
+                 var min = Number(instance.result.from);
+                 var max = Number(instance.result.to);
+                 return {
+                     min: min,
+                     max: max
+                 };
+             }
+
+             function handleRangeInputChange() {
+                 mixer.filter(mixer.getState().activeFilter);
+             }
+
+             function filterTestResult(testResult, target) {
+                 var size = Number(target.dom.el.getAttribute('data-size'));
+                 var range = getRange();
+                 if (size < range.min || size > range.max) {
+                     testResult = false;
+                 }
+                 return testResult;
+             }
+
+             mixitup.Mixer.registerFilter('testResultEvaluateHideShow', 'range', filterTestResult);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script> 
+
+<!-- end car search --> 
+
+<!--Plugin login popup JavaScript file--> 
+<script>
+ 
+        $(document).ready(function () {
+      
+            /* fancy */
+                $("#top-login-button").fancybox();
+            /* login */
+                $(".toggle-password, .toggle-password2").click(function () {
+
+                    $(this).toggleClass("fa-eye fa-eye-slash");
+                    var input = $($(this).attr("toggle"));
+                    if (input.attr("type") == "password") {
+                        input.attr("type", "text");
+                    } else {
+                        input.attr("type", "password");
+                    }
+                });
+               
+
+                $(function () {
+                    $(".switchPanelButton").click(function (event) {
+                        event.preventDefault();
+                        var panel = $(this).attr('panelclass');
+                        $("." + panel).hide();
+                        var panelid = $(this).attr('panelid');
+                        $("#" + panelid).show();
+                    });
+                });
+
+
+                $(".button-mobile-container").click(function () {
+
+                    $('.search-option').toggleClass("show");
+
+                  
+
+                });
+
+
+
+         
+        }); 
+    $("#monthly-1").on("click",function(){
+        $(".value11").text("69") , 
+          $(".value22").text("99"),
+          $(".value33").text("169"),
+          $(".value44").text("269");
+    });
+    
+$("#9month").on("click",function(){
+        $(".value11").text("49") , 
+          $(".value22").text("79"),
+          $(".value33").text("139"),
+          $(".value44").text("239");
+    });
+    
+$("#12monthly").on("click",function(){
+        $(".value11").text("29") , 
+          $(".value22").text("59"),
+          $(".value33").text("119"),
+          $(".value44").text("219");
+    });
+    
+    // Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+    
+    
+</script> 
+<script src="js/efad-scripts.js"></script>
+</body>
+</html>

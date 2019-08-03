@@ -3,7 +3,7 @@
 ------------------------*/ 
 @import url('https://fonts.googleapis.com/css?family=Cairo:400,600,700"');
 
-@import url("bootstrap.min.css");
+@import url("bootstrap.css");
 @import url("jquery.fancybox.css");
 @import url("fontawesome.css");
 @import url("bootstrap-material-datetimepicker.css");
@@ -62,7 +62,9 @@ h6 {
 ul { margin: 0px; padding: 0px; }
 u {text-decoration-style: wavy;}
 
-
+.navbar{
+	padding: 0.5rem 0rem;
+}
 .navbar-brand {
     min-width: 150px;
  
@@ -103,8 +105,6 @@ p{line-height:1.6; font-size:1rem; font-weight:400}
         color: #fff;
     }
 
-.ml-auto, .mx-auto{margin-right: auto !important;
-    margin-left: auto !important;}
 
 .sb-navbar .navbar-brand {
 	margin-right: 3rem;
@@ -124,7 +124,7 @@ p{line-height:1.6; font-size:1rem; font-weight:400}
   -webkit-transform: translate(-50%); /* Safari */  -webkit-transition: width 0.3s /* For Safari 3.1 to 6.0 */;
   transition: width 0.3s;}
 .sb-navbar .navbar-nav .nav-item .nav-link:hover:after {
- width:80%
+ width:90%
   
 	
 }
@@ -1284,11 +1284,10 @@ footer
 .footermenu li{
 	
 	float:right; 
-	padding-left:1rem
 	
 	
 }
-.footermenu li a{position:relative; padding: 0 0.5rem}
+.footermenu li a{position:relative; padding: 0 1rem}
 .footermenu li a:after{content:''; background:#868a90; width:0px; height:1px; bottom:0px; position:absolute; left:50%; transform: translate(-50%); -ms-transform:translate(-50%); /* IE 9 */
   -webkit-transform: translate(-50%); /* Safari */  -webkit-transition: width 0.3s /* For Safari 3.1 to 6.0 */;
   transition: width 0.3s;}
@@ -1827,13 +1826,12 @@ ul.pricetable li.active button {
 }
 .txt-l { font-size:28px; font-weight:bold; }
 .txt-top { position:relative; top:-9px; left:-2px; }
-.tick { font-size:22px; color:rgb(20,83,139); }
+.tick { font-size:22px; color:#003a5d; }
 .hide {
   border:0;
   background:none;
 }
 
-tr:nth-child(even) {background: #fff}
 
 @media (min-width: 640px) {
 	 table.table-price { border-collapse:collapse; table-layout:fixed; width:100% }
@@ -1844,8 +1842,13 @@ tr:nth-child(even) {background: #fff}
    table.table-price td, th {
     display:table-cell !important;
   }
- table.table-price td,  table.table-price th {
+table.table-price th {
     width: 300px;
+  
+  }
+ table.table-price td {
+    width: 300px;
+	 padding: 0 25px;
   
   }
    table.table-price td+td,   table.table-price th+th {
@@ -2648,7 +2651,7 @@ color:#FFC007;
   transform: translate(-50%, -50%);
   margin:0;
 }
-.circle:hover{background: #112e3c; color:#fff}
+.circle:hover{background: #003a5d; color:#fff}
 
 /*******quick payment***********/
 
@@ -2761,11 +2764,11 @@ header .fieldset {
     border: 1px solid #ccc;
 }
 header .fieldset:hover{
-    border: 1px solid #004F79;
+    border: 1px solid #003a5d;
     
 }
 header .fieldset:hover .textbanner{
-    color: #004F79;
+    color: #003a5d;
 }
 
 /* how-get */
@@ -3129,6 +3132,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /* footer */
 .payment-img li{
     padding: 0 5px;
+    width: 4.5rem;
 }
 .footerTopWide img.footerlogo{
     margin-left: 55px;
@@ -3140,6 +3144,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .most-used{
     background-image: url(../images/most-used.png);
+	background-size: 160px;
     font-size: 0;
     position: absolute;
     left: 46px;
@@ -3219,5 +3224,89 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     background-color: #fff;
 }
 .qr-code{
-    margin: 0 55px;
+    margin: 0 41px;
+}
+
+/* responsive footer */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    
+    .footer-end,
+    .footer-end .footerBottomMenu{
+        text-align: center;
+    }
+    .footer-end .footermenu {
+        margin-right: 50px;
+    }
+    .footer-end .payment-img {
+        margin-right: 20px;
+    }
+    .footer-end .footer-social p{
+        margin-right: 65px;
+    }
+    .footer-end .soon{
+        display: block;
+        margin: 10px 0;
+    }
+    .footerTopWide img.footerlogo{
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .payment-img li{
+        width: 4.6rem;
+    }
+    .footerBottomMenu li a{
+        padding: 0 4px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .footer-end .soon{
+        display: block;
+        margin: 10px 0;
+    }
+    .footerTopWide img.footerlogo{
+        margin-top: 40px;
+    }
+    .payment-img li{
+        width: 4.6rem;
+    }
+    .footerBottomMenu li a{
+        padding: 0 4px;
+    }
+    .footer-social a{
+        margin-left: 11px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .footer-end .soon{
+        display: block;
+        margin: 10px 0;
+    }
+    .footerTopWide img.footerlogo{
+        margin-left: 120px;
+        margin-top: 40px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and  (max-width: 1246.98px) { 
+    .payment-img li{
+        width: 4.6rem;
+    }
+    .footer-social a{
+        margin-left: 13px;
+    }
+    .footerBottomMenu li a{
+        padding: 0 4px;
+    }
+}
+
+.container-fluid{
+	padding-right: 20px;
+    padding-left: 20px;
 }

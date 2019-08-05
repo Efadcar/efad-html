@@ -10,7 +10,10 @@
         <link href="css/efad.css" rel="stylesheet">
         <style type="text/css">
             #nouislider-slider{
-            margin: 0px 17px 70px 17px;
+                margin: 0px 17px 70px 17px;
+            }
+            #nouislider-slider-cash-range{
+                margin: 35px 0px;
             }
         </style>
     </head>
@@ -232,12 +235,11 @@
                                         </p>
                                     </div>
                                     <div col-lg-12>
-                                        <input type="text" name="day1"  value="2000" class="item2000 updateSearchContent financialValueDaily" disabled >
-                                        س.ر.
-                                        <input type="text" name="week1" value="8000" class="item8000 updateSearchContent financialValueWeekly" disabled>
-                                        س.ر.
+                                        <input type="hidden" name="day1"  value="2000" id="item2000" class="item2000 updateSearchContent financialValueDaily" disabled >
+                                        <input type="hidden" name="week1" value="8000" id="item8000" class="item8000 updateSearchContent financialValueWeekly" disabled>
                                     </div>
-                                    <input type="text" class="js-range-slider" value="" />
+                                    <!-- <input type="text" class="js-range-slider" value="" /> -->
+                                    <div id="nouislider-slider-cash-range"></div>
                                 </div>
                                 <div class="col-md-12 col-sm-12 pt-2">
                                     <span class="labelh py-2">ترتيب</span>
@@ -908,6 +910,51 @@
                 // Changing event - NOUISLIDER to retrieve result
                 var cadc = document.getElementById('cadc');
                 var btcc = document.getElementById('btcc');
+                
+                slider.noUiSlider.on('update', function( values, handle ) {
+                cadc.value = slider.noUiSlider.get();
+                cadConvert();
+                let result = collectSearchParams();
+                    console.log(result);
+                });
+            
+                cadc.addEventListener('change', function(){
+                slider.noUiSlider.set(this.value);
+                cadConvert();
+                let result = collectSearchParams();
+                    console.log(result);
+                });
+
+                btcc.addEventListener('change', function(e){
+                    slider.noUiSlider.set(this.value*11);
+                });
+
+                var slider = document.getElementById('nouislider-slider-cash-range');
+            
+                noUiSlider.create(slider, {
+                    start: [2000, 8000],
+                    connect: true,
+                    range: {
+                        'min': 2000,
+                        'max': 8000
+                    },
+            
+                    step: 100,
+                    connect: true,
+                    behaviour: 'tap-drag',
+                    tooltips: true,
+            
+                    // Show a scale with the slider
+                    pips: {
+                        mode: 'steps',
+                        stepped: true,
+                        density: 6000
+                    }
+                });
+            
+                // Changing event - NOUISLIDER to retrieve result
+                var cadc = document.getElementById('item2000');
+                var btcc = document.getElementById('item8000');
                 
                 slider.noUiSlider.on('update', function( values, handle ) {
                 cadc.value = slider.noUiSlider.get();

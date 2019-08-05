@@ -160,7 +160,7 @@
                             <div class="button-mobile-container button-mobile-fixed">
                                 <div class="button-mobile">بحث تفصيلى</div>
                             </div>
-                            <div class="col-12 search-option mt-2">
+                            <div class="col-12 search-option mt-2 scrollbar" id="style-1">
                                 <div class="button-mobile-container button-mobile-close">
                                     <div class="button-mobile">مشاهدة</div>
                                 </div>
@@ -235,10 +235,9 @@
                                         </p>
                                     </div>
                                     <div col-lg-12>
-                                        <input type="hidden" name="day1"  value="2000" id="item2000" class="item2000 updateSearchContent financialValueDaily" disabled >
-                                        <input type="hidden" name="week1" value="8000" id="item8000" class="item8000 updateSearchContent financialValueWeekly" disabled>
+                                        <input type="text" name="day1"  value="" id="priceFrom" class="item2000 updateSearchContent financialValueDaily" disabled >
+                                        <input type="text" name="week1" value="" id="priceTo" class="item8000 updateSearchContent financialValueWeekly" disabled>
                                     </div>
-                                    <!-- <input type="text" class="js-range-slider" value="" /> -->
                                     <div id="nouislider-slider-cash-range"></div>
                                 </div>
                                 <div class="col-md-12 col-sm-12 pt-2">
@@ -247,13 +246,13 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <label class="customButton">من الأقل قيمة إلى الأعلى
-                                            <input type="radio" checked="checked" name="highvalue" class="updateSearchContent displayOrdering" value="asc">
+                                            <input type="radio" checked="checked" name="highvalue" class="updateSearchContent displayOrdering" value="ASC">
                                             <span class="checkmark"></span>
                                             </label>
                                         </div>
                                         <div class="col-lg-12">
                                             <label class="customButton">من الأعلى قيمة إلى الأقل
-                                            <input type="radio" name="highvalue" class="updateSearchContent displayOrdering" value="desc">
+                                            <input type="radio" name="highvalue" class="updateSearchContent displayOrdering" value="DESC">
                                             <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -306,8 +305,8 @@
                                     <span class="labelh py-2">سنة الصنع</span>
                                     <!-- <input type="text" class="js-range-slider updateSearchContent" value="" /> -->
                                     <div id="nouislider-slider"></div>
-                                    <input id="cadc" type="hidden">
-                                    <input id="btcc" type="hidden">
+                                    <input id="yearFrom" type="hidden">
+                                    <input id="yearTo" type="hidden">
                                 </div>
                                 <div class="col-md-12 col-sm-12 pt-2" >
                                     <span class="labelh py-2">لون السيارة</span>
@@ -404,7 +403,7 @@
                                         </div>
                                     </div>
                                     -->
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 clearFilters">
                                     <div style="float: right;margin: 35px 0;">
                                         <i class="fas fa-sync" style="color: #003a5d;padding: 0 15px;cursor: pointer;"></i>
                                         <div class="" style="font-size: 18px;color: #2c343e;display: inline;">مسح الكل</div>
@@ -469,7 +468,7 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
                                             </div>
@@ -483,7 +482,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -494,7 +493,157 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value">69</span> <span class="duration">ريال شهريا</span>
                                             </div>
@@ -508,7 +657,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -519,7 +668,7 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value">69</span> <span class="duration">ريال شهريا</span>
                                             </div>
@@ -533,7 +682,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -544,7 +693,7 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value">69</span> <span class="duration">ريال شهريا</span>
                                             </div>
@@ -558,7 +707,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -569,7 +718,7 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value">69</span> <span class="duration">ريال شهريا</span>
                                             </div>
@@ -583,7 +732,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -594,7 +743,7 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value">69</span> <span class="duration">ريال شهريا</span>
                                             </div>
@@ -608,7 +757,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -619,7 +768,7 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value">69</span> <span class="duration">ريال شهريا</span>
                                             </div>
@@ -633,7 +782,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -644,7 +793,7 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value">69</span> <span class="duration">ريال شهريا</span>
                                             </div>
@@ -658,7 +807,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -669,7 +818,7 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value">69</span> <span class="duration">ريال شهريا</span>
                                             </div>
@@ -683,7 +832,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -694,7 +843,7 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value">69</span> <span class="duration">ريال شهريا</span>
                                             </div>
@@ -708,7 +857,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -719,7 +868,7 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value">69</span> <span class="duration">ريال شهريا</span>
                                             </div>
@@ -733,7 +882,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -744,7 +893,7 @@
                                         <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
                                         </div>
                                         <div class="car-price d-flex">
-                                            <div class="price-car ml-auto">
+                                            <div class="price-car mr-auto">
                                                 <div class="price-was">80 ريال</div>
                                                 <span class="value">69</span> <span class="duration">ريال شهريا</span>
                                             </div>
@@ -758,7 +907,7 @@
                                         <div class="car-price d-flex row">
                                             <div class="col-lg-12">
                                                 <span class="dot11"></span>
-                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
+                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
                                                 <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
                                             </div>
                                         </div>
@@ -766,14 +915,15 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <ul class="pagin">
-                                        <li><i class="fas fa-chevron-left float-left"><a href="#"></a></i></li>
+                                        <li><i class="fas fa-chevron-right float-left"><a href="#"></a></i></li>
                                         <div class="text-center">
-                                            <li class="items active"><a href="#">1</a></li>
-                                            <li class="items"><a href="#">2</a></li>
-                                            <li class="items"><a href="#">3</a></li>
-                                            <li class="items"><a href="#">...</a></li>
+                                            <li class="items active" value="0"><a href="#">1</a></li>
+                                            <li class="items" value="1"><a href="#">2</a></li>
+                                            <li class="items" value="2"><a href="#">3</a></li>
+                                            <li class="items" value=""><a href="#">...</a></li>
                                         </div>
-                                        <li><i class="fas fa-chevron-right float-right"><a href="#"></a></i></li>
+                                        <input type="hidden" class="paginationValue" value="0">
+                                        <li><i class="fas fa-chevron-left float-right"><a href="#"></a></i></li>
                                     </ul>
                                 </div>
                             </div>
@@ -884,9 +1034,9 @@
             /* navbar */
             $(document).ready(function () {
                 // implementation of nouislider
-                var slider = document.getElementById('nouislider-slider');
+                var yearSlider = document.getElementById('nouislider-slider');
             
-                noUiSlider.create(slider, {
+                noUiSlider.create(yearSlider, {
                     start: [2015, 2019],
                     connect: true,
                     range: {
@@ -906,80 +1056,50 @@
                         density: 4
                     }
                 });
-            
-                // Changing event - NOUISLIDER to retrieve result
-                var cadc = document.getElementById('cadc');
-                var btcc = document.getElementById('btcc');
                 
-                slider.noUiSlider.on('update', function( values, handle ) {
-                cadc.value = slider.noUiSlider.get();
-                cadConvert();
-                let result = collectSearchParams();
-                    console.log(result);
-                });
-            
-                cadc.addEventListener('change', function(){
-                slider.noUiSlider.set(this.value);
-                cadConvert();
-                let result = collectSearchParams();
+                yearSlider.noUiSlider.on('update', function( values, handle ) {
+                    let silderValue = yearSlider.noUiSlider.get();
+                    let value = silderValue.toString().split(",");
+                    $('#yearFrom').val(Math.trunc( value[1] ));
+                    $('#yearTo').val(Math.trunc( value[0] ));
+                    let result = collectSearchParams();
                     console.log(result);
                 });
 
-                btcc.addEventListener('change', function(e){
-                    slider.noUiSlider.set(this.value*11);
-                });
-
-                var slider = document.getElementById('nouislider-slider-cash-range');
+                /////////////////////////////////////////////////////////////////////
+                ///////////////////////// PRICE FROM - TO////////////////////////////
+                /////////////////////////////////////////////////////////////////////
+                var priceSlider = document.getElementById('nouislider-slider-cash-range');
             
-                noUiSlider.create(slider, {
-                    start: [2000, 8000],
+                noUiSlider.create(priceSlider, {
+                    start: [0, 1000],
                     connect: true,
                     range: {
-                        'min': 2000,
-                        'max': 8000
+                        'min': 0,
+                        'max': 1000
                     },
             
-                    step: 100,
+                    step: 5,
                     connect: true,
                     behaviour: 'tap-drag',
-                    tooltips: true,
+                    tooltips: false,
             
                     // Show a scale with the slider
                     pips: {
                         mode: 'steps',
                         stepped: true,
-                        density: 6000
+                        density: 1
                     }
                 });
-            
-                // Changing event - NOUISLIDER to retrieve result
-                var cadc = document.getElementById('item2000');
-                var btcc = document.getElementById('item8000');
-                
-                slider.noUiSlider.on('update', function( values, handle ) {
-                cadc.value = slider.noUiSlider.get();
-                cadConvert();
-                let result = collectSearchParams();
+
+                priceSlider.noUiSlider.on('update', function( values, handle ) {
+                    let priceSilderValue = priceSlider.noUiSlider.get();
+                    let value = priceSilderValue.toString().split(",");
+                    $('#priceFrom').val(Math.trunc( value[1] ));
+                    $('#priceTo').val(Math.trunc( value[0] ));
+                    let result = collectSearchParams();
                     console.log(result);
                 });
-            
-                cadc.addEventListener('change', function(){
-                slider.noUiSlider.set(this.value);
-                cadConvert();
-                let result = collectSearchParams();
-                    console.log(result);
-                });
-
-                btcc.addEventListener('change', function(e){
-                    slider.noUiSlider.set(this.value*11);
-                });
-
-                //convert cad
-                function cadConvert() {
-                    var cad = slider.noUiSlider.get();
-                    var cadCalc = cad / 11;
-                    document.getElementById('btcc').value = cadCalc;
-                }
             
                 //event listner for generic search filter while typing
                 $('.generalSearch').on('keyup', function() {
@@ -991,6 +1111,14 @@
                     console.log(result);
                 });
                 
+                $('.items').click(function(){
+                    $('.paginationValue').val(this.value);
+                    $('li.items').removeClass('active');
+                    $(this).addClass('active');
+                    let result = collectSearchParams();
+                    console.log(result);
+                });
+
                 // prepare early booking value
                 function earlyBookingValue(){
                     let earlyBooking = $('.btn-switch__radio:checked').val();
@@ -1037,35 +1165,69 @@
                     let financialValueWeekly = $('.financialValueWeekly').val();
                     let displayOrdering = $('.displayOrdering:checked').val();
                     let carBrand = $('.carBrand').children('option:selected').val();
-                    let manufacturingYear = slider.noUiSlider.get();
+                    let carModel = $('.carType').children('option:selected').val();
+                    let carType = $('.carCategory').children('option:selected').val();
+                    let yearFrom = $('#yearFrom').val();
+                    let yearTo = $('#yearTo').val();
+                    let offset = $('.paginationValue').val();
                     let carColor = [];
                     $.each($('.carColor:checked'), function(){            
                         carColor.push($(this).val());
                     });
                     let gearBox = $('.gearBox:checked').val();
                     var result = new function(){
-                        this.generalSearch = generalSearch;
-                        this.carSearchCity = carSearchCity;
+                        this.search_text = generalSearch;
+                        // this.carSearchCity = carSearchCity;
                         this.carClassification = carClassification;
-                        this.membershipPlan = membershipPlan;
-                        this.earlyBooking = earlyBooking;
-                        this.durationOfSubscription = durationOfSubscription;
-                        this.subscriptionValueDuration = subscriptionValueDuration;
-                        this.financialValueDaily = financialValueDaily;
-                        this.financialValueWeekly = financialValueWeekly;
-                        this.displayOrdering = displayOrdering;
-                        this.carBrand = carBrand;
-                        this.manufacturingYear = manufacturingYear;
-                        this.carColor = carColor;
-                        this.gearBox = gearBox;
+                        // this.membershipPlan = membershipPlan;
+                        // this.earlyBooking = earlyBooking;
+                        this.book_period = durationOfSubscription;
+                        // this.subscriptionValueDuration = subscriptionValueDuration;
+                        this.price_from = financialValueWeekly;
+                        this.price_to = financialValueDaily;
+                        this.order_by = displayOrdering;
+                        this.cb_uid = carBrand;
+                        this.cm_uid = carModel;
+                        this.ct_uid = carType;
+                        this.year_from = yearTo;
+                        this.year_to = yearFrom;
+                        this.color = carColor;
+                        this.transmission = gearBox;
+                        this.offset = offset;
                     }
+
+                    //////////////// TODO ///////////////////////////////////
+                    // let x = 5; // car fixed price
+                    // let fixedrateaftermembership = membershipPlan * x / 100;
+                    // let xx = fixedrateaftermembership * earlyBookingValue / 100;
+                    // let xxx = xx * durationOfSubscription;
+                    // $.ajax({
+            
+                    //     type:'POST',
+                    
+                    //     url:'#',
+                    
+                    //     data:{fixedrateaftermembership:xxx},
+                    
+                    //     success:function(data){
+                    //         // TODO
+                    //     },
+                    
+                    //     error: function(data){
+                    //         var errors = data.responseJSON;
+                    //         var errorObj = errors.errors;
+                    //         if ((errorObj)){
+                    //             // TODO
+                    //         }
+                    //         $('html, body').animate({ scrollTop: 0 }, 'fast');
+                    //     }
+                    
+                    // });
+
                     return result;
                 }
                 
                 $( '.updateSearchContent' ).change(function() {
-                    // let value = $(this).val();
-                    // let parent = $(this).parent().prop('className');
-            
                     let result = collectSearchParams();
                     $('.carPriceAfterCal').html(Math.floor(Math.random()*(999-100+1)+100));
                     let x = $('.subscriptionValueDuration:checked').next().html();
@@ -1073,6 +1235,32 @@
                     console.log(result);
                 });
             
+
+                $('.clearFilters').click(function(){
+                    //$("#myCheck").prop("checked", false);
+                    // $('.carClassification:checked').val();
+                    // $('.generalSearch').val('');
+                    // $('.carSearchCity').children("option:selected").val();
+                    // let membershipPlan = $('.membershipPlan:checked').val();
+                    // let earlyBooking = earlyBookingValue();
+                    // let durationOfSubscription = $('.durationOfSubscription:checked').val();
+                    // let subscriptionValueDuration = subscriptionValueDurationValue();
+                    // let financialValueDaily = $('.financialValueDaily').val();
+                    // let financialValueWeekly = $('.financialValueWeekly').val();
+                    // let displayOrdering = $('.displayOrdering:checked').val();
+                    // let carBrand = $('.carBrand').children('option:selected').val();
+                    // let carModel = $('.carType').children('option:selected').val();
+                    // let carType = $('.carCategory').children('option:selected').val();
+                    // let yearFrom = $('#yearFrom').val();
+                    // let yearTo = $('#yearTo').val();
+                    // let offset = $('.paginationValue').val();
+                    // let carColor = [];
+                    // $.each($('.carColor:checked'), function(){            
+                    //     carColor.push($(this).val());
+                    // });
+                    // let gearBox = $('.gearBox:checked').val();
+                    alert('TODO - backend json response');
+                });
             
                 /* navbar */
             
@@ -1085,135 +1273,44 @@
         <!-- filter car search --> 
         <script src='js/filter/mixitup.min.js'></script> 
         <script src='js/filter/mixitup.js'></script> 
-        <!--Plugin rangeSlider JavaScript file--> 
-        <script src="js/filter/ion.rangeSlider.min.js"></script> 
-        <script>
-            var $range = $(".js-range-slider"),
-            instance;
-            
-            $range.ionRangeSlider({
-                skin: "round",
-                type: "double",
-                min: 0,
-                max: 500,
-                from: 0,
-                to: 500,
-                onChange: handleRangeInputChange
-            });
-            
-            instance = $range.data("ionRangeSlider");
-            
-            
-            var container = document.querySelector('[data-ref="product_list"]');
-            var mixer = mixitup(container, {
-                animation: {
-                    duration: 500,
-                    queueLimit: 1000
-                }
-            });
-            
-            function getRange() {
-                var min = Number(instance.result.from);
-                var max = Number(instance.result.to);
-                return {
-                    min: min,
-                    max: max
-                };
-            }
-            
-            function handleRangeInputChange() {
-                mixer.filter(mixer.getState().activeFilter);
-            }
-            
-            function filterTestResult(testResult, target) {
-                var size = Number(target.dom.el.getAttribute('data-size'));
-                var range = getRange();
-                if (size < range.min || size > range.max) {
-                    testResult = false;
-                }
-                return testResult;
-            }
-            
-            mixitup.Mixer.registerFilter('testResultEvaluateHideShow', 'range', filterTestResult);
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </script> 
-        <!-- end car search --> 
+        
         <!--Plugin login popup JavaScript file--> 
         <script>
             $(document).ready(function () {
-            
                 /* fancy */
-                    $("#top-login-button").fancybox();
+                $("#top-login-button").fancybox();
                 /* login */
-                    $(".toggle-password, .toggle-password2").click(function () {
-            
-                        $(this).toggleClass("fa-eye fa-eye-slash");
-                        var input = $($(this).attr("toggle"));
-                        if (input.attr("type") == "password") {
-                            input.attr("type", "text");
-                        } else {
-                            input.attr("type", "password");
-                        }
+                $(".toggle-password, .toggle-password2").click(function () {
+        
+                    $(this).toggleClass("fa-eye fa-eye-slash");
+                    var input = $($(this).attr("toggle"));
+                    if (input.attr("type") == "password") {
+                        input.attr("type", "text");
+                    } else {
+                        input.attr("type", "password");
+                    }
+                });
+               
+        
+                $(function () {
+                    $(".switchPanelButton").click(function (event) {
+                        event.preventDefault();
+                        var panel = $(this).attr('panelclass');
+                        $("." + panel).hide();
+                        var panelid = $(this).attr('panelid');
+                        $("#" + panelid).show();
                     });
-                   
-            
-                    $(function () {
-                        $(".switchPanelButton").click(function (event) {
-                            event.preventDefault();
-                            var panel = $(this).attr('panelclass');
-                            $("." + panel).hide();
-                            var panelid = $(this).attr('panelid');
-                            $("#" + panelid).show();
-                        });
-                    });
-            
-            
-                    $(".button-mobile-container").click(function () {
-            
-                        $('.search-option').toggleClass("show");
-            
-                      
-            
-                    });
-            
-            
-            
-             
-            }); 
-            $("#monthly-1").on("click",function(){
-            $(".value11").text("69") , 
-              $(".value22").text("99"),
-              $(".value33").text("169"),
-              $(".value44").text("269");
+                });
+        
+        
+                $(".button-mobile-container").click(function () {
+        
+                    $('.search-option').toggleClass("show");
+        
+                  
+        
+                });
             });
-            
-            $("#9month").on("click",function(){
-            $(".value11").text("49") , 
-              $(".value22").text("79"),
-              $(".value33").text("139"),
-              $(".value44").text("239");
-            });
-            
-            $("#12monthly").on("click",function(){
-            $(".value11").text("29") , 
-              $(".value22").text("59"),
-              $(".value33").text("119"),
-              $(".value44").text("219");
-            });
-            
         </script> 
         <script src="js/efad-scripts.js"></script>
     </body>

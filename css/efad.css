@@ -3,7 +3,7 @@
 ------------------------*/ 
 @import url('https://fonts.googleapis.com/css?family=Cairo:400,600,700"');
 
-@import url("bootstrap.css");
+@import url("bootstrap.min.css");
 @import url("jquery.fancybox.css");
 @import url("fontawesome.css");
 @import url("bootstrap-material-datetimepicker.css");

@@ -261,7 +261,7 @@
                                 <div class="col-md-12 col-sm-12 pt-2">
                                     <div class="select-wrapper">
                                         <select id="select-car" data-placeholder="ماركة السيارة" class="form-control width100p updateSearchContent carBrand">
-                                            <option value="all">ماركة السيارة</option>
+                                            <option value="0">ماركة السيارة</option>
                                             <option value="kia">كيا</option>
                                             <option value="hyundai">هيونداى</option>
                                             <option value="toyota">تويوتا</option>
@@ -282,7 +282,7 @@
                                 <div class="col-md-12 col-sm-12 pt-1">
                                     <div class="select-wrapper">
                                         <select id="select-car" data-placeholder="أختر شكل السيارة" class="form-control width100p updateSearchContent carType">
-                                            <option value="all">موديل السيارة</option>
+                                            <option value="0">موديل السيارة</option>
                                             <option value="1">الرياض</option>
                                             <option value="2">جدة</option>
                                             <option value="3">المدينة المنورة</option>
@@ -293,7 +293,7 @@
                                 <div class="col-md-12 col-sm-12 pt-1">
                                     <div class="select-wrapper">
                                         <select id="select-car" data-placeholder="أختر شكل السيارة" class="form-control width100p updateSearchContent carCategory">
-                                            <option value="all">نوع السيارة</option>
+                                            <option value="0">نوع السيارة</option>
                                             <option value="1">الرياض</option>
                                             <option value="2">جدة</option>
                                             <option value="3">المدينة المنورة</option>
@@ -416,7 +416,7 @@
                         <!-- btns -->
                         <div class="car_btn scroll">
                             <div class="fieldset">
-                                <input type="radio" name="cartype" class="updateSearchContent carClassification" value="all" data-filter="all" id="c1" checked  >
+                                <input type="radio" name="cartype" class="updateSearchContent carClassification" value="0" data-filter="all" id="c1" checked  >
                                 <label for="c1" class="all" >الكل</label>
                                 <input type="radio" name="cartype" class="updateSearchContent carClassification"  data-filter=".economic" value="economic" id="c2" >
                                 <label for="c2"  class="economic">الاقتصادية</label>
@@ -1201,30 +1201,45 @@
                     // let fixedrateaftermembership = membershipPlan * x / 100;
                     // let xx = fixedrateaftermembership * earlyBookingValue / 100;
                     // let xxx = xx * durationOfSubscription;
-                    // $.ajax({
+                    $.ajax({
             
-                    //     type:'POST',
+                        type:'POST',
                     
-                    //     url:'#',
+                        url:'http://localhost/efad/explore/search',
                     
-                    //     data:{fixedrateaftermembership:xxx},
+                        data:{
+                            search_text:generalSearch,
+                            // car_category:carClassification,
+                            book_period:durationOfSubscription,
+                            price_from:financialValueWeekly,
+                            price_to:financialValueDaily,
+                            order_by:displayOrdering,
+                            cb_uid:carBrand,
+                            cm_uid:carModel,
+                            ct_uid:carType,
+                            year_from:yearTo,
+                            year_to:yearFrom,
+                            color:carColor,
+                            transmission:gearBox,
+                            offset:offset,
+                        },
                     
-                    //     success:function(data){
-                    //         // TODO
-                    //     },
+                        success:function(data){
+                            console.log(data);
+                        },
                     
-                    //     error: function(data){
-                    //         var errors = data.responseJSON;
-                    //         var errorObj = errors.errors;
-                    //         if ((errorObj)){
-                    //             // TODO
-                    //         }
-                    //         $('html, body').animate({ scrollTop: 0 }, 'fast');
-                    //     }
+                        error: function(data){
+                            // var errors = data.responseJSON;
+                            // var errorObj = errors.errors;
+                            // if ((errorObj)){
+                            //     // TODO
+                            // }
+                            // $('html, body').animate({ scrollTop: 0 }, 'fast');
+                        }
                     
-                    // });
+                    });
 
-                    return result;
+                    //return result;
                 }
                 
                 $( '.updateSearchContent' ).change(function() {

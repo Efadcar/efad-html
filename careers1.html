@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="images/favicon.png" sizes="144x144" type="image/png">
-<title>إفاد | الرئيسية</title>
-<link href="css/efad.css" rel="stylesheet">
-    <link href="css/yousef.css" rel="stylesheet">
-    <link href="css/yousef-homepage.css" rel="stylesheet">
-    <link href="css/careers1.css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" sizes="144x144" type="image/png">
+    <title>إفاد | الوظائف</title>
+    <link href="css/efad.css" rel="stylesheet">
+    <link href="css/yousef-careers.css" rel="stylesheet">
 </head>
 <body class="top">
 <div style="display:none">
@@ -141,100 +139,426 @@
     </div>
 </nav>
     
+    <!--  career1  -->
+    
     <section style="padding-top: 100px" class="careers-banner">
-        <div class="container-fluid">
+        <div class="container">
             <h1 class="text-left">الوظائف</h1>
         </div>
         <img src="images/careers/careers1-banner.PNG" style="width: 100%;">
         
     </section>
     
-    <section>
+    <section class="grid-system text-right" style="direction: ltr;">
         <div class="container">
-        <!-- Buttons to choose list or grid view -->
-        <a onclick="listView()"><i class="fas fa-list"></i></a> 
-        <a onclick="gridView()"><i class="fas fa-grip-horizontal"></i></a> 
-
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="ml-5 filter">filtered by :</span>
+                    <div class="select-wrapper mr-5">
+                        <select id="select-car" data-placeholder="city" class="form-control updateSearchContent carType">
+                            <option value="all">City</option>
+                            <option value="1">الرياض</option>
+                            <option value="2">جدة</option>
+                            <option value="3">المدينة المنورة</option>
+                            <option value="4">الدمام</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper mr-5">
+                        <select id="select-car" data-placeholder="Department" class="form-control width100p updateSearchContent carType">
+                            <option value="all">Department</option>
+                            <option value="1">الرياض</option>
+                            <option value="2">جدة</option>
+                            <option value="3">المدينة المنورة</option>
+                            <option value="4">الدمام</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper ml-5 mr-5">
+                        <select id="select-car" data-placeholder="Work Type" class="form-control width100p updateSearchContent carType">
+                            <option value="all">Work Type</option>
+                            <option value="1">الرياض</option>
+                            <option value="2">جدة</option>
+                            <option value="3">المدينة المنورة</option>
+                            <option value="4">الدمام</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <!-- Buttons to choose list or grid view -->
+                    <a onclick="gridView()" class="text-right"><i class="fas fa-grip-horizontal"></i></a>
+                    <a onclick="listView()" class="text-right"><i class="fas fa-list"></i></a> 
+                        
+                </div>
+            </div>
+            <div class="col-lg-12" style="padding: 0;">
+                <h1 class="text-right career-header">MARKETING DEPARTMENT</h1>
+            </div>
         <div class="row">
-          <div class="column" style="background-color:#aaa;">
-            <h2>Column 1</h2>
-            <p>Some text..</p>
-          </div>
-          <div class="column" style="background-color:#bbb;">
-            <h2>Column 2</h2>
-            <p>Some text..</p>
-          </div>
+            <div class="column">
+                <div class="container">
+                    <div class="col-lg-12" style="padding: 0;">
+                        <h1>VAS Product Specialist Professional</h1>
+                      </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-4">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            <span>Cairo, Egypt</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Career Level:</span>
+                            <span style="font-size: 14px;">Mid Career</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Work Type:</span>
+                            <span style="font-size: 14px;">Full Time</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <i class="fas fa-clipboard ml-2"></i>
+                            <span>Posted a day ago</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <i class="far fa-clock ml-2"></i>
+                            <span>Expired in 30 days</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="careers2.html" class="apply">Apply</a>
+                        </div>
+                    </div>
+
+                  </div>
+            </div>
+          <div class="column">
+                <div class="container">
+                    <div class="col-lg-12" style="padding: 0;">
+                        <h1>VAS Product Specialist Professional</h1>
+                      </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-4">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            <span>Cairo, Egypt</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Career Level:</span>
+                            <span style="font-size: 14px;">Mid Career</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Work Type:</span>
+                            <span style="font-size: 14px;">Full Time</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <i class="fas fa-clipboard ml-2"></i>
+                            <span>Posted a day ago</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <i class="far fa-clock ml-2"></i>
+                            <span>Expired in 30 days</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="careers2.html" class="apply">Apply</a>
+                        </div>
+                    </div>
+
+                  </div>
+            </div>
         </div>
 
         <div class="row">
-          <div class="column" style="background-color:#ccc;">
-            <h2>Column 3</h2>
-            <p>Some text..</p>
-          </div>
-          <div class="column" style="background-color:#ddd;">
-            <h2>Column 4</h2>
-            <p>Some text..</p>
-          </div>
+          <div class="column">
+                <div class="container">
+                    <div class="col-lg-12" style="padding: 0;">
+                        <h1>VAS Product Specialist Professional</h1>
+                      </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-4">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            <span>Cairo, Egypt</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Career Level:</span>
+                            <span style="font-size: 14px;">Mid Career</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Work Type:</span>
+                            <span style="font-size: 14px;">Full Time</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <i class="fas fa-clipboard ml-2"></i>
+                            <span>Posted a day ago</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <i class="far fa-clock ml-2"></i>
+                            <span>Expired in 30 days</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="careers2.html" class="apply">Apply</a>
+                        </div>
+                    </div>
+
+                  </div>
+            </div>
+            <div class="column">
+                <div class="container">
+                    <div class="col-lg-12" style="padding: 0;">
+                        <h1>VAS Product Specialist Professional</h1>
+                      </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-4">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            <span>Cairo, Egypt</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Career Level:</span>
+                            <span style="font-size: 14px;">Mid Career</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Work Type:</span>
+                            <span style="font-size: 14px;">Full Time</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <i class="fas fa-clipboard ml-2"></i>
+                            <span>Posted a day ago</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <i class="far fa-clock ml-2"></i>
+                            <span>Expired in 30 days</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="careers2.html" class="apply">Apply</a>
+                        </div>
+                    </div>
+
+                  </div>
+            </div>
         </div>
+            
+            <div class="col-lg-12" style="padding: 0;">
+                <h1 class="text-right career-header">DESIGN</h1>
+            </div>
+        <div class="row">
+          <div class="column">
+                <div class="container">
+                    <div class="col-lg-12" style="padding: 0;">
+                        <h1>VAS Product Specialist Professional</h1>
+                      </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-4">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            <span>Cairo, Egypt</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Career Level:</span>
+                            <span style="font-size: 14px;">Mid Career</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Work Type:</span>
+                            <span style="font-size: 14px;">Full Time</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <i class="fas fa-clipboard ml-2"></i>
+                            <span>Posted a day ago</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <i class="far fa-clock ml-2"></i>
+                            <span>Expired in 30 days</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="careers2.html" class="apply">Apply</a>
+                        </div>
+                    </div>
+
+                  </div>
+            </div>
+            <div class="column">
+                <div class="container">
+                    <div class="col-lg-12" style="padding: 0;">
+                        <h1>VAS Product Specialist Professional</h1>
+                      </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-4">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            <span>Cairo, Egypt</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Career Level:</span>
+                            <span style="font-size: 14px;">Mid Career</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Work Type:</span>
+                            <span style="font-size: 14px;">Full Time</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <i class="fas fa-clipboard ml-2"></i>
+                            <span>Posted a day ago</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <i class="far fa-clock ml-2"></i>
+                            <span>Expired in 30 days</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="careers2.html" class="apply">Apply</a>
+                        </div>
+                    </div>
+
+                  </div>
+            </div>
+        </div>
+
+            
+            <div class="col-lg-12" style="padding: 0;">
+                <h1 class="text-right career-header">ENGINEERING</h1>
+            </div>
+        <div class="row">
+          <div class="column">
+                <div class="container">
+                    <div class="col-lg-12" style="padding: 0;">
+                        <h1>VAS Product Specialist Professional</h1>
+                      </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-4">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            <span>Cairo, Egypt</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Career Level:</span>
+                            <span style="font-size: 14px;">Mid Career</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Work Type:</span>
+                            <span style="font-size: 14px;">Full Time</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <i class="fas fa-clipboard ml-2"></i>
+                            <span>Posted a day ago</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <i class="far fa-clock ml-2"></i>
+                            <span>Expired in 30 days</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="careers2.html" class="apply">Apply</a>
+                        </div>
+                    </div>
+
+                  </div>
+            </div>
+            <div class="column">
+                <div class="container">
+                    <div class="col-lg-12" style="padding: 0;">
+                        <h1>VAS Product Specialist Professional</h1>
+                      </div>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-lg-4">
+                            <i class="fas fa-map-marker-alt ml-2"></i>
+                            <span>Cairo, Egypt</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Career Level:</span>
+                            <span style="font-size: 14px;">Mid Career</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <span class="font-weight-bold">Work Type:</span>
+                            <span style="font-size: 14px;">Full Time</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <i class="fas fa-clipboard ml-2"></i>
+                            <span>Posted a day ago</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <i class="far fa-clock ml-2"></i>
+                            <span>Expired in 30 days</span>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="careers2.html" class="apply">Apply</a>
+                        </div>
+                    </div>
+
+                  </div>
+            </div>
+        </div>
+            <div class="col-lg-12 career-pagin" style="direction: rtl">
+                <ul class="pagin">
+                    
+                    <div class="text-center">
+                        <li><i class="fas fa-chevron-right mr-3"><a href="#"></a></i></li>
+                        <li class="items active"><a href="#">1</a></li>
+                        <li class="items"><a href="#">2</a></li>
+                        <li class="items"><a href="#">3</a></li>
+                        <li class="items"><a href="#">4</a></li>
+                        <li class="items"><a href="#">5</a></li>
+                        <li class="items"><a href="#" style="color: #000;">التالى</a></li>
+                        <li><i class="fas fa-chevron-left mr-2"><a href="#"></a></i></li>
+                    </div>
+                    
+                </ul>
+            </div>
+            
         </div>
     </section>
     
-    <footer class="footer-end py-4">
-    <div class="footerTopWide  pb-2">
-        <div class="container-fluid">
-            <div class="row align-items-center ">
-                <div class="col-lg-4 col-sm-7 col-xs-12">
-                    <ul class="footermenu pb-8">
-                        <li><a href="aboutus.html">عن إفاد </a></li>
-                        <li><a href="#">الوظائف</a></li>
-                        <li><a href="branches.html">الفروع </a></li>
-                    </ul>
-                    <div class="clearfix"></div>
-<!--
-                    <div class="footer-social d-flex  pt-3 pb-3 ">
-                        <h6 class="pr-3 pl-0">تواصل</h6>
-                        <p> <a href="#"><i class="fab fa-whatsapp"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-snapchat"></i></a> <a href="#"><i class="fab fa-instagram"></i></a> <a href="#"><i class="fab fa-facebook-messenger"></i></a> </p>
-                    </div>
--->
-                    <div class="clearfix"></div>
-                    <ul class="payment-img">
-                        <li> <span> <img src="images/payment/visa.png" class="img-thumbnail" alt="فيزا" /></span> </li>
-                        <li> <span> <img src="images/payment/master.png" class="img-thumbnail" alt="ماستر كارد" /></span> </li>
-                        <li> <span> <img src="images/payment/mada.png" class="img-thumbnail" alt="مدى" /></span> </li>
-                        <li> <span> <img src="images/payment/cash1.png" class="img-thumbnail" alt="كاش" /></span> </li>
-                    </ul>
-                    <ul class="footerBottomMenu pt-8">
-                        <li><a class="br-l" href="termsandcondiitions.html">الشروط و الأحكام</a></li>
-                        <li><a class="br-l" href="privacy.html">سياسة الخصوصية</a></li>
-                        <li><p class="pr-1"> إفاد © 2019 </p></li>
-                    </ul>
-                </div>
-                <div class=" col-lg-3 col-sm-5 col-xs-12 ask">
-                    <h6 >تواصل معنا الأن عبر الواتس اب</h6>
-                    <h3 class="mb-1"> <i class="fab fa-whatsapp pl-1"></i> 078  208 555 966 + </h3>
-                    <img src="images/QR-code.png" alt="QR-Code" class="qr-code">
-                </div>
-                <div class="col-lg-2 col-sm-7 col-xs-12">
-                    <h3 class="mb-1">قريبا</h3>
-                    <a href="#"><img src="images/google-play%20(2).png" class="mb-2" style="width: 140px;height: 42px;"></a>
-                    <a href="#"><img src="images/app-store%20(2).png" class="mb-2" style="width: 140px;height: 42px;"></a>
-                </div>
-                <div class="col-lg-3 col-sm-5 col-xs-12 text-center logo-footer"> 
-                    <img src="images/footer-logo.svg" alt="Efad" class="footerlogo" />
-                    <div class="footer-social d-flex  pt-3 pb-3 ">
-                        <p> 
-                            <a href="#"><i class="fas fa-envelope"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            
-                        </p>
+    <!-- footer -->
+    <footer class="footer-end pt-4">
+            <div class="footerTopWide  pb-2">
+                <div class="container-fluid">
+                    <div class="row align-items-center ">
+                        <div class="col-lg-4 col-sm-7 col-xs-12 pr-10">
+                            <ul class="footermenu pb-8">
+                                <li><a href="aboutus.html">عن إفاد </a></li>
+                                <li><a href="#">الوظائف</a></li>
+                                <li><a href="branches.html">الفروع </a></li>
+                            </ul>
+                            <ul class="payment-img">
+                                <li> <span> <img src="images/payment/visa.png" class="img-thumbnail" alt="فيزا" /></span> </li>
+                                <li> <span> <img src="images/payment/master.png" class="img-thumbnail" alt="ماستر كارد" /></span> </li>
+                                <li> <span> <img src="images/payment/mada.png" class="img-thumbnail" alt="مدى" /></span> </li>
+                                <li> <span> <img src="images/payment/cash1.png" class="img-thumbnail" alt="كاش" /></span> </li>
+                            </ul>
+                            <ul class="footerBottomMenu pt-8">
+                                <li><a class="br-l" href="termsandcondiitions.html">الشروط و الأحكام</a></li>
+                                <li><a class="br-l" href="privacy.html">سياسة الخصوصية</a></li>
+                                <li><p class="pr-1"> إفاد © 2019 </p></li>
+                            </ul>
+                        </div>
+                        <div class=" col-lg-3 col-sm-5 col-xs-12 ask text-center">
+                            <h6 >تواصل معنا الأن عبر الواتس اب</h6>
+                            <h3 class="mb-1"> 078  208 555 966 + </h3>
+                            <img src="images/Qrcode.png" alt="QR-Code" class="qr-code" width="87px" height="87px">
+                        </div>
+                        <div class="col-lg-2 col-sm-7 col-xs-12">
+                            <h3 class="mb-1">قريبا</h3>
+                            <a href="#" class="soon"><img src="images/google-play%20(2).png" class="mb-2" style="width: 140px;height: 42px;"></a>
+                            <a href="#" class="soon"><img src="images/app-store%20(2).png" class="mb-2" style="width: 140px;height: 42px;"></a>
+                        </div>
+                        <div class="col-lg-3 col-sm-5 col-xs-12 text-center logo-footer"> 
+                            <img src="images/last-logo.png" alt="Efad" class="footerlogo"/>
+                            <div class="footer-social d-flex  pt-3 pb-3 ">
+                                <p> 
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+
+                                </p>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </div>
-        </div>
-</footer>
+        </footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-3.2.1.min.js"></script> 
@@ -417,7 +741,7 @@ function listView() {
 // Grid View
 function gridView() {
   for (i = 0; i < elements.length; i++) {
-    elements[i].style.width = "50%";
+    elements[i].style.width = "48%";
   }
 }
     

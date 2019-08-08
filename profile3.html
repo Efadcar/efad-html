@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/favicon.png" sizes="144x144" type="image/png">
+        <link href="css/nouislider.min.css" rel="stylesheet"/>
+        <title>إفاد | الصفحة الشخصية</title>
+        <link href="css/efad.css" rel="stylesheet">
+        <link href="css/yousef-profile.css" rel="stylesheet">
+        <style type="text/css">
+            #nouislider-slider{
+            margin: 0px 17px 70px 17px;
+            }
+        </style>
+    </head>
+    <body class="top">
+<!--
+        <div style="display:none">
+            <div id="login_form_ajax" class="login-wrap">
+                <div id="login_inputs">
+                    <div class="panel" id="login" >
+                        <h3>تسجيل الدخول</h3>
+                        <div class="form-group">
+                            <input type='tel' name='mobile' id='mobile' value='رقم الجوال'   class="form-control" placeholder="mobile ID" />
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group" >
+                                <input type="password" class="form-control password-field" name="password" value="كلمة المرور"  placeholder ="كلمة المرور">
+                                <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
+                            </div>
+                        </div>
+                        <div class="form-group text-right"> <a class="right_a switchPanelButton  " panelclass="panel" panelid="forgotpassword" href="#">نسيب كلمة المرور؟</a> </div>
+                        <input type='submit' name='Submit' class="btn btn-default  btn-block" value='تسجيل الدخول' />
+                        <div class="bottom"> <a class="switchPanelButton" panelclass="panel" panelid="register" href="#">ليس لديك حساب؟ إنشاء حساب جديد.</a> </div>
+                    </div>
+                    <div class="panel" id='register' >
+                        <h3>تسجيل حساب جديد</h3>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="الأسم الاول">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="الأسم الأخير">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select id="inputState" data-placeholder="أختر مدينه" class="form-control ">
+                                        <option >أختر مدينه </option>
+                                        <option >الرياض</option>
+                                        <option >مكة</option>
+                                        <option>المدينة</option>
+                                        <option >حائل</option>
+                                        <option >القطيف</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="رقم الجوال">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row  my-2">
+                            <div class="col-sm-12">
+                                <label for="user_password"> كلمة المرور</label>
+                                <div class="input-group" >
+                                    <input type="password" class="form-control password-field" name="password" >
+                                    <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-sm-12">
+                                <label for="user_password">اعادة كتابة كلمة المرور</label>
+                                <div class="input-group" >
+                                    <input type="password" class="form-control password-field2" name="password" >
+                                    <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field2" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <input type='submit' name='Submit' class="btn btn-default  btn-block my-4" value='إرسال' />
+                        <div class="bottom"> <a class="switchPanelButton" panelclass="panel" panelid="login"
+                            href="#">لديك حساب. سجل دخول الان</a> </div>
+                    </div>
+                    <div class="panel" id='forgotpassword'>
+                        <h3>إعاده تعين كلمة مرور جديدة</h3>
+                        <input type='tel' name='mobile' id='Tel1' value='أدخل رقم الجوال'   class="form-control" placeholder="mobile ID" />
+                        <input
+                            type='submit' name='Submit' class="btn btn-default  btn-block my-4" value='أستعادة كلمة المرور' />
+                        <div class="bottom"> يرجى مراجعه الهاتف و كتابة كود التفعيل </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+        <!--back-to-top start-->
+        <div class="scroll-top"><a class="smoothscroll" href="#top"><i class="fa fa-arrow-up"></i></a></div>
+        <!--back-to-top end--> 
+        <!-- preloader start
+            <div id="ht-preloader">
+              <div class="loader clear-loader">
+                <div class="loader-text">Loading</div>
+                <div class="loader-dots"> <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- preloader end -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top sb-navbar nav-new" dir="ltr">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="images/last-logo.png" alt="Efad" /></a>
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav ml-auto" dir="rtl">
+                        <li class="nav-item"><a class="nav-link" href="explore.html">اكتشف</a> </li>
+                        <li class="nav-item active"><a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item"><a class="nav-link" href="howrentcar.html">كيف أحصل على سيارة ؟ </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="Payment.html">الدفع السريع</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">الأسئلة المتكررة</a> </li>
+                        <!--<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">للمزيد </a>
+                            <div class="dropdown-menu border-0 shadow animate slideIn " aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">إتصل بنا</a> <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">الشروط و الأحكام</a>
+                            </div>
+                            </li>-->
+                    </ul>
+                    <div class="navbar-buttons  mbr-section-btn ">
+                        <div class="dropdown show mr-2" style="display: inline-block!important;">
+                          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="far fa-user"></i>
+                          </a>
+
+                          <div class="dropdown-menu Rectangle-538" aria-labelledby="dropdownMenuLink">
+                              <div class="profile-item">
+                                  
+                                  <div class="profile-info">
+                                      <p>ممدوح عمر</p>
+                                      <p>رقم العضوية : 25587879</p>
+                                      <p>البريد الإلكترونى : example@gmail.com</p>
+                                  </div>
+                                  <div class="profile-pic">
+                                    <div class="pic">
+                                        <img src="images/child.png">
+                                    </div>
+                                  </div>
+                                  <div class="clearfix"></div>
+                              </div>
+                            <a class="dropdown-item" href="#" style="margin-top: 15px;">المعلومات الشخصية</a><hr>
+                            <a class="dropdown-item" href="#">الإشتراكات</a><hr>
+                            <a class="dropdown-item" href="#">العضوية</a><hr>
+                              <a class="dropdown-item" href="#">النقاط</a><hr>
+                            <a class="dropdown-item" href="#">الخدمات</a>
+                            <a class="dropdown-item item-out" href="#">تسجيل الخروج</a>
+                          </div>
+                        </div>
+                        
+                        <a href="member.html" class="btn  btn-now  btn--accent" ><span><span>إشترك الان</span></span></a> </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger"> <span></span> <span></span> <span></span> <span></span> </div>
+                </button>
+            </div>
+        </nav>
+        
+        <!--  profile3 -->
+        
+        <section style="padding: 80px 0" class="pro2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" style="border-bottom: 1px solid rgba(217, 217, 217, 0.55);margin: 20px 0">
+                        <h1 class="profile-header">الاشتراكات</h1>
+                        
+                    </div>
+                    <div class="profile-content2 container">
+                        
+                        <div class="row" style="padding: 20px 0">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span>كيا 2018</span>
+                                            <span class="font-weight-bold mr-4" style="font-size: 20px;">سوناتا</span>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">حالة الاشتراك</div>
+                                            <div class="col-lg-6 dot" style="position: relative;">
+                                                <span style="color: #29a256">الخضراء</span>
+                                                <span class="green-dot"></span>
+                                            </div>                
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">تاريخ الحجز</div>
+                                            <div class="col-lg-6">2-11-2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">رقم التذكرة</div>
+                                            <div class="col-lg-6">564789</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">مواصفات السيارة</div>
+                                            <div class="col-lg-6">اتوماتيك</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">تاريخ استلام السيارة</div>
+                                            <div class="col-lg-6">20-11-2020</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">مدينة استلام السيارة</div>
+                                            <div class="col-lg-6">الرياض</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="row">
+                                            <div class="col-lg-6">المبلغ الاجمالى</div>
+                                            <div class="col-lg-6">201.5 رس</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="images/cars/sonata.png" style="max-width: 90%;float: left;">
+                            </div>
+                            <div class="col-lg-12 sec-footer">
+                            <div class="links">
+                                <a href="#" class="ml-4">تفاصيل الفاتورة</a>
+                                <a href="#">إلغاء الاشتراك</a>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- footer -->
+        <footer class="footer-end pt-4">
+            <div class="footerTopWide  pb-2">
+                <div class="container-fluid">
+                    <div class="row align-items-center ">
+                        <div class="col-lg-4 col-sm-7 col-xs-12 pr-10">
+                            <ul class="footermenu pb-8">
+                                <li><a href="aboutus.html">عن إفاد </a></li>
+                                <li><a href="#">الوظائف</a></li>
+                                <li><a href="branches.html">الفروع </a></li>
+                            </ul>
+                            <ul class="payment-img">
+                                <li> <span> <img src="images/payment/visa.png" class="img-thumbnail" alt="فيزا" /></span> </li>
+                                <li> <span> <img src="images/payment/master.png" class="img-thumbnail" alt="ماستر كارد" /></span> </li>
+                                <li> <span> <img src="images/payment/mada.png" class="img-thumbnail" alt="مدى" /></span> </li>
+                                <li> <span> <img src="images/payment/cash1.png" class="img-thumbnail" alt="كاش" /></span> </li>
+                            </ul>
+                            <ul class="footerBottomMenu pt-8">
+                                <li><a class="br-l" href="termsandcondiitions.html">الشروط و الأحكام</a></li>
+                                <li><a class="br-l" href="privacy.html">سياسة الخصوصية</a></li>
+                                <li><p class="pr-1"> إفاد © 2019 </p></li>
+                            </ul>
+                        </div>
+                        <div class=" col-lg-3 col-sm-5 col-xs-12 ask text-center">
+                            <h6 >تواصل معنا الأن عبر الواتس اب</h6>
+                            <h3 class="mb-1"> 078  208 555 966 + </h3>
+                            <img src="images/Qrcode.png" alt="QR-Code" class="qr-code" width="87px" height="87px">
+                        </div>
+                        <div class="col-lg-2 col-sm-7 col-xs-12">
+                            <h3 class="mb-1">قريبا</h3>
+                            <a href="#" class="soon"><img src="images/google-play%20(2).png" class="mb-2" style="width: 140px;height: 42px;"></a>
+                            <a href="#" class="soon"><img src="images/app-store%20(2).png" class="mb-2" style="width: 140px;height: 42px;"></a>
+                        </div>
+                        <div class="col-lg-3 col-sm-5 col-xs-12 text-center logo-footer"> 
+                            <img src="images/last-logo.png" alt="Efad" class="footerlogo"/>
+                            <div class="footer-social d-flex  pt-3 pb-3 ">
+                                <p> 
+                                    <a href="#"><i class="fas fa-envelope"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+        <script src="js/jquery-3.2.1.min.js"></script> 
+        <!-- Include all compiled plugins (below), or include individual files as needed --> 
+        <script src="js/popper.min.js"></script> 
+        <script src="js/bootstrap-4.0.0.js"></script> 
+        <!-- fancybox --> 
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
+        <!-- NOUISLIDER CDN minfied JS file -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.2.1/nouislider.min.js"></script>
+        <script type="text/javascript">
+            /* navbar */
+            $(document).ready(function () {
+                // implementation of nouislider
+                var slider = document.getElementById('nouislider-slider');
+            
+                noUiSlider.create(slider, {
+                    start: [2015, 2019],
+                    connect: true,
+                    range: {
+                        'min': 2015,
+                        'max': 2019
+                    },
+            
+                    step: 1,
+                    connect: true,
+                     behaviour: 'tap-drag',
+                    tooltips: false,
+            
+                    // Show a scale with the slider
+                    pips: {
+                        mode: 'steps',
+                        stepped: true,
+                        density: 4
+                    }
+                });
+            
+                // Changing event - NOUISLIDER to retrieve result
+                var cadc = document.getElementById('cadc');
+                var btcc = document.getElementById('btcc');
+                
+                slider.noUiSlider.on('update', function( values, handle ) {
+                cadc.value = slider.noUiSlider.get();
+                cadConvert();
+                let result = collectSearchParams();
+                    console.log(result);
+                });
+            
+                cadc.addEventListener('change', function(){
+                slider.noUiSlider.set(this.value);
+                cadConvert();
+                let result = collectSearchParams();
+                    console.log(result);
+                });
+
+                btcc.addEventListener('change', function(e){
+                    slider.noUiSlider.set(this.value*11);
+                });
+
+                //convert cad
+                function cadConvert() {
+                    var cad = slider.noUiSlider.get();
+                    var cadCalc = cad / 11;
+                    document.getElementById('btcc').value = cadCalc;
+                }
+            
+                //event listner for generic search filter while typing
+                $('.generalSearch').on('keyup', function() {
+                    if (this.value.length > 1) {
+                        let generalSearch = $('.generalSearch').val();
+                        console.log(generalSearch);
+                    }
+                    let result = collectSearchParams();
+                    console.log(result);
+                });
+                
+                // prepare early booking value
+                function earlyBookingValue(){
+                    let earlyBooking = $('.btn-switch__radio:checked').val();
+                    if(earlyBooking){
+                        if (earlyBooking == 0){
+                            earlyBooking = 1;
+                        }
+                        else if (earlyBooking == 1){
+                            earlyBooking = 0;
+                        }
+                    }
+                    return earlyBooking;
+                }
+                
+                // prepare subscription Value Duration
+                function subscriptionValueDurationValue(){
+                    let subscriptionValueDuration = $('.subscriptionValueDuration:checked').val();            
+                    if (subscriptionValueDuration == 'week1'){
+                        subscriptionValueDuration = 7;
+                    }
+                    else if (subscriptionValueDuration == 'month1'){
+                        subscriptionValueDuration = 30;
+                    }
+                    else if (subscriptionValueDuration == 'year1'){
+                        subscriptionValueDuration = 30 * 12;
+                    }
+                    return subscriptionValueDuration;
+                }
+                
+                /*
+                 * Collect search params filter
+                 *
+                 * @params
+                 */
+                function collectSearchParams(){
+                    let carClassification = $('.carClassification:checked').val();
+                    let generalSearch = $('.generalSearch').val();
+                    let carSearchCity = $('.carSearchCity').children("option:selected").val();
+                    let membershipPlan = $('.membershipPlan:checked').val();
+                    let earlyBooking = earlyBookingValue();
+                    let durationOfSubscription = $('.durationOfSubscription:checked').val();
+                    let subscriptionValueDuration = subscriptionValueDurationValue();
+                    let financialValueDaily = $('.financialValueDaily').val();
+                    let financialValueWeekly = $('.financialValueWeekly').val();
+                    let displayOrdering = $('.displayOrdering:checked').val();
+                    let carBrand = $('.carBrand').children('option:selected').val();
+                    let manufacturingYear = slider.noUiSlider.get();
+                    let carColor = [];
+                    $.each($('.carColor:checked'), function(){            
+                        carColor.push($(this).val());
+                    });
+                    let gearBox = $('.gearBox:checked').val();
+                    var result = new function(){
+                        this.generalSearch = generalSearch;
+                        this.carSearchCity = carSearchCity;
+                        this.carClassification = carClassification;
+                        this.membershipPlan = membershipPlan;
+                        this.earlyBooking = earlyBooking;
+                        this.durationOfSubscription = durationOfSubscription;
+                        this.subscriptionValueDuration = subscriptionValueDuration;
+                        this.financialValueDaily = financialValueDaily;
+                        this.financialValueWeekly = financialValueWeekly;
+                        this.displayOrdering = displayOrdering;
+                        this.carBrand = carBrand;
+                        this.manufacturingYear = manufacturingYear;
+                        this.carColor = carColor;
+                        this.gearBox = gearBox;
+                    }
+                    return result;
+                }
+                
+                $( '.updateSearchContent' ).change(function() {
+                    // let value = $(this).val();
+                    // let parent = $(this).parent().prop('className');
+            
+                    let result = collectSearchParams();
+                    $('.carPriceAfterCal').html(Math.floor(Math.random()*(999-100+1)+100));
+                    let x = $('.subscriptionValueDuration:checked').next().html();
+                    $('.carDurationAfterCal').html('ريال ' + x);
+                    console.log(result);
+                });
+            
+            
+                /* navbar */
+            
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+            
+        </script> 
+        <!-- filter car search --> 
+        <script src='js/filter/mixitup.min.js'></script> 
+        <script src='js/filter/mixitup.js'></script> 
+        <!--Plugin rangeSlider JavaScript file--> 
+        <script src="js/filter/ion.rangeSlider.min.js"></script> 
+        <script>
+            var $range = $(".js-range-slider"),
+            instance;
+            
+            $range.ionRangeSlider({
+                skin: "round",
+                type: "double",
+                min: 0,
+                max: 500,
+                from: 0,
+                to: 500,
+                onChange: handleRangeInputChange
+            });
+            
+            instance = $range.data("ionRangeSlider");
+            
+            
+            var container = document.querySelector('[data-ref="product_list"]');
+            var mixer = mixitup(container, {
+                animation: {
+                    duration: 500,
+                    queueLimit: 1000
+                }
+            });
+            
+            function getRange() {
+                var min = Number(instance.result.from);
+                var max = Number(instance.result.to);
+                return {
+                    min: min,
+                    max: max
+                };
+            }
+            
+            function handleRangeInputChange() {
+                mixer.filter(mixer.getState().activeFilter);
+            }
+            
+            function filterTestResult(testResult, target) {
+                var size = Number(target.dom.el.getAttribute('data-size'));
+                var range = getRange();
+                if (size < range.min || size > range.max) {
+                    testResult = false;
+                }
+                return testResult;
+            }
+            
+            mixitup.Mixer.registerFilter('testResultEvaluateHideShow', 'range', filterTestResult);
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </script> 
+        <!-- end car search --> 
+        <!--Plugin login popup JavaScript file--> 
+        <script>
+            $(document).ready(function () {
+            
+                /* fancy */
+                    $("#top-login-button").fancybox();
+                /* login */
+                    $(".toggle-password, .toggle-password2").click(function () {
+            
+                        $(this).toggleClass("fa-eye fa-eye-slash");
+                        var input = $($(this).attr("toggle"));
+                        if (input.attr("type") == "password") {
+                            input.attr("type", "text");
+                        } else {
+                            input.attr("type", "password");
+                        }
+                    });
+                   
+            
+                    $(function () {
+                        $(".switchPanelButton").click(function (event) {
+                            event.preventDefault();
+                            var panel = $(this).attr('panelclass');
+                            $("." + panel).hide();
+                            var panelid = $(this).attr('panelid');
+                            $("#" + panelid).show();
+                        });
+                    });
+            
+            
+                    $(".button-mobile-container").click(function () {
+            
+                        $('.search-option').toggleClass("show");
+            
+                      
+            
+                    });
+            
+            
+            
+             
+            }); 
+            $("#monthly-1").on("click",function(){
+            $(".value11").text("69") , 
+              $(".value22").text("99"),
+              $(".value33").text("169"),
+              $(".value44").text("269");
+            });
+            
+            $("#9month").on("click",function(){
+            $(".value11").text("49") , 
+              $(".value22").text("79"),
+              $(".value33").text("139"),
+              $(".value44").text("239");
+            });
+            
+            $("#12monthly").on("click",function(){
+            $(".value11").text("29") , 
+              $(".value22").text("59"),
+              $(".value33").text("119"),
+              $(".value44").text("219");
+            });
+            
+        </script> 
+        <script src="js/efad-scripts.js"></script>
+    </body>
+</html>

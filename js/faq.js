@@ -124,6 +124,8 @@ jQuery(document).ready(function($){
 //		});
 //	}
 });
+
+
 //  change li background when click  //
 $('.trigger1').on('click', function(){
 	if($('.question1').hasClass('focused')) {

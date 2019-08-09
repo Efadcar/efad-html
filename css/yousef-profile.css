@@ -20,6 +20,9 @@ nav .navbar-collapse .navbar-buttons .dropdown .fa-user{
 .white-color{
     color: #fff!important;
 }
+.blue-color{
+    color: #003a5d!important;
+}
 /*
 nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     font-family: "Font Awesome 5 Free";
@@ -131,10 +134,9 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     line-height: 3;
 }
 .profile-content .fa-user{
-    color: #000;
     border: 1px solid #000;
     border-radius: 50%;
-    padding: 3px;
+    padding: 8px;
     background: #fff;
 }
 .profile-content .edit{
@@ -146,6 +148,7 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     border: solid 1px rgba(171, 171, 171, 0.55);
     background-color: #ffffff;
     float: left;
+    margin-top: 65px;
 }
 .profile-content .country{
     width: 270px;
@@ -236,4 +239,7 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     bottom: 37px;
     font-size: 1.5rem;
     color: rgb(217,217,217);
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus{
+    box-shadow: none;
 }

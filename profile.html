@@ -188,19 +188,21 @@
                     <div class="profile-content container">
                         <div class="row" style="border-bottom: 1px solid rgba(217, 217, 217, 0.55);padding: 20px 0">
                             <div class="col-lg-12">
-                                <i class="far fa-user" style="font-size: 20px;color: #000"></i>
+                                <i class="far fa-user" style="font-size: 15px;color: #000"></i>
                                 <span class="ml-3 font-weight-bold">بيانات الاسم</span>
                             </div>
                             <div class="col-lg-5">
-                               
-                                <form action="">
-                                  الاسم الاول : <input type="text" name="fname" placeholder="ممدوح" style="border: 0;font-size: 18px;" class="ml-4"><br>
-                                </form>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">الاسم الاول</label>
+                                    <input type='text' name='fname' value='ممدوح' class="form-control" placeholder="الاسم الاول" style="width:60%"/>
+                                </div>
+                                
                             </div>
                             <div class="col-lg-5">
-                                <form action="">
-                                  الاسم الاخير : <input type="text" name="lname" placeholder="عمر" style="border: 0;font-size: 18px;" class="ml-4"><br>
-                                </form>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput2">الاسم الاخير</label>
+                                    <input type='text' name='lname' value='عمر' class="form-control" placeholder="الاسم الاخير" style="width:60%"/>
+                                </div>
                             </div>
                             <div class="col-lg-2">
                                 <a href="#" class="edit">تعديل</a>
@@ -248,16 +250,18 @@
                                 <span class="ml-3 font-weight-bold">بيانات الاتصال</span>
                             </div>
                             <div class="col-lg-5">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">رقم الجوال</label>
+                                    <input type='number' name='mobilenum' class="form-control" placeholder="0123456789" style="width:60%"/>
+                                </div>
                                 
-                                <form action="">
-                                  رقم الجوال : <input type="number" name="mobilenum" placeholder="25648787" style="border: 0;font-size: 18px;" class="ml-4"><br>
-                                </form>
                             </div>
                             <div class="col-lg-5">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">البريد الالكترونى</label>
+                                    <input type='email' name='email' class="form-control" aria-describedby="emailHelp" placeholder="examble@gmail.com" style="width:60%"/>
+                                </div>
                                 
-                                <form action="">
-                                  البريد الالكترونى : <input type="email" name="email" placeholder="examble@gmail.com" style="border: 0;font-size: 18px;" class="ml-4"><br>
-                                </form>
                             </div>
                             <div class="col-lg-2">
                                 <a href="#" class="edit">تعديل</a>
@@ -269,6 +273,22 @@
                                 <i class="fas fa-lock" style="font-size: 25px;color: #000"></i>
                                 <span class="ml-3 font-weight-bold">الرقم السرى</span>
                             </div>
+                            
+                                <div class="col-lg-10">
+                                    <label for="user_password"> كلمة المرور</label>
+                                    <div class="input-group" style="width: 60%">
+                                        <input type="password" class="form-control password-field" name="password" >
+                                        <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
+                                    </div>
+                                    <label for="user_password">اعادة كتابة كلمة المرور</label>
+                                    <div class="input-group" style="width: 60%">
+                                        <input type="password" class="form-control password-field2" name="password" >
+                                        <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field2" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
+                                    </div>
+                                </div>
+                            
+                            
+<!--
                             <div class="col-lg-10">
                                 <form action="">
                                   الرقم السرى : <input type="password" name="password" placeholder="*******" style="border: 0;font-size: 18px;" class="ml-4" id="myInput"><br>
@@ -276,9 +296,10 @@
                                 <input type="checkbox" onclick="myFunction()" class="mr-4">اظهار الرقم السرى
                                 </form>
                             </div>
+-->
                             
                             <div class="col-lg-2">
-                                <a href="#" class="edit">تعديل</a>
+                                <a href="#" class="edit" style="margin-top: 160px">تعديل</a>
                             </div>
                         </div>
                     </div>
@@ -642,9 +663,16 @@
                 if($('#fontawesome-before').hasClass('fa-chevron-down')) {
                     $('#fontawesome-before').removeClass('fa-chevron-down').addClass('fa-chevron-up white-color')
                 } else {
-                    $('#fontawesome-before').addClass('fa-chevron-down').removeClass('fa-chevron-up white-color')
+                    $('#fontawesome-before').removeClass('fa-chevron-up white-color').addClass('fa-chevron-down')
                 }
             });
+//            $(window).on('click', function(){
+//                if($('#fontawesome-before').hasClass('fa-chevron-down')) {
+//                    $('#fontawesome-before').removeClass('fa-chevron-down').addClass('fa-chevron-up white-color')
+//                } else {
+//                    $('#fontawesome-before').addClass('fa-chevron-down').removeClass('fa-chevron-up white-color')
+//                }
+//            });
             $('.dropdown-toggle').on('click', function(){
                 if($('.navbar-buttons .dropdown .btn').hasClass('blue-back')) {
                     $('.navbar-buttons .dropdown .btn').removeClass('blue-back')
@@ -652,16 +680,15 @@
                     $('.navbar-buttons .dropdown .btn').addClass('blue-back')
                 }
             });
+            $(window).on('click', function(){
+                $('.navbar-buttons .dropdown .btn').removeClass('blue-back')
+                
+            });
+            $(window).on('click', function(){
+                $('#fontawesome-before').addClass('fa-chevron-down').removeClass('fa-chevron-up white-color')
+                
+            });
             
-            // show password //
-            function myFunction() {
-              var x = document.getElementById("myInput");
-              if (x.type === "password") {
-                x.type = "text";
-              } else {
-                x.type = "password";
-              }
-            }
         </script> 
         <script src="js/efad-scripts.js"></script>
     </body>

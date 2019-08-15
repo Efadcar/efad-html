@@ -100,7 +100,7 @@ p{line-height:1.6; font-size:0.9rem; font-weight:400}
 
 }
 
-.sb-navbar a{color:#333; font-weight: 600}
+.sb-navbar a{color:rgba(0,0,0,.6); font-weight: 600}
     .sb-navbar a.btn--accent,  .sb-navbar a.btn--accent:focus,  .sb-navbar a.btn--accent:hover {
         color: #fff;
     }

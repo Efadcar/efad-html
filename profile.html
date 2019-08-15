@@ -137,33 +137,34 @@
                             </li>-->
                     </ul>
                     <div class="navbar-buttons  mbr-section-btn ">
-                        <div class="dropdown show" style="display: inline-block!important;">
+                        <div class="dropdown show ml-4" style="display: inline-block!important;">
                           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span style="color: #003a5d;float: right;font-size: 20px;line-height: 1.8;">Ahmed</span>
                             <i class="far fa-user"></i>
-                              <span class="fontawesome-before"><i class="fas fa-chevron-down" id="fontawesome-before"></i></span>
+                              
                           </a>
 
                           <div class="dropdown-menu Rectangle-538" aria-labelledby="dropdownMenuLink">
+                              <span class="dropdown-menu-arrow"></span>
                               <div class="profile-item">
                                   
                                   <div class="profile-info">
-                                      <p>ممدوح عمر</p>
-                                      <p>رقم العضوية : 25587879</p>
-                                      <p>البريد الإلكترونى : example@gmail.com</p>
+                                      <p style="color: #000;font-weight: bold;">ممدوح عمر</p>
+                                      <p style="color:rgba(0,0,0,.6); font-weight: 600">رقم عضوية : 4566</p>
                                   </div>
                                   <div class="profile-pic">
                                     <div class="pic">
-                                        <img src="images/child.png">
+                                        <img src="images/favicon.png">
                                     </div>
                                   </div>
                                   <div class="clearfix"></div>
                               </div>
+                              <hr>
                             <a class="dropdown-item" href="#" style="margin-top: 5px;">المعلومات الشخصية</a><hr>
                             <a class="dropdown-item" href="#">الإشتراكات</a><hr>
-                            <a class="dropdown-item" href="#">العضوية</a><hr>
-                              <a class="dropdown-item" href="#">النقاط</a><hr>
-                            <a class="dropdown-item" href="#">الخدمات</a>
-                            <a class="dropdown-item item-out" href="#">تسجيل الخروج</a>
+                            <a class="dropdown-item" href="#" style="display: inline;">العضوية</a>
+                              <div class="member-color"></div><hr>
+                            <a class="dropdown-item " href="#">تسجيل خروج</a>
                           </div>
                         </div>
                         
@@ -177,35 +178,46 @@
         
         <!--  profile1 -->
         
-        <section style="padding: 80px 0" class="pro">
+        <section style="padding: 90px 20vw" class="pro">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12" style="border-bottom: 1px solid rgba(217, 217, 217, 0.55);margin: 20px 0">
-                        <h1 class="profile-header">المعلومات الشخصية</h1>
+                    <div class="col-lg-12 text-center main-head" dir="ltr">
+                        <div style="width: 20%;display: inline-block" class="p-3 m-3 main-head-box box1">
+                            <img src="images/profile/1.png">
+                            <h2 class="font-weight-bold">العضوية</h2>
+                            <div class="arrow1"></div>
+                        </div>
+                        <div style="width: 20%;display: inline-block" class="p-3 m-3 main-head-box box2">
+                            <img src="images/profile/2.png">
+                            <h2 class="font-weight-bold">الاشتراكات</h2>
+                            <div class="arrow2"></div>
+                        </div>
+                        <div style="width: 20%;display: inline-block" class="p-3 m-3 main-head-box box3">
+                            <img src="images/profile/3.png">
+                            <h2 class="font-weight-bold">بياناتى</h2>
+                            <div class="arrow3"></div>
+                        </div>
                         
                     </div>
                     
-                    <div class="profile-content container">
+                    <div class="profile-content container mt-5">
                         <div class="row" style="border-bottom: 1px solid rgba(217, 217, 217, 0.55);padding: 20px 0">
                             <div class="col-lg-12">
                                 <i class="far fa-user" style="font-size: 15px;color: #000"></i>
                                 <span class="ml-3 font-weight-bold">بيانات الاسم</span>
                             </div>
-                            <div class="col-lg-5">
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput">الاسم الاول</label>
-                                    <input type='text' name='fname' value='ممدوح' class="form-control" placeholder="الاسم الاول" style="width:60%"/>
-                                </div>
+                            <div class="col-lg-6">
+                                <label class="pure-material-textfield-outlined">
+                                    <input type='text' name='fname' class="form-control" placeholder=" "/>
+                                    <span>الاسم الأول</span>
+                                </label>
                                 
                             </div>
-                            <div class="col-lg-5">
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput2">الاسم الاخير</label>
-                                    <input type='text' name='lname' value='عمر' class="form-control" placeholder="الاسم الاخير" style="width:60%"/>
-                                </div>
-                            </div>
-                            <div class="col-lg-2">
-                                <a href="#" class="edit">تعديل</a>
+                            <div class="col-lg-6">
+                                <label class="pure-material-textfield-outlined">
+                                    <input type='text' name='lname' class="form-control" placeholder=" "/>
+                                    <span>الاسم الأخير</span>
+                                </label>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -215,10 +227,10 @@
                                 <i class="fas fa-map-marker-alt" style="font-size: 25px;color: #000"></i>
                                 <span class="ml-3 font-weight-bold">الموقع</span>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-6">
                                 <div class="ml-1">الدولة</div>
                                 <div class="country mr-4">
-                                        <select data-placeholder="السعودية" class="form-control width100p updateSearchContent carType">
+                                        <select data-placeholder="السعودية" class="form-control updateSearchContent carType">
                                             <option value="all">السعودية</option>
                                             <option value="1">الرياض</option>
                                             <option value="2">جدة</option>
@@ -227,10 +239,10 @@
                                         </select>
                                     </div>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-6">
                                 <div class="ml-1">المدينة</div>
                                 <div class="country mr-4">
-                                        <select data-placeholder="المدينة المنورة" class="form-control width100p updateSearchContent carType">
+                                        <select data-placeholder="المدينة المنورة" class="form-control updateSearchContent carType">
                                             <option value="all">المدينة المنورة</option>
                                             <option value="1">الرياض</option>
                                             <option value="2">جدة</option>
@@ -239,9 +251,6 @@
                                         </select>
                                     </div>
                             </div>
-                            <div class="col-lg-2">
-                                <a href="#" class="edit">تعديل</a>
-                            </div>
                         </div>
                         
                         <div class="row" style="border-bottom: 1px solid rgba(217, 217, 217, 0.55);padding: 20px 0">
@@ -249,22 +258,19 @@
                                 <i class="fas fa-phone" style="font-size: 25px;color: #000"></i>
                                 <span class="ml-3 font-weight-bold">بيانات الاتصال</span>
                             </div>
-                            <div class="col-lg-5">
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput">رقم الجوال</label>
-                                    <input type='number' name='mobilenum' class="form-control" placeholder="0123456789" style="width:60%"/>
-                                </div>
+                            <div class="col-lg-6">
+                                <label class="pure-material-textfield-outlined">
+                                    <input type='number' name='number' class="form-control" placeholder=" "/>
+                                    <span>رقم الجوال</span>
+                                </label>
                                 
                             </div>
-                            <div class="col-lg-5">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">البريد الالكترونى</label>
-                                    <input type='email' name='email' class="form-control" aria-describedby="emailHelp" placeholder="examble@gmail.com" style="width:60%"/>
-                                </div>
+                            <div class="col-lg-6">
+                                <label class="pure-material-textfield-outlined">
+                                    <input type='email' name='email' class="form-control" placeholder=" "/>
+                                    <span>البريد الإلكترونى</span>
+                                </label>
                                 
-                            </div>
-                            <div class="col-lg-2">
-                                <a href="#" class="edit">تعديل</a>
                             </div>
                         </div>
                         
@@ -274,17 +280,18 @@
                                 <span class="ml-3 font-weight-bold">الرقم السرى</span>
                             </div>
                             
-                                <div class="col-lg-10">
+                                <div class="col-lg-12">
+<!--
                                     <label for="user_password"> كلمة المرور</label>
                                     <div class="input-group" style="width: 60%">
                                         <input type="password" class="form-control password-field" name="password" >
                                         <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
                                     </div>
-                                    <label for="user_password">اعادة كتابة كلمة المرور</label>
-                                    <div class="input-group" style="width: 60%">
-                                        <input type="password" class="form-control password-field2" name="password" >
-                                        <div class="input-group-prepend"> <span class=" input-group-text"> <span toggle=".password-field2" class=" fa fa-fw fa-eye field-icon toggle-password"></span></span> </div>
-                                    </div>
+-->
+                                    <label class="pure-material-textfield-outlined" >
+                                    <input type='password' name='password' class="form-control password-field" placeholder=" "/>
+                                    <span>كلمة المرور</span>
+                                </label>
                                 </div>
                             
                             
@@ -298,13 +305,10 @@
                             </div>
 -->
                             
-                            <div class="col-lg-2">
-                                <a href="#" class="edit" style="margin-top: 160px">تعديل</a>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-12">
-                        <a href="#" class="ok">تم</a>
+                    <div class="col-lg-12 text-center mt-4">
+                        <a href="#" class="edit">تعديل</a>
                     </div>
                 </div>
             </div>
@@ -659,13 +663,13 @@
             });
             
             
-            $('.dropdown-toggle').on('click', function(){
-                if($('#fontawesome-before').hasClass('fa-chevron-down')) {
-                    $('#fontawesome-before').removeClass('fa-chevron-down').addClass('fa-chevron-up white-color')
-                } else {
-                    $('#fontawesome-before').removeClass('fa-chevron-up white-color').addClass('fa-chevron-down')
-                }
-            });
+//            $('.dropdown-toggle').on('click', function(){
+//                if($('#fontawesome-before').hasClass('fa-chevron-down')) {
+//                    $('#fontawesome-before').removeClass('fa-chevron-down').addClass('fa-chevron-up white-color')
+//                } else {
+//                    $('#fontawesome-before').removeClass('fa-chevron-up white-color').addClass('fa-chevron-down')
+//                }
+//            });
 //            $(window).on('click', function(){
 //                if($('#fontawesome-before').hasClass('fa-chevron-down')) {
 //                    $('#fontawesome-before').removeClass('fa-chevron-down').addClass('fa-chevron-up white-color')
@@ -673,22 +677,40 @@
 //                    $('#fontawesome-before').addClass('fa-chevron-down').removeClass('fa-chevron-up white-color')
 //                }
 //            });
-            $('.dropdown-toggle').on('click', function(){
-                if($('.navbar-buttons .dropdown .btn').hasClass('blue-back')) {
-                    $('.navbar-buttons .dropdown .btn').removeClass('blue-back')
-                } else {
-                    $('.navbar-buttons .dropdown .btn').addClass('blue-back')
-                }
+//            $('.dropdown-toggle').on('click', function(){
+//                if($('.navbar-buttons .dropdown .btn').hasClass('blue-back')) {
+//                    $('.navbar-buttons .dropdown .btn').removeClass('blue-back')
+//                } else {
+//                    $('.navbar-buttons .dropdown .btn').addClass('blue-back')
+//                }
+//            });
+//            $(window).on('click', function(){
+//                $('.navbar-buttons .dropdown .btn').removeClass('blue-back')
+//                
+//            });
+//            $(window).on('click', function(){
+//                $('#fontawesome-before').addClass('fa-chevron-down').removeClass('fa-chevron-up white-color')
+//                
+//            });
+            
+            $('.box1').on('click', function(){
+                    $('.pro .main-head .main-head-box .arrow1').addClass('arrow-down')
+                    $('.pro .main-head .main-head-box .arrow2').removeClass('arrow-down')
+                    $('.pro .main-head .main-head-box .arrow3').removeClass('arrow-down')
             });
-            $(window).on('click', function(){
-                $('.navbar-buttons .dropdown .btn').removeClass('blue-back')
-                
+            $('.box2').on('click', function(){
+                    $('.pro .main-head .main-head-box .arrow2').addClass('arrow-down')
+                    $('.pro .main-head .main-head-box .arrow3').removeClass('arrow-down')
+                    $('.pro .main-head .main-head-box .arrow1').removeClass('arrow-down')
             });
-            $(window).on('click', function(){
-                $('#fontawesome-before').addClass('fa-chevron-down').removeClass('fa-chevron-up white-color')
+            $('.box3').on('click', function(){
+                    $('.pro .main-head .main-head-box .arrow3').addClass('arrow-down')
+                    $('.pro .main-head .main-head-box .arrow2').removeClass('arrow-down')
+                    $('.pro .main-head .main-head-box .arrow1').removeClass('arrow-down')
                 
             });
             
+
         </script> 
         <script src="js/efad-scripts.js"></script>
     </body>

@@ -1,7 +1,7 @@
 /*profile nav */
 
 nav .navbar-collapse .navbar-buttons .dropdown .fa-user{
-    color: #003a5d;
+    color: #000;
     border: 1px solid #b1b1b1;
     border-radius: 50%;
     width: 35px;
@@ -9,6 +9,7 @@ nav .navbar-collapse .navbar-buttons .dropdown .fa-user{
     background: #fff;
     line-height: 2;
     margin-right: -30px;
+    float: left;
 }
 .fontawesome-before{
     position: absolute;
@@ -40,83 +41,108 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     display: none;
 }
 .navbar-buttons .dropdown .btn{
-    border-radius: 1px;
-    border-color: #fff;
-    width: 99px;
+    width: 138px;
     background: #fff;
     box-shadow: none;
+    padding: 2px 17px;
+    border: 1px solid #0F698E;
+    border-radius: 25px;
     
 }
 .navbar-buttons .dropdown .btn:active{
     box-shadow: none!important;
-    background: #003a5d!important;
+    background: #fff!important;
+    border: 1px solid #0F698E;
 }
+/*
 .blue-back{
     box-shadow: none!important;
     background: #003a5d!important;
 }
+*/
 .dropdown-menu{
     text-align: right;
 }
+.dropdown-menu .member-color{
+    background-color: red;
+    width: 45px;
+    height: 25px;
+    border-radius: 15px;
+    display: inline-block;
+    float: left;
+    margin: 4px 15px;
+}
+.dropdown-menu-arrow {
+  top: -25px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  position: relative;
+}
+.dropdown-menu-arrow:before,
+.dropdown-menu-arrow:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 12px 8px;
+  border-style: solid;
+  border-color: transparent;
+  z-index: 1001;
+}
+.dropdown-menu-arrow:after {
+  bottom: -18px;
+  border-bottom-color: #fff;
+}
+.dropdown-menu-arrow:before {
+  bottom: -17px;
+  border-bottom-color: #0F698E;
+}
 .Rectangle-538 {
   width: 272px;
-  background-color: #e9e9e9;
 }
 .navbar-buttons .dropdown .dropdown-menu{
-    right: 0;
+    right: -50px;
+    top: 55px;
     margin: 0;
-    border-radius: 1px;
+    border-radius: 20px;
+    border: 1px solid rgba(15,105,142,.5);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.4), 0 1px 8px 0 rgba(0, 0, 0, 0.1);
 }
 .navbar-buttons .dropdown .dropdown-menu hr{
-    margin: 5px 13px;
+    margin: 5px;
 }
 .dropdown-item{
     padding: .1rem .8rem;
 }
-.navbar-buttons .dropdown .dropdown-menu .item-out{
-    text-align: center;
-    border: 1px solid rgba(171, 171, 171, 0.55);
-    width: 50%;
-    margin: 0 auto 10px;
-    background: #fff;
-    border-radius: 15px;
-}
-.navbar-buttons .dropdown .dropdown-menu .dropdown-item:hover{
-    background: #e9e9e9;
-}
-.navbar-buttons .dropdown .dropdown-menu .item-out:hover{
-    background: #fff;
-}
-.navbar-buttons .dropdown .dropdown-menu .item-out:focus{
-    color: #333;
-}
 .navbar-buttons .dropdown .dropdown-menu .profile-item{
-    background: #003a5d;
-    color: #fff;
-    margin-top: -10px;
-    height: 120px;
-    
+    background: #fff;
+    color: #000;
+    border-radius: 25px;
 }
 .navbar-buttons .dropdown .dropdown-menu .profile-item .profile-pic{
-    width: 30%;
-    float: right;
-    margin: 25px 0;
+    width: 25%;
+    float: left;
+    margin: 5px;
     position: relative;
 }
 .navbar-buttons .dropdown .dropdown-menu .profile-item .pic{
-    width: 69px;
-    height: 69px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
+    background: #eee;
 }
 .navbar-buttons .dropdown .dropdown-menu .profile-item .pic img{
     position: absolute;
-    width: 69px;
-    height: 69px;
-    left: 0;
+    width: 40px;
+    height: 40px;
+    left: 10px;
+    top: 10px;
 }
 .navbar-buttons .dropdown .dropdown-menu .profile-item .profile-info{
     width: 70%;
-    float: left;
+    float: right;
     padding: 10px 15px;
 }
 .navbar-buttons .dropdown .dropdown-menu .profile-item .profile-info p{
@@ -139,16 +165,30 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     padding: 8px;
     background: #fff;
 }
-.profile-content .edit{
-    padding: 0px 15px;
-    width: 68px;
-    height: 31px;
-    line-height: 1.8;
+.pro .edit{
+    padding: 0px 25px;
     border-radius: 15.5px;
     border: solid 1px rgba(171, 171, 171, 0.55);
     background-color: #ffffff;
-    float: left;
-    margin-top: 65px;
+}
+.pro .main-head img{
+    width: 70px;
+}
+.pro .main-head .main-head-box{
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.arrow-down {
+    position: absolute;
+  width: 0; 
+  height: 0; 
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 20px solid #0F698E;
+    bottom: -20px;
+    left: 65px;
 }
 .profile-content .country{
     width: 270px;
@@ -163,24 +203,15 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     font-size: 1em;
     position: absolute;
     top: 0.4em;
-    left: 20px;
+    left: 85px;
     color: #003a5d;
     pointer-events: none;
     line-height: 2;
 }
-.pro .ok{
-    padding: 0px 26px;
-    width: 68px;
-    height: 31px;
-    line-height: 1.8;
-    border-radius: 15.5px;
-    border: solid 1px rgba(171, 171, 171, 0.55);
-    background-color: #ffffff;
-    float: left;
-    margin-top: 25px;
-    
+.profile-content .country .form-control{
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    width: 75%;
 }
-
 /* profile 2*/
 .pro2 .sec-header h2,
 .pro2 .sec-header .links{
@@ -242,4 +273,199 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
 }
 .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus{
     box-shadow: none;
+    
+}
+
+
+/* google input */
+
+.pure-material-textfield-outlined {
+    --pure-material-safari-helper1: rgb(var(--pure-material-primary-rgb, 0, 58, 93));
+    position: relative;
+    display: inline-block;
+    padding-top: 6px;
+    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+    font-size: 16px;
+    line-height: 1;
+    overflow: hidden;
+}
+
+/* Input, Textarea */
+.pure-material-textfield-outlined > input,
+.pure-material-textfield-outlined > textarea {
+    box-sizing: border-box;
+    margin: 0;
+    border: solid 1px; /* Safari */
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    border-top-color: transparent;
+    border-radius: 4px;
+    padding: 15px 13px 15px;
+    width: 100%;
+    height: calc(2.25rem + 4px);
+    color: #495057;
+    background-color: #f0f0f0;
+    box-shadow: none; /* Firefox */
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    caret-color: rgb(var(--pure-material-primary-rgb, 0, 58, 93));
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* Span */
+.pure-material-textfield-outlined > input + span,
+.pure-material-textfield-outlined > textarea + span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    width: 100%;
+    max-height: 100%;
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    font-size: 75%;
+    line-height: 15px;
+    cursor: text;
+    transition: color 0.2s, font-size 0.2s, line-height 0.2s;
+}
+
+/* Corners */
+.pure-material-textfield-outlined > input + span::before,
+.pure-material-textfield-outlined > input + span::after,
+.pure-material-textfield-outlined > textarea + span::before,
+.pure-material-textfield-outlined > textarea + span::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    margin-top: 6px;
+    border-top: solid 1px;
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+    min-width: 10px;
+    height: 8px;
+    pointer-events: none;
+    box-shadow: inset 0 1px transparent;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pure-material-textfield-outlined > input + span::before,
+.pure-material-textfield-outlined > textarea + span::before {
+    margin-left: 4px;
+    border-right: solid 1px transparent;
+    border-radius: 0 4px;
+}
+
+.pure-material-textfield-outlined > input + span::after,
+.pure-material-textfield-outlined > textarea + span::after {
+    flex-grow: 1;
+    margin-right: 4px;
+    border-left: solid 1px transparent;
+    border-radius: 4px 0;
+}
+
+/* Hover */
+.pure-material-textfield-outlined:hover > input,
+.pure-material-textfield-outlined:hover > textarea {
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+    border-top-color: transparent;
+}
+
+.pure-material-textfield-outlined:hover > input + span::before,
+.pure-material-textfield-outlined:hover > textarea + span::before,
+.pure-material-textfield-outlined:hover > input + span::after,
+.pure-material-textfield-outlined:hover > textarea + span::after {
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+}
+
+.pure-material-textfield-outlined:hover > input:not(:focus):placeholder-shown,
+.pure-material-textfield-outlined:hover > textarea:not(:focus):placeholder-shown {
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);
+}
+
+/* Placeholder-shown */
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown {
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);
+}
+
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span {
+    font-size: inherit;
+    line-height: 52px;
+}
+
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span::before,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span::before,
+.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span::after,
+.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span::after {
+    border-top-color: transparent;
+}
+
+/* Focus */
+.pure-material-textfield-outlined > input:focus,
+.pure-material-textfield-outlined > textarea:focus {
+    border-color: rgb(var(--pure-material-primary-rgb, 0, 58, 93));
+    border-top-color: transparent;
+    box-shadow: inset 1px 0 var(--pure-material-safari-helper1), inset -1px 0 var(--pure-material-safari-helper1), inset 0 -1px var(--pure-material-safari-helper1);
+    outline: none;
+}
+
+.pure-material-textfield-outlined > input:focus + span,
+.pure-material-textfield-outlined > textarea:focus + span {
+    color: rgb(var(--pure-material-primary-rgb, 0, 58, 93));
+}
+
+.pure-material-textfield-outlined > input:focus + span::before,
+.pure-material-textfield-outlined > input:focus + span::after,
+.pure-material-textfield-outlined > textarea:focus + span::before,
+.pure-material-textfield-outlined > textarea:focus + span::after {
+    border-top-color: var(--pure-material-safari-helper1) !important;
+    box-shadow: inset 0 1px var(--pure-material-safari-helper1);
+}
+
+/* Disabled */
+.pure-material-textfield-outlined > input:disabled,
+.pure-material-textfield-outlined > input:disabled + span,
+.pure-material-textfield-outlined > textarea:disabled,
+.pure-material-textfield-outlined > textarea:disabled + span {
+    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
+    border-top-color: transparent !important;
+    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+    pointer-events: none;
+}
+
+.pure-material-textfield-outlined > input:disabled + span::before,
+.pure-material-textfield-outlined > input:disabled + span::after,
+.pure-material-textfield-outlined > textarea:disabled + span::before,
+.pure-material-textfield-outlined > textarea:disabled + span::after {
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
+}
+
+.pure-material-textfield-outlined > input:disabled:placeholder-shown,
+.pure-material-textfield-outlined > input:disabled:placeholder-shown + span,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span {
+    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;
+}
+
+.pure-material-textfield-outlined > input:disabled:placeholder-shown + span::before,
+.pure-material-textfield-outlined > input:disabled:placeholder-shown + span::after,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span::before,
+.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span::after {
+    border-top-color: transparent !important;
+}
+
+/* Faster transition in Safari for less noticable fractional font-size issue */
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        .pure-material-textfield-outlined > input,
+        .pure-material-textfield-outlined > input + span,
+        .pure-material-textfield-outlined > textarea,
+        .pure-material-textfield-outlined > textarea + span,
+        .pure-material-textfield-outlined > input + span::before,
+        .pure-material-textfield-outlined > input + span::after,
+        .pure-material-textfield-outlined > textarea + span::before,
+        .pure-material-textfield-outlined > textarea + span::after {
+            transition-duration: 0.1s;
+        }
+    }
 }

@@ -115,6 +115,12 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
 }
 .dropdown-item{
     padding: .1rem .8rem;
+    border-radius: 25px;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  color: rgba(0,0,0,.6);
+  text-decoration: none;
+  background-color: #fff;
 }
 .navbar-buttons .dropdown .dropdown-menu .profile-item{
     background: #fff;

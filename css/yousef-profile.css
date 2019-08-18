@@ -9,6 +9,7 @@ nav .navbar-collapse .navbar-buttons .dropdown .fa-user{
     background: #fff;
     line-height: 2;
     margin-right: -30px;
+    margin-left: -11px;
     float: left;
 }
 .fontawesome-before{
@@ -45,14 +46,14 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     background: #fff;
     box-shadow: none;
     padding: 2px 17px;
-    border: 1px solid #0F698E;
+    border: 1px solid #333;
     border-radius: 25px;
     
 }
 .navbar-buttons .dropdown .btn:active{
     box-shadow: none!important;
     background: #fff!important;
-    border: 1px solid #0F698E;
+    border: 1px solid #333;
 }
 /*
 .blue-back{
@@ -97,7 +98,7 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
 }
 .dropdown-menu-arrow:before {
   bottom: -17px;
-  border-bottom-color: #0F698E;
+  border-bottom-color: #333;
 }
 .Rectangle-538 {
   width: 272px;
@@ -107,7 +108,7 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     top: 55px;
     margin: 0;
     border-radius: 20px;
-    border: 1px solid rgba(15,105,142,.5);
+    border: 1px solid rgba(3,3,3,.5);
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.4), 0 1px 8px 0 rgba(0, 0, 0, 0.1);
 }
 .navbar-buttons .dropdown .dropdown-menu hr{
@@ -185,6 +186,39 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     border-radius: 15px;
     position: relative;
     cursor: pointer;
+    border: 1px solid #fff;
+}
+.pro .nav-tabs{
+    border-bottom: none;
+}
+.pro .main-head .main-head-box .nav-link{
+    font-size: 1.3rem;
+}
+.pro .main-head .main-head-box .nav-link.active{
+    background-color: #fff;
+    border:1px solid #fff;
+}
+.pro .main-head .main-head-box .nav-link:hover{
+    background-color: #fff;
+    border:1px solid #fff;
+}
+.pro .main-head .box1:hover a{
+    color: #003A5D;
+}
+.pro .main-head .box1:hover{
+    border: 1px solid #003A5D;
+}
+.pro .main-head .box2:hover a{
+    color: #003A5D;
+}
+.pro .main-head .box2:hover{
+    border: 1px solid #003A5D;
+}
+.pro .main-head .box3:hover a{
+    color: #003A5D;
+}
+.pro .main-head .box3:hover{
+    border: 1px solid #003A5D;
 }
 .arrow-down {
     position: absolute;
@@ -192,9 +226,9 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
   height: 0; 
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
-  border-top: 20px solid #0F698E;
+  border-top: 20px solid #003A5D;
     bottom: -20px;
-    left: 65px;
+    left: 45px;
 }
 .profile-content .country{
     width: 270px;

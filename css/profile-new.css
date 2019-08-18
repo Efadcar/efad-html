@@ -109,8 +109,12 @@ p{
 	margin-bottom: 8px !important;
 }
 
+.navbar{
+  width: 101%;
+}
+
 .header-img{
-	width: 100%;
+	width: 102%;
 	height: 270px;
 }
 

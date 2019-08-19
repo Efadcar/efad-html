@@ -5,8 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="images/favicon.png" sizes="144x144" type="image/png">
+    <link href="css/nouislider.min.css" rel="stylesheet"/>
 <title>إفاد | الرئيسية</title>
 <link href="css/efad.css" rel="stylesheet">
+<link href="css/yousef-profile.css" rel="stylesheet">
 </head>
 <body class="top">
 <div style="display:none">
@@ -111,93 +113,122 @@
 
 <!-- preloader end -->
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top sb-navbar nav-new" dir="ltr">
-    <div class="container-fluid"> <a class="navbar-brand" href="index.html"><img class="logo" src="images/efadlogo.png" alt="Efad" /></a>
-        <div class="collapse navbar-collapse" id="mainMenu">
-            <ul class="navbar-nav ml-auto" dir="rtl">
-                <li class="nav-item"><a class="nav-link" href="explore.html">اكتشف</a> </li>
-<!--                <li class="nav-item active"><a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a> </li>-->
-                <li class="nav-item"><a class="nav-link" href="howrentcar.html">كيف أحصل على سيارة ؟ </a> </li>
-                <li class="nav-item"><a class="nav-link" href="Payment.html">الدفع السريع</a> </li>
-                <li class="nav-item"><a class="nav-link" href="faq.html">الأسئلة المتكررة</a> </li>
-                <!--<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">للمزيد </a>
-                        <div class="dropdown-menu border-0 shadow animate slideIn " aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">إتصل بنا</a> <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">الشروط و الأحكام</a>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top sb-navbar nav-new" dir="rtl">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="images/home-images/logo.png" alt="Efad" /></a>
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav ml-auto mr-auto" dir="rtl">
+                        <li class="nav-item"><a class="nav-link" href="explore.html">اكتشف</a> </li>
+                        <li class="nav-item active"><a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item"><a class="nav-link" href="howrentcar.html">كيف أحصل على سيارة ؟ </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="Payment.html">الدفع السريع</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">الأسئلة المتكررة</a> </li>
+                        <!--<li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">للمزيد </a>
+                            <div class="dropdown-menu border-0 shadow animate slideIn " aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">إتصل بنا</a> <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">الشروط و الأحكام</a>
+                            </div>
+                            </li>-->
+                    </ul>
+                    <div class="navbar-buttons  mbr-section-btn ">
+                        <div class="dropdown show mr-4" style="display: inline-block!important;">
+                          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span style="color: #333;float: right;font-size: 20px;line-height: 1.8;margin-right: 5px;">Ahmed</span>
+                            <i class="far fa-user"></i>
+                              
+                          </a>
+
+                          <div class="dropdown-menu Rectangle-538" aria-labelledby="dropdownMenuLink">
+                              <span class="dropdown-menu-arrow"></span>
+                              <div class="profile-item">
+                                  
+                                  <div class="profile-info">
+                                      <p style="color: #000;font-weight: bold;">ممدوح عمر</p>
+                                      <p style="color:rgba(0,0,0,.6); font-weight: 600">رقم عضوية : 4566</p>
+                                  </div>
+                                  <div class="profile-pic">
+                                    <div class="pic">
+                                        <img src="images/favicon.png">
+                                    </div>
+                                  </div>
+                                  <div class="clearfix"></div>
+                              </div>
+                              <hr>
+                            <a class="dropdown-item" href="#بياناتي" style="margin-top: 5px;">بياناتي</a><hr>
+                            <a class="dropdown-item" href="#الاشتراكات">الاشتراكات</a><hr>
+                            <a class="dropdown-item" href="#العضوية" style="display: inline;">العضوية</a>
+                              <div class="member-color"></div><hr>
+                            <a class="dropdown-item " href="#">تسجيل خروج</a>
+                          </div>
                         </div>
-                    </li>-->
-                
-            </ul>
-            <div class="navbar-buttons  mbr-section-btn "> <a id="top-login-button" href="#login_form_ajax" class="mr-2 login-link">تسجيل دخول </a> <a href="member.html" class="btn  btn-now  btn--accent" ><span><span>إشترك الان</span></span></a> </div>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="hamburger"> <span></span> <span></span> <span></span> <span></span> </div>
-        </button>
-    </div>
-</nav>
+                        
+                        <a href="member.html" class="btn  btn-now  btn--accent" ><span><span>إشترك الان</span></span></a> </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger"> <span></span> <span></span> <span></span> <span></span> </div>
+                </button>
+            </div>
+        </nav>
 <!--    header first div   -->
     
     <section class="first-div">
-        <div class="text-center">
-            <h1 style="font-size: 2rem;font-weight: 600">خدمة الإشتراك للسيارات</h1>
-            <h4>احجز السيارة وراح نوصلها علشان<br> تجربها لمدة 24 ساعة</h4>
-        </div>
+        
     </section>
     
 <!-- why efad -->
     
-<header class="">
+<header class="main-header pt-3">
     <div class="container-fluid">
-        <h1 class="whyefad text-center pb-1">ليش أختار إفاد ؟</h1>
-        <div class="row" style=" padding: 0 200px 0 200px;">
-            <div class="col-lg-4 col-sm-12">
+        <h1 class="whyefad text-center pb-1 font-weight-bold">ليش أختار إفاد ؟</h1>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
                 <div class="text-center">
-                    <fieldset class="fieldset">
-                       <legend><div class="textbanner"> توصيل واستلام السيارة مجاناً </div></legend> 
-                        <img src="images/why_efad/drive-free.png" class="efd-pic">
+                    <fieldset class="fieldset pr-5"> 
+                        <img src="images/why_efad/1.png" class="efd-pic">
+                        <div class="textbanner"> توصيل واستلام السيارة مجاناً </div>
                     </fieldset>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
                 <div class="text-center">
-                    <fieldset class="fieldset">
-                        <legend> <div class="textbanner"> الكيلو متر مفتوح </div></legend>
-                    <img src="images/why_efad/km.png" class="efd-pic">
+                    <fieldset class="fieldset pl-5">
+                        <img src="images/why_efad/2.png" class="efd-pic">
+                        <div class="textbanner"> سيارة مزودة بالوقود </div>
                     </fieldset>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
                 <div class="text-center">
-                    <fieldset class="fieldset">
-                        <legend><div class="textbanner"> تأمين شامل 100 ٪ </div></legend>
-                    <img src="images/why_efad/car-1000.png" class="efd-pic">
+                    <fieldset class="fieldset pr-5">
+                        <img src="images/why_efad/3.png" class="efd-pic">
+                        <div class="textbanner"> الكيلو متر مفتوح </div>
                     </fieldset>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
                 <div class="text-center">
-                    <fieldset class="fieldset">
-                        <legend> <div class="textbanner"> خدمة المساعدة على الطريق </div></legend>
-                    <img src="images/why_efad/veciel.png" class="efd-pic">
+                    <fieldset class="fieldset pl-5">
+                        <img src="images/why_efad/4.png" class="efd-pic">
+                        <div class="textbanner"> تأمين شامل 100% </div>
                     </fieldset>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
                 <div class=" text-center">
-                    <fieldset class="fieldset">
-                        <legend> <div class="textbanner"> سيارة مزودة بالوقود </div></legend>
-                    <img src="images/why_efad/fuel.png" class="efd-pic">
+                    <fieldset class="fieldset pr-5">
+                        <img src="images/why_efad/6.png" class="efd-pic">
+                        <div class="textbanner"> خدمة المساعدة على الطريق </div>
                     </fieldset>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
+            <div class="col-lg-6 col-sm-12">
                 <div class=" text-center">
-                    <fieldset class="fieldset">
-                   <legend> <div class="textbanner"> غير راضي؟
-                       <span>استرجع كامل المبلغ المدفوع 100%</span></div></legend>
-                    <img src="images/why_efad/back-money.png" class="efd-pic">
+                    <fieldset class="fieldset pl-5">
+                        <img src="images/why_efad/5.png" class="efd-pic">
+                        <div class="textbanner"> غير راضي؟ <br>
+                       <span>استرجع المبلغ بالكامل 100%</span></div>
                     </fieldset>
                 </div>
             </div>
@@ -209,650 +240,664 @@
 
 <!--cars search-->
 
-<section  class="p-0">
-	<div class="container-fluid ">
-		<div class="row">
-			<div class="col-sm-3">
-				<div class="row no-gutters">
-					<div class="col-6 col-xs-6 ">
-						<div class="cars-many"> <span>3000</span> <span>سيارة</span> </div>
-					</div>
-					<div class="col-6 col-xs-6 ">
-						<div class="cars-branch"> <span>4</span> <span>مدن</span> </div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="button-mobile-container button-mobile-fixed">
-						<div class="button-mobile">بحث تفصيلى</div>
-					</div>
-					<div class="col-12 search-option mt-2">
-						<div class="button-mobile-container button-mobile-close">
-							<div class="button-mobile">مشاهدة</div>
-						</div>
-						<h4><i class="fa fa-filter"></i> بحث متقدم </h4>
-						<div class="col-md-12 col-sm-12 pt-2">
-							<span class="labelh pb-2">خطة العضوية</span>
-							<div class="radio-group d-flex planname" role="group">
-								<input type="radio" class="updateSearchContent membershipPlan" id="blueplan" data-filter=".blueplan" name="selector" value="5" checked>
-								<label for="blueplan" class="blueplan">زرقاء</label>
-								<input type="radio" class="updateSearchContent membershipPlan" id="greenplan" name="selector" data-filter=".greenplan" value="10">
-								<label for="greenplan" class="greenplan">خضراء</label>
-								<input type="radio" class="updateSearchContent membershipPlan" id="redplan" data-filter=".redplan" name="selector" value="15">
-								<label for="redplan" class="redplan">حمراء</label>
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12 pt-2">
-							<div class=" justify-content-between">
-								<span class="labelh ">الحجز المبكر</span>
-								<div class="btn-switch">
-									<input type="radio" id="yes" name="switch" class="btn-switch__radio btn-switch__radio_yes updateSearchContent" value="0" />
-									<input type="radio" checked id="no" name="switch" class="btn-switch__radio btn-switch__radio_no updateSearchContent" value="1" />
-									<label for="yes" class="btn-switch__label btn-switch__label_yes"><span class="btn-switch__txt"></span></label>
-									<label for="no" class="btn-switch__label btn-switch__label_no"><span class="btn-switch__txt"></span></label>
-								</div>
-							</div>
-							<span class="text-mutedd small pt-2"> أحصل على 5 % كخصم إضافية عند إجراء الحجز المبكر </span> 
-						</div>
-						<div class="col-md-12 col-sm-12 pt-2">
-							<span class="labelh py-2">مدة الاشتراك</span>
-							<!--  Custom Radio Buttons  -->
-							<div class="row">
-								<div class="col-lg-12">
-									<label class="customButton">أقل من 6 شهور
-									<input type="radio" checked="checked" name="month" class="updateSearchContent durationOfSubscription" value="0">
-									<span class="checkmark"></span>
-									</label>
-								</div>
-								<div class="col-lg-12">
-									<label class="customButton">أكثر من 6 شهور
-									<input type="radio" name="month" class="updateSearchContent durationOfSubscription" value="1">
-									<span class="checkmark"></span>
-									</label>
-								</div>
-							</div>
-							<!--
-								<div class="car_btn car-y">
-									<p class="fieldset">
-										<input type="radio" name="year"  value="day" id="day">
-										<label for="day" class="less-month"> أقل من 6 شهور</label>
-										<input type="radio" name="year" value="month"  id="month">
-										<label for="month" class="more-month">أكثر من 6 شهور</label>
-										<input type="radio" name="year" value="year"  id="year">
-										<label for="year" >سنوي</label>
-									</p>
-								</div>
+<section  class="p-0 border-top pt-10">
+            <div class="container-fluid ">
+                <div class="row ">
+                    <div class="col-sm-3">
+                        <div class="row no-gutters">
+                            <div class="col-6 col-xs-6 ">
+                                <div class="cars-many"> <span>3000</span> <span>سيارة</span> </div>
+                            </div>
+                            <div class="col-6 col-xs-6 ">
+                                <div class="cars-branch"> <span>4</span> <span>مدن</span> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="button-mobile-container button-mobile-fixed">
+                                <div class="button-mobile">بحث تفصيلى</div>
+                            </div>
+                            <div class="col-12 search-option mt-2 scrollbar" id="style-1">
+                                <div class="button-mobile-container button-mobile-close">
+                                    <div class="button-mobile">مشاهدة</div>
+                                </div>
+                                <h4><i class="fa fa-filter"></i> بحث متقدم </h4>
+								<!--
+                                <div class="col-md-12 col-sm-12 pt-2">
+                                    <span class="labelh pb-2">خطة العضوية</span>
+                                    <div class="radio-group d-flex planname" role="group">
+                                        <input type="radio" class="updateSearchContent membershipPlan" id="blueplan" data-filter=".blueplan" name="selector" value="5" checked>
+                                        <label for="blueplan" class="blueplan">زرقاء</label>
+                                        <input type="radio" class="updateSearchContent membershipPlan" id="greenplan" name="selector" data-filter=".greenplan" value="10">
+                                        <label for="greenplan" class="greenplan">خضراء</label>
+                                        <input type="radio" class="updateSearchContent membershipPlan" id="redplan" data-filter=".redplan" name="selector" value="15">
+                                        <label for="redplan" class="redplan">حمراء</label>
+                                    </div>
+                                </div>
 								-->
-						</div>
-						<div class="col-md-12 col-sm-12 pt-2">
-							<span class="labelh py-2">عرض قيمة الإشتراك لمدة</span>
-							<div class="car_btn car-y">
-								<p class="fieldset">
-									<!--
-										<input type="radio" name="day1"  value="day1" id="day1"  >
-										<label for="day1" class="day"> يومى</label>
-										-->
-									<input type="radio" name="year1" value="week1"  id="week1" class="updateSearchContent subscriptionValueDuration" checked>
-									<label for="week1" class="week">اسبوعى</label>
-									<input type="radio" name="year1"  value="month1" id="month1" class="updateSearchContent subscriptionValueDuration" >
-									<label for="month1" class="month"> شهرى</label>
-									<input type="radio" name="year1" value="year1"  id="year1" class="updateSearchContent subscriptionValueDuration" >
-									<label for="year1" class="year">سنوى</label>
-								</p>
-							</div>
-							<div col-lg-12>
-								<input type="text" name="day1"  value="2000" class="item2000 updateSearchContent financialValueDaily" disabled >
-								س.ر.
-								<input type="text" name="week1" value="8000" class="item8000 updateSearchContent financialValueWeekly" disabled>
-								س.ر.
-							</div>
-							<input type="text" class="js-range-slider" value="" />
-						</div>
-						<div class="col-md-12 col-sm-12 pt-2">
-							<span class="labelh py-2">ترتيب</span>
-							<!--  Custom Radio Buttons  -->
-							<div class="row">
-								<div class="col-lg-12">
-									<label class="customButton">من الأقل قيمة إلى الأعلى
-									<input type="radio" checked="checked" name="highvalue" class="updateSearchContent displayOrdering" value="asc">
-									<span class="checkmark"></span>
-									</label>
-								</div>
-								<div class="col-lg-12">
-									<label class="customButton">من الأعلى قيمة إلى الأقل
-									<input type="radio" name="highvalue" class="updateSearchContent displayOrdering" value="desc">
-									<span class="checkmark"></span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12 pt-2">
-							<div class="select-wrapper">
-								<select id="select-car" data-placeholder="ماركة السيارة" class="form-control width100p updateSearchContent carBrand">
-									<option value="all">ماركة السيارة</option>
-									<option value="kia">كيا</option>
-									<option value="hyundai">هيونداى</option>
-									<option value="toyota">تويوتا</option>
-									<option value="ford">فورد</option>
-									<option value="volkswagen">فولكس فاجن</option>
-									<option value="fiat">فيات</option>
-									<option value="nissan">نيسان</option>
-									<option value="acura">اكورا</option>
-									<option value="changan">شانجان</option>
-									<option value="volvo">فولفو</option>
-									<option value="geely">جيلى</option>
-									<option value="renault">رينو</option>
-									<option value="GMC">جميس</option>
-									<option value="mazda">مازدا</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12 pt-1">
-							<div class="select-wrapper">
-								<select id="select-car" data-placeholder="أختر شكل السيارة" class="form-control width100p updateSearchContent carType">
-									<option value="all">موديل السيارة</option>
-									<option value="1">الرياض</option>
-									<option value="2">جدة</option>
-									<option value="3">المدينة المنورة</option>
-									<option value="4">الدمام</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12 pt-1">
-							<div class="select-wrapper">
-								<select id="select-car" data-placeholder="أختر شكل السيارة" class="form-control width100p updateSearchContent carCategory">
-									<option value="all">نوع السيارة</option>
-									<option value="1">الرياض</option>
-									<option value="2">جدة</option>
-									<option value="3">المدينة المنورة</option>
-									<option value="4">الدمام</option>
-								</select>
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12 pt-2">
-							<span class="labelh py-2">سنة الصنع</span>
-							<!-- <input type="text" class="js-range-slider updateSearchContent" value="" /> -->
-							<div id="nouislider-slider"></div>
-							<input id="cadc" type="hidden">
-							<input id="btcc" type="hidden">
-						</div>
-						<div class="col-md-12 col-sm-12 pt-2" >
-							<span class="labelh py-2">لون السيارة</span>
-							<div class="custom-radios">
-								<div>
-									<input type="checkbox" id="white" data-filter=".white" class="updateSearchContent carColor"  value="white" >
-									<label for="white"> <span> <i class="fa fa-check blackCheck"></i> </span> </label>
-								</div>
-								<div>
-									<input type="checkbox" id="gray" data-filter=".gray" class="updateSearchContent carColor"  value="gray" >
-									<label for="gray"> <span> <i class="fa fa-check"></i> </span> </label>
-								</div>
-								<div>
-									<input type="checkbox" id="yellow" class="updateSearchContent carColor"  data-filter=".yellow" value="yellow">
-									<label for="yellow"> <span> <i class="fa fa-check"></i> </span> </label>
-								</div>
-								<div>
-									<input type="checkbox" id="brown"  class="updateSearchContent carColor" value="brown" data-filter=".brown">
-									<label for="brown"> <span> <i class="fa fa-check"></i> </span> </label>
-								</div>
-								<div>
-									<input type="checkbox" id="red" class="updateSearchContent carColor"  value="red" data-filter=".red">
-									<label for="red"> <span> <i class="fa fa-check"></i> </span> </label>
-								</div>
-								<div>
-									<input type="checkbox" id="Aetna"  class="updateSearchContent carColor" value="Aetna" data-filter=".Aetna">
-									<label for="Aetna"> <span> <i class="fa fa-check"></i> </span> </label>
-								</div>
-								<div>
-									<input type="checkbox" id="Algolia"  class="updateSearchContent carColor" value="Algolia" data-filter=".Algolia">
-									<label for="Algolia"> <span> <i class="fa fa-check"></i> </span> </label>
-								</div>
-								<div>
-									<input type="checkbox" id="blue" class="updateSearchContent carColor" data-filter=".blue" value="blue">
-									<label for="blue"> <span> <i class="fa fa-check"></i> </span> </label>
-								</div>
-								<div>
-									<input type="checkbox" id="Lingus"  class="updateSearchContent carColor" data-filter=".Lingus" value="Lingus">
-									<label for="Lingus"> <span> <i class="fa fa-check"></i> </span> </label>
-								</div>
-								<div>
-									<input type="checkbox" id="Adobe"  class="updateSearchContent carColor" value="Adobe" data-filter=".Adobe">
-									<label for="Adobe"> <span> <i class="fa fa-check"></i> </span> </label>
-								</div>
-								<div>
-									<input type="checkbox" id="black" class="updateSearchContent carColor"  value="black" data-filter=".black">
-									<label for="black"> <span> <i class="fa fa-check"></i> </span> </label>
-								</div>
-								<div>
-									<input type="checkbox" id="Arriva" class="updateSearchContent carColor"  value="Arriva" data-filter=".Arriva">
-									<label for="Arriva"> <span> <i class="fa fa-check"></i> </span> </label>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12 col-sm-12 pt-2">
-							<span class="labelh py-2">ناقل الحركة</span>
-							<!--  Custom Radio Buttons  -->
-							<div class="row">
-								<div class="col-lg-12">
-									<label class="customButton">أتوماتيك
-									<input type="radio" class="updateSearchContent gearBox" checked="checked" name="automanual" value="auto">
-									<span class="checkmark"></span>
-									</label>
-								</div>
-								<div class="col-lg-12">
-									<label class="customButton">عادى
-									<input type="radio" class="updateSearchContent gearBox" name="automanual" value="manual">
-									<span class="checkmark"></span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<!--
-							<div class="col-lg-12" style="font-size: 18px;color: #2c343e">ناقل الحركة</div>
-							<div class="col-lg-12">
-								<label class="customButton" style="margin:0 45px 0 10px">أتوماتيك
-								  <input type="radio" checked="checked" name="highvalue">
-								  <span class="checkmark"></span>
-								</label>
 
-								<label class="customButton" style="margin:0 10px">عادى
-								  <input type="radio" name="highvalue">
-								  <span class="checkmark"></span>
-								</label>
-							</div>
-							-->
-						<!--
-							<div class="col-md-12 col-sm-12 pt-1">
-								<div class="select-wrapper">
-									<select id="select-country" data-placeholder="اتوماتيك" class="form-control width100p">
-										<option >اتوماتيك</option>
-										<option >مانويل</option>
-									</select>
-								</div>
-							</div>
-							-->
-						<div class="col-lg-12">
-							<div style="float: right;margin: 35px 0;">
-								<i class="fas fa-sync" style="color: #003a5d;padding: 0 15px;cursor: pointer;"></i>
-								<div class="" style="font-size: 18px;color: #2c343e;display: inline;">مسح الكل</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-9">
-				<!-- btns -->
-				<div class="car_btn scroll">
-					<div class="fieldset">
-						<input type="radio" name="cartype" class="updateSearchContent carClassification" value="all" data-filter="all" id="c1" checked  >
-						<label for="c1" class="all" >الكل</label>
-						<input type="radio" name="cartype" class="updateSearchContent carClassification"  data-filter=".economic" value="economic" id="c2" >
-						<label for="c2"  class="economic">الاقتصادية</label>
-						<input type="radio" name="cartype" class="updateSearchContent carClassification" value="mini" data-filter=".mini" id="c4">
-						<label for="c4" class="mini">الصغيرة</label>
-						<input type="radio" class="updateSearchContent carClassification" name="cartype" value="medium"  data-filter=".small" id="c3">
-						<label for="c3" class="small">المتوسطة</label>
-						<input type="radio" class="updateSearchContent carClassification" name="cartype" value="big"   data-filter=".big" id="c5">
-						<label for="c5" class="big">الكبيرة</label>
-						<input type="radio" class="updateSearchContent carClassification" name="cartype" value="superior" data-filter=".superior" id="c6">
-						<label for="c6" class="superior">الفخمة</label>
-						<div class="animation start-home"></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12">
-						<input class="form-control mr-sm-2 mt-2 inp-inp updateSearchContent generalSearch" data-ref="input-search" type="search" placeholder="ابحث عن مواصفات سيارتك هنا:الماركة ,الموديل ,اللون,ناقل الحركة أو سمة الصنع .." aria-label="Search">
-						<i class="fas fa-search sear-inp"></i>
-						<div class="select-wrapper select-wrapperNew" style="display: inline;">
-							<select class="custom-select1 updateSearchContent carSearchCity" 
-								data-placeholder="كل المدن">
-								<option selected>كل المدن</option>
-								<option value="1">الرياض</option>
-								<option value="2">الرياض</option>
-								<option value="3">الرياض</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="row ch-row-ch">
-					<div class="col-lg-6">
-						<p class="text-muted small pt-2"> * جميع الاسعار تشمل  ضريبة  القيمة المضافة 5% </p>
-					</div>
-					<div class="col-lg-6">
-						<div class="color-dots pt-2" style="float: left;">
-							<span class="dot1"></span>
-							<span class="dot100 dot101">متاح</span>
-							<span class="dot3"></span>
-							<span class="dot100 dot103">قريبا</span>
-							<span class="dot4"></span>
-							<span class="dot100 dot104">غير متاح</span>
-						</div>
-					</div>
-				</div>
-				<div class="product_list" data-ref="product_list">
-					<div class="row">
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value">69</span> <span class="duration">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value">69</span> <span class="duration">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value">69</span> <span class="duration">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value">69</span> <span class="duration">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value">69</span> <span class="duration">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value">69</span> <span class="duration">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value">69</span> <span class="duration">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value">69</span> <span class="duration">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value">69</span> <span class="duration">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value">69</span> <span class="duration">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
-							<div class="thumbnail-container">
-								<div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
-								</div>
-								<div class="car-price d-flex">
-									<div class="price-car ml-auto">
-										<div class="price-was">80 ريال</div>
-										<span class="value">69</span> <span class="duration">ريال شهريا</span>
-									</div>
-									<div class="carname d-flex">
-										<div class="ml-auto">
-											<h5><span>كيا</span> <span>2018</span></h5>
-											<h3>سوناتا</h3>
-										</div>
-									</div>
-								</div>
-								<div class="car-price d-flex row">
-									<div class="col-lg-12">
-										<span class="dot11"></span>
-										<i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 25px;font-weight: 600;">8</span>
-										<div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<ul class="pagin">
-								<li><i class="fas fa-chevron-left float-left"><a href="#"></a></i></li>
-								<div class="text-center">
-									<li class="items active"><a href="#">1</a></li>
-									<li class="items"><a href="#">2</a></li>
-									<li class="items"><a href="#">3</a></li>
-									<li class="items"><a href="#">...</a></li>
-								</div>
-								<li><i class="fas fa-chevron-right float-right"><a href="#"></a></i></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+                                <div class="col-md-12 col-sm-12 pt-2">
+                                    <div class=" justify-content-between">
+                                        <span class="labelh ">الحجز المبكر</span>
+                                        <div class="btn-switch">
+                                            <input type="radio" id="yes" name="switch" class="btn-switch__radio btn-switch__radio_yes updateSearchContent" value="0" />
+                                            <input type="radio" checked id="no" name="switch" class="btn-switch__radio btn-switch__radio_no updateSearchContent" value="1" />
+                                            <label for="yes" class="btn-switch__label btn-switch__label_yes"><span class="btn-switch__txt"></span></label>
+                                            <label for="no" class="btn-switch__label btn-switch__label_no"><span class="btn-switch__txt"></span></label>
+                                        </div>
+                                    </div>
+                                    <span class="text-mutedd small pt-2"> أحصل على 5 % كخصم إضافية عند إجراء الحجز المبكر </span> 
+                                </div>
+                                <div class="col-md-12 col-sm-12 pt-2">
+                                    <span class="labelh py-2">مدة الاشتراك</span>
+                                    <!--  Custom Radio Buttons  -->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <label class="customButton">أقل من 6 شهور
+                                            <input type="radio" checked="checked" name="month" class="updateSearchContent durationOfSubscription" value="0">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <label class="customButton">أكثر من 6 شهور
+                                            <input type="radio" name="month" class="updateSearchContent durationOfSubscription" value="1">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!--
+                                        <div class="car_btn car-y">
+                                            <p class="fieldset">
+                                                <input type="radio" name="year"  value="day" id="day">
+                                                <label for="day" class="less-month"> أقل من 6 شهور</label>
+                                                <input type="radio" name="year" value="month"  id="month">
+                                                <label for="month" class="more-month">أكثر من 6 شهور</label>
+                                                <input type="radio" name="year" value="year"  id="year">
+                                                <label for="year" >سنوي</label>
+                                            </p>
+                                        </div>
+                                        -->
+                                </div>
+                                <div class="col-md-12 col-sm-12 pt-2">
+                                    <span class="labelh py-2">عرض قيمة الإشتراك لمدة</span>
+                                    <div class="car_btn car-y">
+                                        <p class="fieldset">
+                                            <!--
+                                                <input type="radio" name="day1"  value="day1" id="day1"  >
+                                                <label for="day1" class="day"> يومى</label>
+                                                -->
+                                            <input type="radio" name="year1" value="week1"  id="week1" class="updateSearchContent subscriptionValueDuration" checked>
+                                            <label for="week1" class="week">اسبوعى</label>
+                                            <input type="radio" name="year1"  value="month1" id="month1" class="updateSearchContent subscriptionValueDuration" >
+                                            <label for="month1" class="month"> شهرى</label>
+                                            <input type="radio" name="year1" value="year1"  id="year1" class="updateSearchContent subscriptionValueDuration" >
+                                            <label for="year1" class="year">سنوى</label>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-12 col-sm-12 pt-2">
+                                    <span class="labelh py-2">عرض السعر</span>
+                                    
+                                    <div col-lg-12>
+										من:
+                                        	&nbsp;<input type="text" name="week1" value="" id="priceTo" class="item8000 updateSearchContent financialValueWeekly" disabled>&nbsp;&nbsp;&nbsp;&nbsp;
+										الي:
+                                        	&nbsp;<input type="text" name="day1"  value="" id="priceFrom" class="item2000 updateSearchContent financialValueDaily" disabled >
+										
+                                    </div>
+                                    <div id="nouislider-slider-cash-range" class="mt-2"></div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 pt-2">
+                                    <span class="labelh py-2">ترتيب</span>
+                                    <!--  Custom Radio Buttons  -->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <label class="customButton">من الأقل قيمة إلى الأعلى
+                                            <input type="radio" checked="checked" name="highvalue" class="updateSearchContent displayOrdering" value="ASC">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <label class="customButton">من الأعلى قيمة إلى الأقل
+                                            <input type="radio" name="highvalue" class="updateSearchContent displayOrdering" value="DESC">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 pt-2">
+                                    <div class="select-wrapper">
+                                        <select id="select-car" data-placeholder="ماركة السيارة" class="form-control width100p updateSearchContent carBrand">
+                                            <option value="0">ماركة السيارة</option>
+                                            <option value="kia">كيا</option>
+                                            <option value="hyundai">هيونداى</option>
+                                            <option value="toyota">تويوتا</option>
+                                            <option value="ford">فورد</option>
+                                            <option value="volkswagen">فولكس فاجن</option>
+                                            <option value="fiat">فيات</option>
+                                            <option value="nissan">نيسان</option>
+                                            <option value="acura">اكورا</option>
+                                            <option value="changan">شانجان</option>
+                                            <option value="volvo">فولفو</option>
+                                            <option value="geely">جيلى</option>
+                                            <option value="renault">رينو</option>
+                                            <option value="GMC">جميس</option>
+                                            <option value="mazda">مازدا</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 pt-1">
+                                    <div class="select-wrapper">
+                                        <select id="select-car" data-placeholder="أختر شكل السيارة" class="form-control width100p updateSearchContent carType">
+                                            <option value="0">موديل السيارة</option>
+                                            <option value="1">الرياض</option>
+                                            <option value="2">جدة</option>
+                                            <option value="3">المدينة المنورة</option>
+                                            <option value="4">الدمام</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 pt-1">
+                                    <div class="select-wrapper">
+                                        <select id="select-car" data-placeholder="أختر شكل السيارة" class="form-control width100p updateSearchContent carCategory">
+                                            <option value="0">نوع السيارة</option>
+                                            <option value="1">الرياض</option>
+                                            <option value="2">جدة</option>
+                                            <option value="3">المدينة المنورة</option>
+                                            <option value="4">الدمام</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 pt-2 mb-5">
+                                    <span class="labelh py-2">سنة الصنع</span>
+                                    <!-- <input type="text" class="js-range-slider updateSearchContent" value="" /> -->
+                                    <div id="nouislider-slider"></div>
+                                    <input id="yearFrom" type="hidden">
+                                    <input id="yearTo" type="hidden">
+                                </div>
+                                <div class="col-md-12 col-sm-12 pt-2" >
+                                    <span class="labelh py-2">لون السيارة</span>
+                                    <div class="custom-radios">
+                                        <div>
+                                            <input type="checkbox" id="white" data-filter=".white" class="updateSearchContent carColor"  value="white" >
+                                            <label for="white"> <span> <i class="fa fa-check blackCheck"></i> </span> </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="gray" data-filter=".gray" class="updateSearchContent carColor"  value="gray" >
+                                            <label for="gray"> <span> <i class="fa fa-check"></i> </span> </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="yellow" class="updateSearchContent carColor"  data-filter=".yellow" value="yellow">
+                                            <label for="yellow"> <span> <i class="fa fa-check"></i> </span> </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="brown"  class="updateSearchContent carColor" value="brown" data-filter=".brown">
+                                            <label for="brown"> <span> <i class="fa fa-check"></i> </span> </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="red" class="updateSearchContent carColor"  value="red" data-filter=".red">
+                                            <label for="red"> <span> <i class="fa fa-check"></i> </span> </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="Aetna"  class="updateSearchContent carColor" value="Aetna" data-filter=".Aetna">
+                                            <label for="Aetna"> <span> <i class="fa fa-check"></i> </span> </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="Algolia"  class="updateSearchContent carColor" value="Algolia" data-filter=".Algolia">
+                                            <label for="Algolia"> <span> <i class="fa fa-check"></i> </span> </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="blue" class="updateSearchContent carColor" data-filter=".blue" value="blue">
+                                            <label for="blue"> <span> <i class="fa fa-check"></i> </span> </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="Lingus"  class="updateSearchContent carColor" data-filter=".Lingus" value="Lingus">
+                                            <label for="Lingus"> <span> <i class="fa fa-check"></i> </span> </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="Adobe"  class="updateSearchContent carColor" value="Adobe" data-filter=".Adobe">
+                                            <label for="Adobe"> <span> <i class="fa fa-check"></i> </span> </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="black" class="updateSearchContent carColor"  value="black" data-filter=".black">
+                                            <label for="black"> <span> <i class="fa fa-check"></i> </span> </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="Arriva" class="updateSearchContent carColor"  value="Arriva" data-filter=".Arriva">
+                                            <label for="Arriva"> <span> <i class="fa fa-check"></i> </span> </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 pt-2">
+                                    <span class="labelh py-2">ناقل الحركة</span>
+                                    <!--  Custom Radio Buttons  -->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <label class="customButton">أتوماتيك
+                                            <input type="radio" class="updateSearchContent gearBox" checked="checked" name="automanual" value="auto">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <label class="customButton">عادى
+                                            <input type="radio" class="updateSearchContent gearBox" name="automanual" value="manual">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--
+                                    <div class="col-lg-12" style="font-size: 18px;color: #2c343e">ناقل الحركة</div>
+                                    <div class="col-lg-12">
+                                        <label class="customButton" style="margin:0 45px 0 10px">أتوماتيك
+                                          <input type="radio" checked="checked" name="highvalue">
+                                          <span class="checkmark"></span>
+                                        </label>
+                                    
+                                        <label class="customButton" style="margin:0 10px">عادى
+                                          <input type="radio" name="highvalue">
+                                          <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    -->
+                                <!--
+                                    <div class="col-md-12 col-sm-12 pt-1">
+                                        <div class="select-wrapper">
+                                            <select id="select-country" data-placeholder="اتوماتيك" class="form-control width100p">
+                                                <option >اتوماتيك</option>
+                                                <option >مانويل</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    -->
+                                <div class="col-lg-12 clearFilters">
+                                    <div style="float: right;margin: 35px 0;">
+                                        <i class="fas fa-sync" style="color: #003a5d;padding: 0 15px;cursor: pointer;"></i>
+                                        <div class="" style="font-size: 18px;color: #2c343e;display: inline;">مسح الكل</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <!-- btns -->
+                        <div class="car_btn scroll">
+                            <div class="fieldset">
+                                <input type="radio" name="cartype" class="updateSearchContent carClassification" value="0" data-filter="all" id="c1" checked  >
+                                <label for="c1" class="all" >الكل</label>
+                                <input type="radio" name="cartype" class="updateSearchContent carClassification"  data-filter=".economic" value="economic" id="c2" >
+                                <label for="c2"  class="economic">الاقتصادية</label>
+                                <input type="radio" name="cartype" class="updateSearchContent carClassification" value="mini" data-filter=".mini" id="c4">
+                                <label for="c4" class="mini">الصغيرة</label>
+                                <input type="radio" class="updateSearchContent carClassification" name="cartype" value="medium"  data-filter=".small" id="c3">
+                                <label for="c3" class="small">المتوسطة</label>
+                                <input type="radio" class="updateSearchContent carClassification" name="cartype" value="big"   data-filter=".big" id="c5">
+                                <label for="c5" class="big">الكبيرة</label>
+                                <input type="radio" class="updateSearchContent carClassification" name="cartype" value="superior" data-filter=".superior" id="c6">
+                                <label for="c6" class="superior">الفخمة</label>
+                                <div class="animation start-home"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <input class="form-control mt-2 inp-inp updateSearchContent generalSearch" data-ref="input-search" type="search" placeholder="ابحث عن مواصفات سيارتك هنا:الماركة ,الموديل ,اللون,ناقل الحركة أو سمة الصنع .." aria-label="Search">
+                                <i class="fas fa-search sear-inp"></i>
+								<!--
+                                <div class="select-wrapper select-wrapperNew" style="display: inline;">
+                                    <select class="custom-select1 updateSearchContent carSearchCity" 
+                                        data-placeholder="كل المدن">
+                                        <option selected>كل المدن</option>
+                                        <option value="1">الرياض</option>
+                                        <option value="2">الرياض</option>
+                                        <option value="3">الرياض</option>
+                                    </select>
+                                </div>
+								-->
+                            </div>
+                        </div>
+                        <div class="row ch-row-ch">
+                            <div class="col-lg-6">
+                                <p class="text-muted small pt-2"> * جميع الاسعار تشمل  ضريبة  القيمة المضافة 5% </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="color-dots pt-2" style="float: left;">
+                                    <span class="dot1"></span>
+                                    <span class="dot100 dot101">متاح</span>
+                                    <span class="dot3"></span>
+                                    <span class="dot100 dot103">قريبا</span>
+                                    <span class="dot4"></span>
+                                    <span class="dot100 dot104">غير متاح</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_list" data-ref="product_list" style="margin: 0 5px 0 25px;">
+                            <div class="row">
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value carPriceAfterCal">69</span> <span class="duration carDurationAfterCal">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>               <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value">69</span> <span class="duration">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value">69</span> <span class="duration">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value">69</span> <span class="duration">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>                <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value">69</span> <span class="duration">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-sm-6 col-md-6 col-lg-4 col-12 mix  superior blueplan كيا green y2018 "  data-size="69">
+                                    <div class="thumbnail-container">
+                                        <div class="car-img"> <img src="images/cars/sonata.png" class="img-fluid" /> 
+                                        </div>
+                                        <div class="car-price d-flex">
+                                            <div class="price-car mr-auto">
+                                                <div class="price-was">80 ريال</div>
+                                                <span class="value">69</span> <span class="duration">ريال شهريا</span>
+                                            </div>
+                                            <div class="carname d-flex">
+                                                <div class="ml-auto">
+                                                    <h5><span>كيا</span> <span>2018</span></h5>
+                                                    <h3>سوناتا</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="car-price d-flex row">
+                                            <div class="col-lg-12">
+                                                <span class="dot11"></span>
+                                                <i class="far fa-heart heart"></i>                                                 <span class="mr-3 position-absolute" style="font-size: 19px;font-weight: 600;margin-top: 4px;">8</span>
+                                                <div class="btn-reserve btn-reserve1"> <a href="reservation.html" class="btn btn-default">احجز الآن</a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-12">
+                                    <ul class="pagin">
+                                        <li><i class="fas fa-chevron-right float-left"><a href="#"></a></i></li>
+                                        <div class="text-center">
+                                            <li class="items active" value="0"><a href="#">1</a></li>
+                                            <li class="items" value="1"><a href="#">2</a></li>
+                                            <li class="items" value="2"><a href="#">3</a></li>
+                                            <li class="items" value=""><a href="#">...</a></li>
+                                        </div>
+                                        <input type="hidden" class="paginationValue" value="0">
+                                        <li><i class="fas fa-chevron-left float-right"><a href="#"></a></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     <!--  car condition  -->
     
-    <section class="car-con">
-        <h1 class="text-center">ماهى شروط الحصول على سيارة؟</h1>
+    <section>
+        <h1 class="text-center font-weight-bold">ماهى شروط الحصول على سيارة؟</h1>
+        <div class="car-con"></div>
     </section>
     
     <!-- how get car -->
@@ -862,35 +907,24 @@
             <div class="row">
                 <div class="container">
                     <div class="col-lg-12 text-center py-4">
-                    <h1 style="font-size: 2.2rem;">كيف أحصل على سيارة ؟</h1>
+                    <h1 style="font-size: 1.5em;" class="font-weight-bold">كيف أحصل على سيارة ؟</h1>
                 </div>
                 <div class="steps">
-                    <div class="line"></div>
                     <ul>
                         <li class="item">
-                            <div class="itemNum itemNum1"></div>
-                            <div class="text-center" style="margin: 10px 0;">إشترك فى العضوية</div>
-                            <img src="images/how-get/confirm-on-mem.png" class="img-fluid" style="width: 95px">
+                            <img src="images/how-get/c1.png" class="img-fluid">
                         </li>
                         <li class="item">
-                            <div class="itemNum itemNum2"></div>
-                            <div class="text-center" style="margin: 10px 0;">إختار سيارتك</div>
-                            <img src="images/how-get/choose-car.png" class="img-fluid" style="width: 95px">
+                            <img src="images/how-get/c2.png" class="img-fluid">
                         </li>
                         <li class="item">
-                            <div class="itemNum itemNum3"></div>
-                            <div class="text-center" style="margin: 10px 0;">حدد الفترة الزمنية للخدمة</div>
-                            <img src="images/how-get/define-time.png" class="img-fluid" style="width: 95px">
+                            <img src="images/how-get/c3.png" class="img-fluid">
                         </li>
                         <li class="item">
-                            <div class="itemNum itemNum4"></div>
-                            <div class="text-center" style="margin: 10px 0;">إدفع</div>
-                            <img src="images/how-get/pay.png" class="img-fluid" style="width: 95px">
+                            <img src="images/how-get/c4.png" class="img-fluid">
                         </li>
                         <li class="item">
-                            <div class="itemNum itemNum5"></div>
-                            <div class="text-center" style="margin: 10px 0;">استلم سيارتك وانطلق</div>
-                            <img src="images/how-get/get-your-car.png" class="img-fluid" style="width: 95px">
+                            <img src="images/how-get/c5.png" class="img-fluid">
                         </li>
                     </ul>
                 </div>
@@ -1288,19 +1322,257 @@
 <script src="js/bootstrap-4.0.0.js"></script> 
 
 <!-- fancybox --> 
-<script type="text/javascript" src="js/jquery.fancybox.js"></script> 
-<script type="text/javascript">
+        <script type="text/javascript" src="js/jquery.fancybox.js"></script> 
+    <!-- NOUISLIDER CDN minfied JS file -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/8.2.1/nouislider.min.js"></script>
+        <script type="text/javascript">
         /* navbar */
         $(document).ready(function () {
+                // implementation of nouislider
+                var yearSlider = document.getElementById('nouislider-slider');
+            
+                noUiSlider.create(yearSlider, {
+                    start: [2015, 2019],
+                    connect: true,
+                    range: {
+                        'min': 2015,
+                        'max': 2019
+                    },
+					direction: 'rtl',
+                    step: 1,
+                    connect: true,
+                     behaviour: 'tap-drag',
+                    tooltips: false,
+            
+                    // Show a scale with the slider
+                    pips: {
+                        mode: 'steps',
+                        stepped: true,
+                        density: 4
+                    }
+                });
+                
+                yearSlider.noUiSlider.on('update', function( values, handle ) {
+                    let silderValue = yearSlider.noUiSlider.get();
+                    let value = silderValue.toString().split(",");
+                    $('#yearFrom').val(Math.trunc( value[1] ));
+                    $('#yearTo').val(Math.trunc( value[0] ));
+                    let result = collectSearchParams();
+                    console.log(result);
+                });
+
+                /////////////////////////////////////////////////////////////////////
+                ///////////////////////// PRICE FROM - TO////////////////////////////
+                /////////////////////////////////////////////////////////////////////
+                var priceSlider = document.getElementById('nouislider-slider-cash-range');
+            
+                noUiSlider.create(priceSlider, {
+                    start: [0, 1000],
+                    connect: true,
+                    range: {
+                        'min': 0,
+                        'max': 1000
+                    },
+            		direction: 'rtl',
+                    step: 5,
+                    connect: true,
+                    behaviour: 'tap-drag',
+                    tooltips: false,
+            
+                    // Show a scale with the slider
+                    
+                });
+
+                priceSlider.noUiSlider.on('update', function( values, handle ) {
+                    let priceSilderValue = priceSlider.noUiSlider.get();
+                    let value = priceSilderValue.toString().split(",");
+                    $('#priceFrom').val(Math.trunc( value[1] ));
+                    $('#priceTo').val(Math.trunc( value[0] ));
+                    let result = collectSearchParams();
+                    console.log(result);
+                });
+            
+                //event listner for generic search filter while typing
+                $('.generalSearch').on('keyup', function() {
+                    if (this.value.length > 1) {
+                        let generalSearch = $('.generalSearch').val();
+                        console.log(generalSearch);
+                    }
+                    let result = collectSearchParams();
+                    console.log(result);
+                });
+                
+                $('.items').click(function(){
+                    $('.paginationValue').val(this.value);
+                    $('li.items').removeClass('active');
+                    $(this).addClass('active');
+                    let result = collectSearchParams();
+                    console.log(result);
+                });
+
+                // prepare early booking value
+                function earlyBookingValue(){
+                    let earlyBooking = $('.btn-switch__radio:checked').val();
+                    if(earlyBooking){
+                        if (earlyBooking == 0){
+                            earlyBooking = 1;
+                        }
+                        else if (earlyBooking == 1){
+                            earlyBooking = 0;
+                        }
+                    }
+                    return earlyBooking;
+                }
+                
+                // prepare subscription Value Duration
+                function subscriptionValueDurationValue(){
+                    let subscriptionValueDuration = $('.subscriptionValueDuration:checked').val();            
+                    if (subscriptionValueDuration == 'week1'){
+                        subscriptionValueDuration = 7;
+                    }
+                    else if (subscriptionValueDuration == 'month1'){
+                        subscriptionValueDuration = 30;
+                    }
+                    else if (subscriptionValueDuration == 'year1'){
+                        subscriptionValueDuration = 30 * 12;
+                    }
+                    return subscriptionValueDuration;
+                }
+                
+                /*
+                 * Collect search params filter
+                 *
+                 * @params
+                 */
+                function collectSearchParams(){
+                    let carClassification = $('.carClassification:checked').val();
+                    let generalSearch = $('.generalSearch').val();
+                    let carSearchCity = $('.carSearchCity').children("option:selected").val();
+                    let membershipPlan = $('.membershipPlan:checked').val();
+                    let earlyBooking = earlyBookingValue();
+                    let durationOfSubscription = $('.durationOfSubscription:checked').val();
+                    let subscriptionValueDuration = subscriptionValueDurationValue();
+                    let financialValueDaily = $('.financialValueDaily').val();
+                    let financialValueWeekly = $('.financialValueWeekly').val();
+                    let displayOrdering = $('.displayOrdering:checked').val();
+                    let carBrand = $('.carBrand').children('option:selected').val();
+                    let carModel = $('.carType').children('option:selected').val();
+                    let carType = $('.carCategory').children('option:selected').val();
+                    let yearFrom = $('#yearFrom').val();
+                    let yearTo = $('#yearTo').val();
+                    let offset = $('.paginationValue').val();
+                    let carColor = [];
+                    $.each($('.carColor:checked'), function(){            
+                        carColor.push($(this).val());
+                    });
+                    let gearBox = $('.gearBox:checked').val();
+                    var result = new function(){
+                        this.search_text = generalSearch;
+                        // this.carSearchCity = carSearchCity;
+                        this.carClassification = carClassification;
+                        // this.membershipPlan = membershipPlan;
+                        // this.earlyBooking = earlyBooking;
+                        this.book_period = durationOfSubscription;
+                        // this.subscriptionValueDuration = subscriptionValueDuration;
+                        this.price_from = financialValueWeekly;
+                        this.price_to = financialValueDaily;
+                        this.order_by = displayOrdering;
+                        this.cb_uid = carBrand;
+                        this.cm_uid = carModel;
+                        this.ct_uid = carType;
+                        this.year_from = yearTo;
+                        this.year_to = yearFrom;
+                        this.color = carColor;
+                        this.transmission = gearBox;
+                        this.offset = offset;
+                    }
+
+                    //////////////// TODO ///////////////////////////////////
+                    // let x = 5; // car fixed price
+                    // let fixedrateaftermembership = membershipPlan * x / 100;
+                    // let xx = fixedrateaftermembership * earlyBookingValue / 100;
+                    // let xxx = xx * durationOfSubscription;
+                    $.ajax({
+            
+                        type:'POST',
+                    
+                        url:'http://localhost/efad/explore/search',
+                    
+                        data:{
+                            search_text:generalSearch,
+                            // car_category:carClassification,
+                            book_period:durationOfSubscription,
+                            price_from:financialValueWeekly,
+                            price_to:financialValueDaily,
+                            order_by:displayOrdering,
+                            cb_uid:carBrand,
+                            cm_uid:carModel,
+                            ct_uid:carType,
+                            year_from:yearTo,
+                            year_to:yearFrom,
+                            color:carColor,
+                            transmission:gearBox,
+                            offset:offset,
+                        },
+                    
+                        success:function(data){
+                            console.log(data);
+                        },
+                    
+                        error: function(data){
+                            // var errors = data.responseJSON;
+                            // var errorObj = errors.errors;
+                            // if ((errorObj)){
+                            //     // TODO
+                            // }
+                            // $('html, body').animate({ scrollTop: 0 }, 'fast');
+                        }
+                    
+                    });
+
+                    //return result;
+                }
+                
+                $( '.updateSearchContent' ).change(function() {
+                    let result = collectSearchParams();
+                    $('.carPriceAfterCal').html(Math.floor(Math.random()*(999-100+1)+100));
+                    let x = $('.subscriptionValueDuration:checked').next().html();
+                    $('.carDurationAfterCal').html('ريال ' + x);
+                    console.log(result);
+                });
+            
+
+                $('.clearFilters').click(function(){
+                    //$("#myCheck").prop("checked", false);
+                    // $('.carClassification:checked').val();
+                    // $('.generalSearch').val('');
+                    // $('.carSearchCity').children("option:selected").val();
+                    // let membershipPlan = $('.membershipPlan:checked').val();
+                    // let earlyBooking = earlyBookingValue();
+                    // let durationOfSubscription = $('.durationOfSubscription:checked').val();
+                    // let subscriptionValueDuration = subscriptionValueDurationValue();
+                    // let financialValueDaily = $('.financialValueDaily').val();
+                    // let financialValueWeekly = $('.financialValueWeekly').val();
+                    // let displayOrdering = $('.displayOrdering:checked').val();
+                    // let carBrand = $('.carBrand').children('option:selected').val();
+                    // let carModel = $('.carType').children('option:selected').val();
+                    // let carType = $('.carCategory').children('option:selected').val();
+                    // let yearFrom = $('#yearFrom').val();
+                    // let yearTo = $('#yearTo').val();
+                    // let offset = $('.paginationValue').val();
+                    // let carColor = [];
+                    // $.each($('.carColor:checked'), function(){            
+                    //     carColor.push($(this).val());
+                    // });
+                    // let gearBox = $('.gearBox:checked').val();
+                    alert('TODO - backend json response');
+                });
 
             /* navbar */
 
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
             });
-
-   
-            
 
         });
 
@@ -1311,73 +1583,6 @@
 <!-- filter car search --> 
 <script src='js/filter/mixitup.min.js'></script> 
 <script src='js/filter/mixitup.js'></script> 
-
-<!--Plugin rangeSlider JavaScript file--> 
-<script src="js/filter/ion.rangeSlider.min.js"></script> 
-<script>
-
-             var $range = $(".js-range-slider"),
-       instance;
-
-             $range.ionRangeSlider({
-                 skin: "round",
-                 type: "double",
-                 min: 0,
-                 max: 500,
-                 from: 0,
-                 to: 500,
-                 onChange: handleRangeInputChange
-             });
-
-             instance = $range.data("ionRangeSlider");
-
-
-             var container = document.querySelector('[data-ref="product_list"]');
-             var mixer = mixitup(container, {
-                 animation: {
-                     duration: 500,
-                     queueLimit: 1000
-                 }
-             });
-
-             function getRange() {
-                 var min = Number(instance.result.from);
-                 var max = Number(instance.result.to);
-                 return {
-                     min: min,
-                     max: max
-                 };
-             }
-
-             function handleRangeInputChange() {
-                 mixer.filter(mixer.getState().activeFilter);
-             }
-
-             function filterTestResult(testResult, target) {
-                 var size = Number(target.dom.el.getAttribute('data-size'));
-                 var range = getRange();
-                 if (size < range.min || size > range.max) {
-                     testResult = false;
-                 }
-                 return testResult;
-             }
-
-             mixitup.Mixer.registerFilter('testResultEvaluateHideShow', 'range', filterTestResult);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </script> 
 
 <!-- end car search --> 
 

@@ -107,9 +107,8 @@ p{line-height:1.6; font-size:0.9rem; font-weight:400}
 
 
 .sb-navbar .navbar-brand {
-	margin-right: 3rem;
     margin-left: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -2721,12 +2720,12 @@ h1.whyefad{font-size: 1.5rem}
 /* header */
 
 .first-div{
-    background-image: url('../images/header-pic2.png');
-    background-size: 100% 80%;
+    background-image: url('../images/home-images/bannerArtboard%201.jpg');
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 519px;
     width: 100%;
-    margin-top: 81px;
+    margin-top: 106px;
 }
 .first-div h1{
     margin-bottom: 0;
@@ -2737,39 +2736,42 @@ h1.whyefad{font-size: 1.5rem}
 }
 
 /* why efad */
-
+.main-header{
+    background-image: url(../images/why_efad/carArtboard-1.png);
+    background-size: 100% 100%;
+}
 .textbanner {
     font-weight: 600;
-    font-size: .7em;
+    font-size: 1.2em;
 }
 .textbanner span{
-    font-size: .6em;
+    font-size: .8em;
 }
 .efd-pic{
-    border: 1px solid #ccc;
-    border-radius: 50%;
-	width: 129px;
-}
-
-.efd-pic:hover{
-    border: 1px solid #003a5d;
-    border-radius: 50%;
+   	width: 100px;
 }
 
 fieldset { 
-  border: 2px groove (internal value) !important ;
 }
 header .fieldset {
 	display: block;
     position: relative;
     padding-top: 0.35em;
     padding-bottom: 01.25em;
-    padding-left: 0.25em;
-    padding-right: 0.25em;
     border-radius: 5px;
 }
 header .fieldset:hover .textbanner{
     color: #003a5d;
+}
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+    .main-header{
+        background-image: none;
+    }
+    header .fieldset{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
 }
 
 /* how-get */
@@ -2779,17 +2781,6 @@ header .fieldset:hover .textbanner{
     position: relative;
 }
 
-.how-get .steps .line{
-    position: absolute;
-    top: 48px;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: #bbb;
-    z-index: 0;
-    width: 77%;
-    margin: auto;
-}
 .how-get .steps ul{
     position: relative;
     overflow: hidden;
@@ -2797,35 +2788,10 @@ header .fieldset:hover .textbanner{
 .how-get .steps ul .item{
     float: right;
     text-align: center;
-    width: 20%;
+    width: 22%;
+    margin-left: -25px;
 }
-.how-get .steps ul .item .itemNum{
-    background-repeat: no-repeat;
-    width: 94px;
-    height: 95px;
-    margin: 0 auto;
-    background-position: center top;
-}
-.how-get .steps ul .item .itemNum1{
-    background: url("../images/how-get/step1.png");
-	background-size: 95px;
-}
-.how-get .steps ul .item .itemNum2{
-    background: url("../images/how-get/step2.png"); 
-	background-size: 95px;
-}
-.how-get .steps ul .item .itemNum3{
-    background: url("../images/how-get/step3.png"); 
-	background-size: 95px;
-}
-.how-get .steps ul .item .itemNum4{
-    background: url("../images/how-get/step4.png"); 
-	background-size: 95px;
-}
-.how-get .steps ul .item .itemNum5{
-    background: url("../images/how-get/step5.png"); 
-	background-size: 95px;
-}
+
 @media (max-width: 767px){
 .how-get .steps ul .item {
     float: none;
@@ -2835,9 +2801,6 @@ header .fieldset:hover .textbanner{
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
 }
-    .how-get .steps .line{
-        display: none;
-    }
 }
 
 /* start our_prices*/
@@ -3144,9 +3107,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 /*  car condition  */
 
 .car-con{
-    background-image: url('../images/car-condition.png');
+    background-image: url(../images/home-images/car2Artboard%201.jpg);
     background-repeat: no-repeat;
-    background-size: 80% 80%;
+    background-size: contain;
     height: 500px;
 	background-position: center;
 }

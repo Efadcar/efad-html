@@ -184,7 +184,7 @@ p{line-height:1.6; font-size:0.9rem; font-weight:400}
     -webkit-transition: width .1s ease-in-out;
     transition: width .1s ease-in-out;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
@@ -240,7 +240,7 @@ button.navbar-toggler {
   cursor: pointer;
   transition: all .2s;
  
-  right: 1rem;
+  left: 1rem;
 	position: relative
 }
 
@@ -358,7 +358,7 @@ button.navbar-toggler {
     top: 50px;
 }
 	.sb-navbar .navbar-nav .nav-item .nav-link {
-    padding: 0 1rem ;
+    padding: 0 .6rem ;
     margin-bottom: 0;
 }
 }
@@ -1265,7 +1265,7 @@ footer
 
 .footer-end
 {
-	background: #F3F3F3; color:#61656c; margin-top:100px
+	background: #F3F3F3; color:#61656c;
 }
 .footer-end p{margin:0}
 .footerTopWide {
@@ -2711,12 +2711,21 @@ h1.whyefad{font-size: 1.5rem}
 /* navbar */
 
 .btn-now{
-    padding: 5px 40px;
+    padding: 5px 30px;
 }
 .nav-new{
     background-color: #fff;
 }
-
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px){
+    .navbar-buttons .dropdown ,
+    .navbar-buttons .btn{
+        width: auto!important;
+    }
+    .navbar-buttons .dropdown .btn{
+        display: inline-block!important;
+    }
+}
 /* header */
 
 .first-div{
@@ -2733,6 +2742,26 @@ h1.whyefad{font-size: 1.5rem}
 }
 .first-div h4{
     line-height: 1.5;
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .first-div{
+        height: 240px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .first-div{
+        height: 290px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .first-div{
+        height: 330px;
+    }
 }
 
 /* why efad */
@@ -2802,6 +2831,7 @@ header .fieldset:hover .textbanner{
     padding-bottom: 20px;
 }
 }
+
 
 /* start our_prices*/
 .our_prices{
@@ -3051,12 +3081,42 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     height: auto;
     text-align: center;
     bottom: 5px;
-    right: 20px;
+    right: 0;
     top: auto;
-    left: 20px;
+    left: 0;
+}
+
+/* mobile devices (less than 380px)*/
+@media (max-width: 380px) { 
+    .our_prices .price{
+        height: 350px;
+    }
+}
+/* iphone 5/se devices (less than 345px)*/
+@media (max-width: 345px) { 
+    .our_prices .price{
+        height: 450px;
+    }
+    .pricing-switcher .car_btn label{
+        width:55px;
+        margin: 0 4px;
+    }
+}
+/* mobile devices (between 360px , 485px)*/
+@media (min-width: 360px) and (max-width: 485px) { 
+    .pricing-switcher .car_btn label{
+        width:55px;
+    }
 }
     /* end our_prices*/
-
+    
+    /* dublicatedQuestions */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .dublicatedQuestions{
+        padding: 20px 10px!important;
+    }
+}
 
 /* gallery */
 .galImg{
@@ -3104,16 +3164,62 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin-top: 20px;
     border-radius: 15px;
 }
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .galImg{
+        padding: 20px 10px!important;
+    }
+}
 /*  car condition  */
 
-.car-con{
+.condition .car-con{
     background-image: url(../images/home-images/car2Artboard%201.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     height: 500px;
 	background-position: center;
 }
+.condition h1{
+    margin-bottom: 0;
+}
+/* phones (portrait phones, less than 415px)*/
+@media (max-width: 415px) { 
+    .condition .car-con{
+        height: 150px;
+    }
+    .condition h1{
+        font-size: 1.2rem;
+    }
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 415.9px) and (max-width: 575.98px) { 
+    .condition .car-con{
+        height: 200px;
+    }
+    .condition h1{
+        font-size: 1.2rem;
+    }
+}
 
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .condition .car-con{
+        height: 270px;
+    }
+    .condition h1{
+        font-size: 1.2rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .condition .car-con{
+        height: 270px;
+    }
+    .condition h1{
+        font-size: 1.2rem;
+    }
+}
 /* footer */
 .payment-img li{
     padding: 0 5px;

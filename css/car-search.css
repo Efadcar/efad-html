@@ -120,21 +120,21 @@
     pointer-events: all;
 }
 
-        .search-option {
-    display: none;
-    position: fixed;
-    height: 100%;
-    padding: 10px 20px 275px 20px;
-    width: 100%;
-    top: 0px;
-    left: 0;
-    overflow: scroll;
-    background: #fff;
-    z-index: 510;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    overflow-x: hidden; 
-}
+    .search-option {
+        display: none;
+        position: fixed;
+        height: 100%;
+        padding: 10px 20px 10px 20px;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        overflow: scroll;
+        background: #fff;
+        z-index: 510;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: hidden; 
+    }
 
   }
   .show {
@@ -614,6 +614,15 @@ border-radius:0
     color: #000;
 }
 
+@media (max-width:500px){
+    .inp-inp{
+        font-size: .5rem!important;
+    }
+    .sear-inp{
+        left: 30px;
+        top: 5px;
+    }
+}
 .custom-select1{
     padding: .375rem .75rem .375rem 1.75rem;
     color: #495057;
@@ -1033,3 +1042,17 @@ color: #fff;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     background-color: #555;
 }*/
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    .car_btn.car-y label{
+        padding: 0 10px;
+        margin-left: 2px;
+    }
+    .search-option .item2000, .search-option .item8000{
+        width: 30%;
+    }
+    .customButton{
+        font-size: .9rem;
+    }
+}

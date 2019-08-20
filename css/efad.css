@@ -108,7 +108,7 @@ p{line-height:1.6; font-size:0.9rem; font-weight:400}
 
 .sb-navbar .navbar-brand {
     margin-left: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -202,9 +202,14 @@ p{line-height:1.6; font-size:0.9rem; font-weight:400}
 }
 }
 @media (max-width: 991.98px) {
-body.menu-opened  .navbar.navbar-expand-lg #mainMenu {
-    width: 500px; 
-}}
+    body.menu-opened  .navbar.navbar-expand-lg #mainMenu {
+        width: 500px; 
+    }
+    .sb-navbar .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
 
 
 
@@ -2734,7 +2739,7 @@ h1.whyefad{font-size: 1.5rem}
     background-repeat: no-repeat;
     height: 519px;
     width: 100%;
-    margin-top: 106px;
+    margin-top: 90px;
 }
 .first-div h1{
     margin-bottom: 0;
@@ -2747,6 +2752,9 @@ h1.whyefad{font-size: 1.5rem}
 @media (max-width: 575.98px) { 
     .first-div{
         height: 240px;
+        margin-top: 74px;
+        background-size: cover;
+        background-position: right;
     }
 }
 
@@ -2754,6 +2762,7 @@ h1.whyefad{font-size: 1.5rem}
 @media (min-width: 576px) and (max-width: 767.98px) { 
     .first-div{
         height: 290px;
+        margin-top: 74px;
     }
 }
 
@@ -2761,6 +2770,7 @@ h1.whyefad{font-size: 1.5rem}
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .first-div{
         height: 330px;
+        margin-top: 74px;
     }
 }
 
@@ -2820,16 +2830,22 @@ header .fieldset:hover .textbanner{
     width: 22%;
     margin-left: -25px;
 }
-
-@media (max-width: 767px){
-.how-get .steps ul .item {
-    float: none;
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px){
+    .how-get .steps ul .item {
+        float: none;
+        display: block;
+        width: 50%;
+        margin: 20px auto 0;
+/*        border-bottom: 1px solid #ddd;*/
+        padding-bottom: 20px;
+    }
 }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .how-get .steps ul .item {
+        margin-left: -17px;
+    }
 }
 
 
@@ -3186,6 +3202,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 @media (max-width: 415px) { 
     .condition .car-con{
         height: 150px;
+        background-size: cover;
     }
     .condition h1{
         font-size: 1.2rem;
@@ -3195,6 +3212,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 @media (min-width: 415.9px) and (max-width: 575.98px) { 
     .condition .car-con{
         height: 200px;
+        background-size: cover;
     }
     .condition h1{
         font-size: 1.2rem;

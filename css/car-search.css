@@ -786,7 +786,7 @@ border-radius:0
     color: #fff;
     border-radius: 0;
     background: #000;
-    margin-left: 10px;
+    margin: 0 5px!important;
 }
 /*
 .blueplan1:{
@@ -1054,5 +1054,15 @@ color: #fff;
     }
     .customButton{
         font-size: .9rem;
+    }
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .color-dots{
+        float: none!important;
+        text-align: center;
+    }
+    .ch-row-ch{
+        text-align: center;
     }
 }

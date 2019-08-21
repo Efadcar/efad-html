@@ -63,7 +63,7 @@ ul { margin: 0px; padding: 0px; }
 u {text-decoration-style: wavy;}
 
 .navbar{
-	padding: 0.5rem 0rem;
+	padding: 0;
 }
 .navbar-brand {
     min-width: 150px;
@@ -73,7 +73,7 @@ u {text-decoration-style: wavy;}
 .logo {
    
     display: block;
- 
+    font-size: 2.8rem;
     max-width: 4em;
     box-sizing: border-box;
  
@@ -108,14 +108,16 @@ p{line-height:1.6; font-size:0.9rem; font-weight:400}
 
 .sb-navbar .navbar-brand {
     margin-left: 0;
-    font-size: 2rem;
     font-weight: 700;
+    margin-right: 20px;
 }
-
+.sb-navbar .navbar-nav .nav-item{
+    margin: 0 15px;
+}
 .sb-navbar .navbar-nav .nav-item .nav-link {
     
     padding: 1rem 0;
-   color:#333; position:relative
+   color:#000; position:relative
   
 	
 }
@@ -162,7 +164,7 @@ p{line-height:1.6; font-size:0.9rem; font-weight:400}
 	opacity: 1;}
 .btn{    border-radius: 50em;}
 .btn--accent {
-    background-color: #EB0028;
+    background-color: #E10028;
  
     color: #fff;
  
@@ -229,7 +231,9 @@ body.menu-opened .navbar.navbar-expand-lg #mainMenu {
 
 
 
-
+.navbar-buttons{
+    padding-left: 25px;
+}
 
 
 body.menu-opened {
@@ -419,12 +423,12 @@ opacity:0
 .cars-many, .cars-branch {
     font-size:1.7rem;
     font-weight:700; 
-    line-height:1.5rem;
+    line-height:1rem;
     color:#fff; 
     padding:1rem; 
     text-align:center;
     border: 2px solid #000;
-    border-radius: 0;
+    border-radius: 3px!important;
     background: #000;
     margin-left: 10px;
 }
@@ -2708,7 +2712,10 @@ color:#FFC007;
     padding-right: .25rem;
 }
 
-h1.whyefad{font-size: 1.5rem}
+h1.whyefad{
+    font-size: 2rem;
+    color: #001D31;
+}
 
 
 /* yousef-homepage edits */
@@ -3080,7 +3087,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 .our_prices_head{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: #001D31;
 }
 .price .list-unstyled .fa-check{
     margin-left: 5px;
@@ -3196,7 +3204,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 	background-position: center;
 }
 .condition h1{
-    margin-bottom: 0;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #001D31;
 }
 /* phones (portrait phones, less than 415px)*/
 @media (max-width: 415px) { 

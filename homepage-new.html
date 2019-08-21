@@ -117,9 +117,9 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img class="logo" src="images/home-images/logo.png" alt="Efad" /></a>
                 <div class="collapse navbar-collapse" id="mainMenu">
-                    <ul class="navbar-nav ml-auto mr-auto" dir="rtl">
-                        <li class="nav-item"><a class="nav-link" href="explore.html">اكتشف</a> </li>
-                        <li class="nav-item active"><a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a> </li>
+                    <ul class="navbar-nav ml-4 mr-auto" dir="rtl">
+<!--                        <li class="nav-item"><a class="nav-link" href="explore.html">الرئيسية</a> </li>-->
+                        <li class="nav-item active"><a class="nav-link" href="index.html">اكتشف <span class="sr-only">(current)</span></a> </li>
                         <li class="nav-item"><a class="nav-link" href="howrentcar.html">كيف أحصل على سيارة ؟ </a> </li>
                         <li class="nav-item"><a class="nav-link" href="Payment.html">الدفع السريع</a> </li>
                         <li class="nav-item"><a class="nav-link" href="faq.html">الأسئلة المتكررة</a> </li>
@@ -135,7 +135,7 @@
                     <div class="navbar-buttons  mbr-section-btn ">
                         <div class="dropdown show mr-2" style="display: inline-block!important;float: right;width: 45%;">
                           <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <span style="color: #333;float: right;font-size: 20px;line-height: 1.8;margin-right: 5px;">Ahmed</span>
+                              <span style="color: #003a5d;float: right;font-size: 20px;line-height: 1.8;margin-right: 5px;">Ahmed</span>
                             <i class="far fa-user"></i>
                               
                           </a>
@@ -164,7 +164,7 @@
                           </div>
                         </div>
                         
-                        <a href="member.html" class="btn  btn-now  btn--accent ml-2" style="width: 45%;display: inline-block;"><span>إشترك الان</span></a> </div>
+                        <a href="member.html" class="btn  btn-now  btn--accent ml-4" style="width: 44%;display: inline-block;">إشترك الان</a> </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="hamburger"> <span></span> <span></span> <span></span> <span></span> </div>
@@ -246,10 +246,10 @@
                     <div class="col-sm-12 col-lg-3">
                         <div class="row no-gutters">
                             <div class="col-6 col-xs-6 ">
-                                <div class="cars-many"> <span>3000</span> <span>سيارة</span> </div>
+                                <div class="cars-many"> <span>3000</span> <span class="car-count">سيارة</span> </div>
                             </div>
                             <div class="col-6 col-xs-6 ">
-                                <div class="cars-branch"> <span>4</span> <span>مدن</span> </div>
+                                <div class="cars-branch"> <span>4</span> <span class="city-count">مدن</span> </div>
                             </div>
                         </div>
                         <div class="row">
@@ -260,9 +260,9 @@
                                 <div class="button-mobile-container button-mobile-close">
                                     <div class="button-mobile">مشاهدة</div>
                                 </div>
-                                <h4><i class="fa fa-filter"></i> بحث متقدم </h4>
-								<!--
-                                <div class="col-md-12 col-sm-12 pt-2">
+                                <h4 style="font-size: 1.5rem;font-weight: 100;"><i class="fa fa-filter" style="color: #000;"></i> بحث متقدم </h4>
+								
+                                <div class="col-md-12 col-sm-12 pt-1">
                                     <span class="labelh pb-2">خطة العضوية</span>
                                     <div class="radio-group d-flex planname" role="group">
                                         <input type="radio" class="updateSearchContent membershipPlan" id="blueplan" data-filter=".blueplan" name="selector" value="5" checked>
@@ -273,7 +273,7 @@
                                         <label for="redplan" class="redplan">حمراء</label>
                                     </div>
                                 </div>
-								-->
+								
 
                                 <div class="col-md-12 col-sm-12 pt-2">
                                     <div class=" justify-content-between">
@@ -285,7 +285,7 @@
                                             <label for="no" class="btn-switch__label btn-switch__label_no"><span class="btn-switch__txt"></span></label>
                                         </div>
                                     </div>
-                                    <span class="text-mutedd small pt-2"> أحصل على 5 % كخصم إضافية عند إجراء الحجز المبكر </span> 
+                                    <span class="efad-color small pt-2"> أحصل على 5 % كخصم إضافية عند إجراء الحجز المبكر </span> 
                                 </div>
                                 <div class="col-md-12 col-sm-12 pt-2">
                                     <span class="labelh py-2">مدة الاشتراك</span>
@@ -326,11 +326,11 @@
                                                 <label for="day1" class="day"> يومى</label>
                                                 -->
                                             <input type="radio" name="year1" value="week1"  id="week1" class="updateSearchContent subscriptionValueDuration" checked>
-                                            <label for="week1" class="week">اسبوعى</label>
+                                            <label for="week1" class="week">اسبوع</label>
                                             <input type="radio" name="year1"  value="month1" id="month1" class="updateSearchContent subscriptionValueDuration" >
-                                            <label for="month1" class="month"> شهرى</label>
+                                            <label for="month1" class="month">شهر</label>
                                             <input type="radio" name="year1" value="year1"  id="year1" class="updateSearchContent subscriptionValueDuration" >
-                                            <label for="year1" class="year">سنوى</label>
+                                            <label for="year1" class="year">سنة</label>
                                         </p>
                                     </div>
                                     
@@ -339,16 +339,14 @@
                                     <span class="labelh py-2">عرض السعر</span>
                                     
                                     <div col-lg-12>
-										من:
-                                        	&nbsp;<input type="text" name="week1" value="" id="priceTo" class="item8000 updateSearchContent financialValueWeekly" disabled>&nbsp;&nbsp;&nbsp;&nbsp;
-										الي:
-                                        	&nbsp;<input type="text" name="day1"  value="" id="priceFrom" class="item2000 updateSearchContent financialValueDaily" disabled >
-										
+                                        	<input type="text" name="week1" value="" id="priceTo" class="item8000 updateSearchContent financialValueWeekly" disabled>&nbsp;
+										س.ر.
+                                        	&nbsp;<input type="text" name="day1"  value="" id="priceFrom" class="item2000 updateSearchContent financialValueDaily" disabled >&nbsp;
+										س.ر.
                                     </div>
                                     <div id="nouislider-slider-cash-range" class="mt-2"></div>
                                 </div>
                                 <div class="col-md-12 col-sm-12 pt-2">
-                                    <span class="labelh py-2">ترتيب</span>
                                     <!--  Custom Radio Buttons  -->
                                     <div class="row">
                                         <div class="col-lg-12">
@@ -386,7 +384,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-12 col-sm-12 pt-1">
+                                <div class="col-md-12 col-sm-12">
                                     <div class="select-wrapper">
                                         <select id="select-car" data-placeholder="أختر شكل السيارة" class="form-control width100p updateSearchContent carType">
                                             <option value="0">موديل السيارة</option>
@@ -397,7 +395,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-12 col-sm-12 pt-1">
+                                <div class="col-md-12 col-sm-12">
                                     <div class="select-wrapper">
                                         <select id="select-car" data-placeholder="أختر شكل السيارة" class="form-control width100p updateSearchContent carCategory">
                                             <option value="0">نوع السيارة</option>
@@ -557,10 +555,10 @@
                         </div>
                         <div class="row ch-row-ch" style="margin: 0;">
                             <div class="col-lg-6 col-md-6">
-                                <p class="text-muted small pt-2"> * جميع الاسعار تشمل  ضريبة  القيمة المضافة 5% </p>
+                                <p class="text-muted small pt-1"> * جميع الاسعار تشمل  ضريبة  القيمة المضافة 5% </p>
                             </div>
                             <div class="col-lg-6 col-md-6">
-                                <div class="color-dots pt-2" style="float: left;">
+                                <div class="color-dots pt-1" style="float: left;padding-top: .5rem!important;">
                                     <span class="dot1"></span>
                                     <span class="dot100 dot101">متاح</span>
                                     <span class="dot3"></span>
@@ -902,12 +900,12 @@
     
     <!-- how get car -->
     
-    <section class="how-get">
+    <section class="how-get" style="padding-top: 0!important;">
         <div class="container-fluid">
             <div class="row">
                 <div class="container">
                     <div class="col-lg-12 text-center py-3">
-                    <h1 style="font-size: 1.5em;margin-bottom: 0;" class="font-weight-bold">كيف أحصل على سيارة ؟</h1>
+                    <h1 style="font-size: 2rem;margin-bottom: 25px;color: #001D31;" class="font-weight-bold">كيف أحصل على سيارة ؟</h1>
                 </div>
                 <div class="steps">
                     <ul>
@@ -1159,7 +1157,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>الأسئلة المتكررة</h1>
+                    <h1 style="font-size: 2rem;color: #001D31;">الأسئلة المتكررة</h1>
                 </div>
             </div>
             <div class="row">
@@ -1615,6 +1613,12 @@ $("#12monthly").on("click",function(){
           $(".value33").text("119"),
           $(".value44").text("219");
     });
+    
+    $(window).on("click",function() {
+        $(".form-control").css("background-color","rgb(240,240,240)");
+    });
+    
+
     
 </script> 
 <script src="js/efad-scripts.js"></script>

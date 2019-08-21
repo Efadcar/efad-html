@@ -1,14 +1,14 @@
 /*profile nav */
 
 nav .navbar-collapse .navbar-buttons .dropdown .fa-user{
-    color: #000;
-    border: 1px solid #b1b1b1;
+    color: #333;
+    border: 1px solid #333;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background: #fff;
-    line-height: 2;
-    margin: 3px 0 3px -11px;
+    line-height: 1.5;
+    margin: 6px 0 5px -5px;
     float: left;
 }
 .fontawesome-before{
@@ -45,14 +45,14 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     background: #fff;
     box-shadow: none;
     padding: 0 17px;
-    border: 1px solid #333;
+    border: 1px solid #79C8CF;
     border-radius: 25px;
     
 }
 .navbar-buttons .dropdown .btn:active{
     box-shadow: none!important;
     background: #fff!important;
-    border: 1px solid #333;
+    border: 1px solid #79C8CF;
 }
 /*
 .blue-back{
@@ -64,9 +64,9 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     text-align: right;
 }
 .dropdown-menu .member-color{
-    background-color: red;
-    width: 45px;
-    height: 25px;
+    background-color: #E10028;
+    width: 37px;
+    height: 23px;
     border-radius: 15px;
     display: inline-block;
     float: left;
@@ -97,7 +97,7 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
 }
 .dropdown-menu-arrow:before {
   bottom: -17px;
-  border-bottom-color: #333;
+  border-bottom-color: #79C8CF;
 }
 .Rectangle-538 {
   width: 272px;
@@ -107,14 +107,14 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
     top: 55px;
     margin: 0;
     border-radius: 20px;
-    border: 1px solid rgba(3,3,3,.5);
+    border: 1px solid #79C8CF;
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.4), 0 1px 8px 0 rgba(0, 0, 0, 0.1);
 }
 .navbar-buttons .dropdown .dropdown-menu hr{
     margin: 5px;
 }
 .dropdown-item{
-    padding: .1rem .8rem;
+    padding: .1rem 1.3rem;
     border-radius: 25px;
 }
 .dropdown-item:hover, .dropdown-item:focus {
@@ -130,7 +130,6 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
 .navbar-buttons .dropdown .dropdown-menu .profile-item .profile-pic{
     width: 25%;
     float: left;
-    margin: 5px;
     position: relative;
 }
 .navbar-buttons .dropdown .dropdown-menu .profile-item .pic{
@@ -149,7 +148,7 @@ nav .navbar-collapse .navbar-buttons .dropdown .dropdown-toggle:focus::before{
 .navbar-buttons .dropdown .dropdown-menu .profile-item .profile-info{
     width: 70%;
     float: right;
-    padding: 10px 15px;
+    padding: 5px 1.3rem;
 }
 .navbar-buttons .dropdown .dropdown-menu .profile-item .profile-info p{
     margin-bottom: 5px;

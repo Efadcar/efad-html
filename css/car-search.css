@@ -414,7 +414,7 @@
 
     	height: 35px;
 	line-height: 30px;
- margin-left:5px; padding:0 15px;      border: 2px solid #d7d7d7; font-size:0.75rem
+ margin-left:5px; padding:0 20px;      border: 2px solid #d7d7d7; font-size:0.75rem
 
   }
 
@@ -786,7 +786,12 @@ border-radius:0
     color: #fff;
     border-radius: 0;
     background: #000;
-    margin: 0 5px!important;
+    margin: 0 2px!important;
+}
+.cars-many .car-count,
+.cars-branch .city-count{
+    font-size: .8rem;
+    font-weight: 100;
 }
 /*
 .blueplan1:{
@@ -832,9 +837,9 @@ color: #fff;
 .customButton {
 /*  display: block;*/
   position: relative;
-  margin-right: 15px;
+  margin-right: 0;
     padding-right: 35px;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -961,6 +966,7 @@ color: #fff;
 #select-car{
     margin: 15px 0;
     border: 1px solid #fff;
+    font-size: 14px;
 }
 #select-car:hover{
     border: 1px solid #003a5d;
